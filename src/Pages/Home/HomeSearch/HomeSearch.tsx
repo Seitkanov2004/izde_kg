@@ -1,9 +1,10 @@
 import React from 'react';
+import "./HomeSearch.scss"
 
 const HomeSearch = () => {
     return (
-        <div>
-            
+        <div className="homeSearch">
+            <h1 className="homeSearch--title">werty</h1>
         </div>
     );
 };
