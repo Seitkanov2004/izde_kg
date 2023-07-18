@@ -1,8 +1,9 @@
 import React from 'react';
+import "./HomeSearch.scss"
 
 const HomeSearch = () => {
     return (
-        <div>
+        <div className="homeSearch">
             
         </div>
     );
