@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutUs = () => {
+const HomeSearch = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const AboutUs = () => {
     );
 };
 
-export default AboutUs;
+export default HomeSearch;
