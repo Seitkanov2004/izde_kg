@@ -1,7 +1,101 @@
-#login{
-  background: url("../../img/login-bg.png")no-repeat center/cover;
+#login {
+  background: url("../../img/login-bg.png") no-repeat center/cover;
   min-height: 100vh;
-  .login{
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      color: #FFF;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 50px 0;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+
+    &--form {
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+      border-radius: 32px;
+      border: 1px solid rgba(0, 74, 96, 0.61);
+      background: #FFF;
+
+      ::placeholder {
+        color: rgba(0, 74, 96, 0.54);
+      }
+
+      input {
+        border-radius: 11px;
+        border: 1px solid rgba(0, 74, 96, 0.46);
+        padding: 15px 20px;
+        margin: 8px 0;
+        font-size: 18px;
+      }
+
+      p {
+        padding: 10px 0;
+        color: #004A60;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &__helper {
+        text-align: center;
+        color: var(--color-main, #1B76F9);
+        font-size: 16px;
+        padding: 10px 0;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+      }
+
+      button {
+        color: #FFF;
+        font-size: 20px;
+        border-radius: 11px;
+        border: 1px solid #0762E5;
+        background: #1B76F9;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 12px 0;
+        margin: 8px 0;
+        cursor: pointer;
+      }
+
+      &__withGoogle {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        color: #004A60;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-content: center;
+        margin-top: 12px;
+        padding: 10px 0;
+        border-radius: 11px;
+        border: 1px solid rgba(0, 74, 96, 0.46);
+        &--icon{
+          font-size: 30px;
+        }
+        span{
+          margin-left: 10px;
+        }
+      }
+    }
 
   }
 }

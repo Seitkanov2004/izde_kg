@@ -44,11 +44,11 @@
         font-weight: 400;
         line-height: normal;
         border-radius: 8px;
-        padding: 6px 2px;
+        padding: 8px 2px;
         border: 1px solid rgba(0, 74, 96, 0.50);
         outline: none;
       }
-      button{
+      &__btn{
         color: var(--color-bg, #FFF);
         font-size: 16px;
         font-style: normal;

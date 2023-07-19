@@ -1,0 +1,87 @@
+#footer{
+  padding: 50px 0;
+  .footer{
+    display: flex;
+    flex-direction: column;
+    &--start{
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      &__logoBlock{
+        width: 20%;
+        div{
+          display: flex;
+          align-items: start;
+          span{
+            color: var(--color-text, #004A60);
+            font-size: 21.33px;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 32px;
+            margin-right: 8px;
+          }
+        }
+        p{
+          color: rgba(0, 74, 96, 0.70);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-top: 16px;
+        }
+      }
+
+
+      &__navigateBlock{
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        &--block{
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          h3{
+            color: var(--color-text, #004A60);
+            font-size: 21.33px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding-bottom: 16px;
+          }
+          &__icons{
+            display: flex;
+            align-items: center;
+            &--nav{
+              font-size: 24px !important;
+              padding-right: 6px;
+            }
+          }
+          a{
+            color: rgba(0, 74, 96, 0.70);
+            font-size: 16px;
+            margin: 8px 0;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    &--end{
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      a{
+        color: var(--color-main, #1B76F9);
+        font-size: 12.8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 14px;
+      }
+    }
+  }
+}
