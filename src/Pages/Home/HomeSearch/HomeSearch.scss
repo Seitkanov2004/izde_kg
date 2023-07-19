@@ -1,5 +1,61 @@
-.homeSearch{
-  &--title{
-    color: red;
+#homeSearch{
+  padding: 200px 0 120px 0;
+  .homeSearch {
+    .text {
+      color: var(--color-text, #004A60);
+      font-size: 28.43px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .title {
+      color: rgba(0, 74, 96, 0.70);
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+    }
+    &--cards {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 64px;
+      .card {
+        display: flex;
+        width: 416px;
+        height: 368px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        border-radius: 32px;
+        border: 1px solid rgba(0, 74, 96, 0.50);
+        .SuperAgents {
+          display: flex;
+          padding: 4px 4px;
+          align-items: center;
+          justify-content: center;
+          gap: 1px;
+          border-radius: 16px;
+          background: var(--color-main, #1B76F9);
+          color: var(--color-bg, #FFF);
+          .super{
+            color: var(--color-bg, #FFF);
+            font-size: 12.8px;
+            font-weight: 400;
+          }
+        }
+        h1 {
+          color: var(--color-text, #004A60);
+          font-size: 21.33px;
+          font-weight: 500;
+          padding: 0 25px;
+        }
+        p{
+          color: rgba(0, 74, 96, 0.70);
+          font-size: 16px;
+          font-weight: 400;
+          padding: 0 25px;
+        }
+      }
+    }
   }
 }
