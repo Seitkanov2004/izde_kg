@@ -1,5 +1,4 @@
 import React from 'react';
-import HomeSearch from "./Pages/Home/HomeSearch/HomeSearch";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import {Route, Routes} from "react-router-dom";
