@@ -11,6 +11,7 @@ const Login = () => {
                     <h1 className="login-title"><img src={logoLogin} alt="img"/>&emsp;<span>WELCOME TO IZDE.KG</span></h1>
                     <div>
 
+
                     </div>
                 </div>
             </div>
