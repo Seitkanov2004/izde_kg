@@ -21,7 +21,7 @@ const HomeSearch = () => {
                             <p>The most responsive agents with up-to-date and improved accuracy on the properties you are searching for.</p>
                         </div>
                         <div className="card">
-                            <h1>Verified listings</h1>
+                            <h1>Verified  listings</h1>
                             <p>Explore property listing that have passed our verification process</p>
                         </div>
                     </div>
