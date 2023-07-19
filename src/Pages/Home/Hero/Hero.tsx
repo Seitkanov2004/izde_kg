@@ -40,7 +40,7 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className="Hero--block__field">
-                            <input type="text" className='search' name='' placeholder="Enter an address or city "/>
+                            <input type="text" className='search' name='search' placeholder="Enter an address or city"/>
                             <button className='btnSearch'><FiSearch/>Search</button>
                         </div>
                     </div>

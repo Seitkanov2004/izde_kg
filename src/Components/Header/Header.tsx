@@ -6,26 +6,26 @@ import "./Header.scss"
 
 const Header = () => {
     return (
-        <div id="header">
+        <header id="header">
             <div className="container">
                 <div className="header">
-                    <NavLink to="/login" className="header--logo"><span>find.kg</span><img src={logo} alt=""/></NavLink>
-                    <div className="header--nav">
+                    <NavLink to="/" className="header--logo"><span>find.kg</span><img src={logo} alt=""/></NavLink>
+                    <nav className="header--nav">
                         <NavLink to="/buy">Buy</NavLink>
                         <NavLink to="/rent">Rent</NavLink>
                         <NavLink to="/agents">Agents</NavLink>
                         <NavLink to="/reciews">Reviews</NavLink>
-                    </div>
+                    </nav>
                     <div className="header--lan">
                         <select>
                             <option value="en-US">🇺🇸&emsp;English</option>
                             <option value="ru-RU">🇷🇺&emsp;Russia</option>
                         </select>
-                        <button>login</button>
+                        <NavLink to="/login" className="header--lan__btn">login</NavLink>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     );
 };
 
