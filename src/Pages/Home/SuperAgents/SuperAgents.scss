@@ -1,0 +1,52 @@
+#SuperAgents {
+  padding: 120px 0;
+  .SuperAgents {
+    display: flex;
+    flex-direction: column;
+    &--text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        color: var(--color-text, #004A60);
+        font-size: 28.43px;
+        font-weight: 600;
+      }
+      button {
+        padding: 8px 16px;
+        border-radius: 8px;
+        background: rgba(27, 118, 249, 0.30);
+        color: var(--color-main, #1B76F9);
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+      }
+    }
+    &--blocks {
+      margin-top: 64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .agent {
+        position: relative;
+        cursor: pointer;
+        .medalFill {
+          position: absolute;
+          right: 0;
+          color: #fff;
+          display: flex;
+          padding: 4px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 24px;
+          background: var(--color-main, #1B76F9);
+          .medal {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

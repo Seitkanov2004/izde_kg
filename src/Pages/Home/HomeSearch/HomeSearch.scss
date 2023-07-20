@@ -1,16 +1,16 @@
 #homeSearch{
-  padding: 200px 0 120px 0;
+  padding: 15% 0 10% 0;
   .homeSearch {
     .text {
       color: var(--color-text, #004A60);
-      font-size: 28.43px;
+      font-size: 30px;
       font-weight: 600;
       text-align: center;
       margin-bottom: 16px;
     }
     .title {
       color: rgba(0, 74, 96, 0.70);
-      font-size: 16px;
+      font-size: 19px;
       font-weight: 400;
       text-align: center;
     }
@@ -20,8 +20,12 @@
       align-items: center;
       margin-top: 64px;
       .card {
+        img {
+          width: 100%;
+        }
+        position: relative;
         display: flex;
-        width: 416px;
+        width: 426px;
         height: 368px;
         flex-direction: column;
         align-items: flex-start;
@@ -29,32 +33,49 @@
         border-radius: 32px;
         border: 1px solid rgba(0, 74, 96, 0.50);
         .SuperAgents {
+          position: absolute;
+          top: 16px;
+          left: 16px;
           display: flex;
-          padding: 4px 4px;
+          padding: 4px 8px;
           align-items: center;
           justify-content: center;
-          gap: 1px;
+          gap: 4px;
           border-radius: 16px;
           background: var(--color-main, #1B76F9);
           color: var(--color-bg, #FFF);
           .super{
             color: var(--color-bg, #FFF);
             font-size: 12.8px;
-            font-weight: 400;
+            font-weight: 300;
           }
         }
-        h1 {
-          color: var(--color-text, #004A60);
-          font-size: 21.33px;
-          font-weight: 500;
-          padding: 0 25px;
+        .Verified {
+          display: flex;
+          padding: 4px 8px;
+          align-items: center;
+          gap: 4px;
+          position: absolute;
+          left: 16px;
+          top: 16px;
+          border-radius: 16px;
+          background: var(--color-main, #1B76F9);
+          color: var(--color-bg, #FFF);
         }
-        p{
-          color: rgba(0, 74, 96, 0.70);
-          font-size: 16px;
-          font-weight: 400;
-          padding: 0 25px;
-        }
+       .cardText {
+         padding: 0 30px;
+         h1 {
+           color: var(--color-text, #004A60);
+           font-size: 21.33px;
+           font-weight: 500;
+           margin-bottom: 15px;
+         }
+         p{
+           color: rgba(0, 74, 96, 0.70);
+           font-size: 16px;
+           font-weight: 400;
+         }
+       }
       }
     }
   }
