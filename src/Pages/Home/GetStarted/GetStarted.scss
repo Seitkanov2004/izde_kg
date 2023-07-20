@@ -1,0 +1,37 @@
+#GetStarted {
+  .GetStarted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--addProperty {
+      display: flex;
+      padding: 64px 315px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 32px;
+      background: var(--color-main, #1B76F9);
+      h1 {
+        color: #FFF;
+        font-size: 28.43px;
+        font-weight: 600;
+      }
+      p {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      button {
+        padding: 16px 24px;
+        border-radius: 8px;
+        background: var(--color-bg, #FFF);
+        color: var(--color-main, #1B76F9);
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 32px;
+        border: none;
+      }
+    }
+  }
+}

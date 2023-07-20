@@ -1,6 +1,9 @@
 import React from 'react';
 import './hero.scss';
 import {FiSearch} from 'react-icons/fi'
+import {BiChevronDown} from 'react-icons/bi'
+import {Simulate} from "react-dom/test-utils";
+import click = Simulate.click;
 
 const Hero = () => {
     return (
@@ -15,14 +18,17 @@ const Hero = () => {
                                 <div className="buy">Buy</div>
                             </div>
                             <div className="Hero--block__filter--options">
-                                <select name="" id="" className='type'>
-                                    <option value="">Property type</option>
-                                    <option value="">Apartment</option>
-                                    <option value="">Villa</option>
-                                    <option value="">Townhouse</option>
-                                    <option value="">Renthouse</option>
-                                    <option value="">Whole Building</option>
-                                </select>
+                                <div className="type">
+                                    <input type="text" className='textBox' placeholder='Property type' readOnly/>
+                                    <BiChevronDown className='down' />
+                                    <div className="option">
+                                        <div><span>Apartment</span></div>
+                                        <div><span>Villa</span></div>
+                                        <div><span>Townhouse</span></div>
+                                        <div><span>Penthouse</span></div>
+                                        <div><span>Whole Building</span></div>
+                                    </div>
+                                </div>
                                 <select name="" id="" className='room'>
                                     <option value="">Room</option>
                                     <option value="">1</option>
