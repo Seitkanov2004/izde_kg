@@ -22,10 +22,10 @@ const Header = () => {
                 <div className="header">
                     <NavLink to="/" className="header--logo"><span>find.kg</span><img src={logo} alt=""/></NavLink>
                     <nav className="header--nav">
-                        <NavLink to="/buy">Buy</NavLink>
-                        <NavLink to="/rent">Rent</NavLink>
-                        <NavLink to="/agents">Agents</NavLink>
-                        <NavLink to="/reciews">Reviews</NavLink>
+                        <NavLink to="/buy" onClick={() => window.scroll(0,0)}>Buy</NavLink>
+                        <NavLink to="/rent" onClick={() => window.scroll(0,0)}>Rent</NavLink>
+                        <NavLink to="/agents" onClick={() => window.scroll(0,0)}>Agents</NavLink>
+                        <NavLink to="/reciews" onClick={() => window.scroll(0,0)}>Reviews</NavLink>
                     </nav>
                     <div className="header--lan">
                         <select>
@@ -43,16 +43,34 @@ const Header = () => {
                     </div>
                     <div style={{display: menu ? "block" : ""}} className="header--navAdap">
                         <div className="header--navAdap__block">
-                            <GrClose onClick={() => setMenu(false)} className="header--navAdap__block--close"/>
-                            <NavLink onClick={() => setMenu(false)} to="/buy">Buy</NavLink>
-                            <NavLink onClick={() => setMenu(false)} to="/rent">Rent</NavLink>
-                            <NavLink onClick={() => setMenu(false)} to="/agents">Agents</NavLink>
-                            <NavLink onClick={() => setMenu(false)} to="/reciews">Reviews</NavLink>
+                            <GrClose onClick={() => {
+                                window.scroll(0,0)
+                                setMenu(false)
+                            }} className="header--navAdap__block--close"/>
+                            <NavLink onClick={() => {
+                                window.scroll(0,0)
+                                setMenu(false)
+                            }} to="/buy">Buy</NavLink>
+                            <NavLink onClick={() => {
+                                window.scroll(0,0)
+                                setMenu(false)
+                            }} to="/rent">Rent</NavLink>
+                            <NavLink onClick={() => {
+                                window.scroll(0,0)
+                                setMenu(false)
+                            }} to="/agents">Agents</NavLink>
+                            <NavLink onClick={() => {
+                                window.scroll(0,0)
+                                setMenu(false)
+                            }} to="/reciews">Reviews</NavLink>
                             <select>
                                 <option value="en-US">🇺🇸&emsp;English</option>
                                 <option value="ru-RU">🇷🇺&emsp;Russia</option>
                             </select>
-                            <NavLink onClick={() => setMenu(false)} to="/login" className="header--navAdap__block--btn">login</NavLink>
+                            <NavLink onClick={() => {
+                                window.scroll(0,0)
+                                setMenu(false)
+                            }} to="/login" className="header--navAdap__block--btn">login</NavLink>
                         </div>
                     </div>
                 </div>

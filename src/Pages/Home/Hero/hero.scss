@@ -1,151 +1,164 @@
 #Hero {
- .Hero {
-   background: url("./../../../img/Image.png")no-repeat center/cover;
-   height: 400px;
-   border-radius: 32px;
-   margin: 64px 0 0 0;
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   h1 {
-     color: var(--color-bg, #FFF);
-     text-align: center;
-     font-size: 58.5px;
-     font-weight: 600;
-     padding-top: 38px;
-     padding-bottom: 140px;
-   }
-   &--block {
-     display: flex;
-     width: 90%;
-     padding: 24px;
-     justify-content: space-between;
-     align-items: center;
-     gap: 24px;
-     border-radius: 32px;
-     border: 1px solid rgba(0, 74, 96, 0.50);
-     background: #FFF;
-     &__filter {
-       &--rentOrBuy {
-         display: flex;
-         gap: 8px;
-         margin-bottom: 8px;
-         .rent {
-           display: flex;
-           padding: 8px 16px;
-           align-items: flex-start;
-           gap: 8px;
-           border-radius: 8px;
-           border: 1px solid rgba(0, 74, 96, 0.50);
-           cursor: pointer;
-           color: rgba(0, 74, 96, 0.70);
-         }
-         .buy {
-           display: flex;
-           padding: 8px 16px;
-           align-items: flex-start;
-           gap: 8px;
-           border-radius: 8px;
-           border: 1px solid rgba(0, 74, 96, 0.50);
-           cursor: pointer;
-           color: rgba(0, 74, 96, 0.70);
-         }
-       }
-       &--options {
-         display: flex;
-         gap: 8px;
-         .type {
-          position: relative;
-           width: 139px;
-           height: 24px;
-          input {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            cursor: pointer;
-            outline: none;
+  .Hero {
+    background: url("./../../../img/Image.png") no-repeat center/cover;
+    height: 400px;
+    border-radius: 32px;
+    margin: 64px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      color: var(--color-bg, #FFF);
+      text-align: center;
+      font-size: 58.5px;
+      font-weight: 600;
+      padding-top: 38px;
+      padding-bottom: 140px;
+    }
+
+    &--block {
+      display: flex;
+      width: 90%;
+      padding: 24px;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      border-radius: 32px;
+      border: 1px solid rgba(0, 74, 96, 0.50);
+      background: #FFF;
+
+      &__filter {
+        &--rentOrBuy {
+          display: flex;
+          gap: 8px;
+          margin-bottom: 8px;
+
+          .rent {
+            display: flex;
+            padding: 8px 16px;
+            align-items: flex-start;
+            gap: 8px;
             border-radius: 8px;
-            padding: 8px 8px 8px 16px;
+            border: 1px solid rgba(0, 74, 96, 0.50);
+            cursor: pointer;
+            color: rgba(0, 74, 96, 0.70);
+          }
+
+          .buy {
+            display: flex;
+            padding: 8px 16px;
+            align-items: flex-start;
+            gap: 8px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 74, 96, 0.50);
+            cursor: pointer;
+            color: rgba(0, 74, 96, 0.70);
+          }
+        }
+
+        &--options {
+          display: flex;
+          gap: 8px;
+
+          .type {
+            position: relative;
+            width: 139px;
+            height: 24px;
+
+            input {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              cursor: pointer;
+              outline: none;
+              border-radius: 8px;
+              padding: 8px 8px 8px 16px;
+              border: 1px solid rgba(0, 74, 96, 0.50);
+              color: rgba(0, 74, 96, 0.70);
+              font-size: 16px;
+              font-weight: 400;
+            }
+
+            .down {
+              position: absolute;
+              z-index: 1;
+              font-size: 26px;
+              top: 8px;
+              right: -7px;
+            }
+
+            .option {
+              position: absolute;
+              top: 38px;
+              width: 162px;
+              background: #fff;
+              border-radius: 0 0 8px 8px;
+              overflow: hidden;
+              border-left: 1px solid rgba(0, 74, 96, 0.50);
+              border-right: 1px solid rgba(0, 74, 96, 0.50);
+              border-top: 1px solid rgba(0, 74, 96, 0.50);
+              //display: none;
+              div {
+                cursor: pointer;
+                width: 100%;
+                border-bottom: 1px solid rgba(0, 74, 96, 0.50);
+                color: rgba(0, 74, 96, 0.70);
+                font-size: 16px;
+                font-weight: 400;
+                padding: 10px 0;
+                span {
+                  padding: 16px 26px 16px 16px;
+                }
+              }
+            }
+
+          }
+
+          .room {
+            display: flex;
+            padding: 10px 10px 10px 16px;
+            align-items: flex-start;
+            gap: 8px;
+            align-self: stretch;
             border: 1px solid rgba(0, 74, 96, 0.50);
             color: rgba(0, 74, 96, 0.70);
             font-size: 16px;
             font-weight: 400;
+            border-radius: 8px;
+            outline: none;
+            cursor: pointer;
           }
-           .down {
-             position: absolute;
-             z-index: 1;
-             width: 24px;
-             height: 24px;
-             top: 8px;
-             right: -7px;
-           }
-           .option {
-             position: absolute;
-             top: 38px;
-             width: 100%;
-             background: #fff;
-             border-radius: 0 0 8px 8px;
-             overflow: hidden;
-             border-left: 1px solid rgba(0, 74, 96, 0.50);
-             border-right: 1px solid rgba(0, 74, 96, 0.50);
-             border-top: 1px solid rgba(0, 74, 96, 0.50);
-             //display: none;
-           }
-           div {
-             cursor: pointer;
-             width: 100%;
-             border-bottom: 1px solid rgba(0, 74, 96, 0.50);
-             color: rgba(0, 74, 96, 0.70);
-             font-size: 16px;
-             font-weight: 400;
-             span{
-               margin: 20px 20px 20px 16px;
-               //padding: 16px 26px 16px 16px;
-             }
-           }
-         }
-         .room {
-           display: flex;
-           padding:  10px 10px 10px 16px;
-           align-items: flex-start;
-           gap: 8px;
-           align-self: stretch;
-           border: 1px solid rgba(0, 74, 96, 0.50);
-           color: rgba(0, 74, 96, 0.70);
-           font-size: 16px;
-           font-weight: 400;
-           border-radius: 8px;
-           outline: none;
-           cursor: pointer;
-         }
-         .price {
-           display: flex;
-           padding:  10px 10px 10px 16px;
-           align-items: flex-start;
-           gap: 8px;
-           align-self: stretch;
-           border: 1px solid rgba(0, 74, 96, 0.50);
-           color: rgba(0, 74, 96, 0.70);
-           font-size: 16px;
-           font-weight: 400;
-           border-radius: 8px;
-           //border: none;
-           outline: none;
-           cursor: pointer;
-         }
-       }
-     }
-     &__field {
-       cursor: pointer;
-       display: flex;
-       width: 762px;
-       padding: 16px;
-       justify-content: space-between;
-       align-items: center;
-       border-radius: 16px;
-       background: rgba(0, 74, 96, 0.10);
+
+          .price {
+            display: flex;
+            padding: 10px 10px 10px 16px;
+            align-items: flex-start;
+            gap: 8px;
+            align-self: stretch;
+            border: 1px solid rgba(0, 74, 96, 0.50);
+            color: rgba(0, 74, 96, 0.70);
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 8px;
+            //border: none;
+            outline: none;
+            cursor: pointer;
+          }
+        }
+      }
+
+      &__field {
+        cursor: pointer;
+        display: flex;
+        width: 762px;
+        padding: 16px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px;
+        background: rgba(0, 74, 96, 0.10);
 
         .search {
           border: none;
@@ -158,21 +171,22 @@
           width: 80%;
           height: 100%;
         }
-       .btnSearch {
-         display: flex;
-         padding: 16px;
-         align-items: center;
-         gap: 8px;
-         border-radius: 8px;
-         background: #1B76F9;
-         border: none;
-         color: #FFF;
-         font-size: 16px;
-         font-style: normal;
-         font-weight: 500;
-         cursor: pointer;
-       }
-     }
-   }
- }
+
+        .btnSearch {
+          display: flex;
+          padding: 16px;
+          align-items: center;
+          gap: 8px;
+          border-radius: 8px;
+          background: #1B76F9;
+          border: none;
+          color: #FFF;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
