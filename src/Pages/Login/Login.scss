@@ -28,16 +28,40 @@
       border: 1px solid rgba(0, 74, 96, 0.61);
       background: #FFF;
 
-      ::placeholder {
-        color: rgba(0, 74, 96, 0.54);
+
+      .errorInput {
+        ::placeholder {
+          color: red;
+        }
+        width: 93%;
+        input {
+          border-radius: 11px;
+          border: 1px solid red;
+          padding: 15px 20px;
+          margin: 8px 0;
+          font-size: 18px;
+          width: 100%;
+        }
       }
 
-      input {
-        border-radius: 11px;
-        border: 1px solid rgba(0, 74, 96, 0.46);
-        padding: 15px 20px;
-        margin: 8px 0;
-        font-size: 18px;
+      ul {
+        ::placeholder {
+          color: rgba(0, 74, 96, 0.54);
+        }
+        width: 93%;
+        input {
+          border-radius: 11px;
+          border: 1px solid rgba(0, 74, 96, 0.46);
+          padding: 15px 20px;
+          margin: 8px 0;
+          font-size: 18px;
+          width: 100%;
+        }
+        h5 {
+          color: red;
+          font-weight: lighter;
+          margin-top: -4px;
+        }
       }
 
       p {
@@ -88,10 +112,12 @@
         padding: 10px 0;
         border-radius: 11px;
         border: 1px solid rgba(0, 74, 96, 0.46);
-        &--icon{
+
+        &--icon {
           font-size: 30px;
         }
-        span{
+
+        span {
           margin-left: 10px;
         }
       }

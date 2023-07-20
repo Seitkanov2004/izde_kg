@@ -1,11 +1,11 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 interface IAction {
-    product: any[]
+
 }
 
 const initialState: IAction = {
-    product: []
+
 }
 
 
