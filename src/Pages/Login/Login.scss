@@ -122,6 +122,51 @@
         }
       }
     }
+  }
+}
 
+
+@media (max-width: 576px) {
+    #login{
+      .login{
+        h1{
+          font-size: 25px;
+          img{
+            width: 7%;
+          }
+
+        }
+      }
+    }
+}
+
+@media (max-width: 450px) {
+  #login{
+    .login{
+      &--form{
+        align-items: center;
+        padding: 18px;
+
+
+        &__withGoogle{
+          font-size: 18px;
+          width: 90%;
+        }
+        button{
+          font-size: 18px;
+          width: 90%;
+        }
+
+        p{
+          text-align: center;
+        }
+
+        ul{
+          input{
+            width: 88%;
+          }
+        }
+      }
+    }
   }
 }
