@@ -12,7 +12,7 @@
         font-size: 28.43px;
         font-weight: 600;
       }
-      button {
+      a {
         padding: 8px 16px;
         border-radius: 8px;
         background: rgba(27, 118, 249, 0.30);
@@ -21,6 +21,10 @@
         font-weight: 500;
         border: none;
         cursor: pointer;
+      }
+      a:hover {
+        background: var(--color-main, #1B76F9);
+        color :#fff;
       }
     }
     &--blocks {

@@ -15,7 +15,7 @@ const HomeSearch = () => {
                     <h1 className='text'>Easy Home Search</h1>
                     <p className='title'>We can help you to find your dream home</p>
                     <div className="homeSearch--cards">
-                        <NavLink to = '/buy'>
+                        <NavLink to = '/agents'>
                             <div className="card">
                                 <img src={cardOne} alt="card"/>
                                 <div className="SuperAgents">
@@ -29,7 +29,7 @@ const HomeSearch = () => {
                             </div>
                         </NavLink>
 
-                        <NavLink to='./rent'>
+                        <NavLink to='./buy'>
                             <div className="card">
                                 <div className="Verified">
                                     <RiCheckboxCircleFill/>

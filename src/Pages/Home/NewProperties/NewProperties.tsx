@@ -5,6 +5,7 @@ import HouseTwo from './../../../img/Rectangle 9 (1).png'
 import HouseTree from './../../../img/Rectangle 9 (2).png'
 import HouseFour from './../../../img/Rectangle 9 (3).png'
 import Slider from "react-slick";
+import {NavLink} from "react-router-dom";
 
 
 const NewProperties = () => {
@@ -32,7 +33,7 @@ const NewProperties = () => {
                                 <option value="">Recently added</option>
                                 <option value="">Recently added</option>
                             </select>
-                            <button>See more</button>
+                            <NavLink to="/agents" onClick={() => window.scroll(0,0)}>See more</NavLink>
                         </div>
                     </div>
                     <div className="NewProperties--blocks">

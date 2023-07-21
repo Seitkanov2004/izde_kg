@@ -8,6 +8,7 @@ import AgentFive from './../../../img/Rectangle 13 (4).svg'
 import AgentSix from './../../../img/Rectangle 13 (5).svg'
 import {RiMedalFill} from 'react-icons/ri'
 import Slider from "react-slick";
+import {NavLink} from "react-router-dom";
 
 const SuperAgents = () => {
 
@@ -28,7 +29,7 @@ const SuperAgents = () => {
                 <div className="SuperAgents">
                     <div className="SuperAgents--text">
                         <h1>Meet our SuperAgents</h1>
-                        <button>See more</button>
+                        <NavLink to="/agents" onClick={() => window.scroll(0,0)}>See more</NavLink>
                     </div>
                     <div className="SuperAgents--blocks">
                         <Slider {...settings}>
