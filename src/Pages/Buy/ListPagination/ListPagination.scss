@@ -155,74 +155,7 @@
       }
     }
 
-    .xlarge {
-      width: 40rem;
-    }
 
-    .large {
-      width: 45rem;
-    }
-
-    .middle {
-      width: 32rem;
-    }
-
-    .small {
-      width: 22rem;
-    }
-
-    .xsmall {
-      width: 14rem;
-    }
-
-    ul, li {
-      list-style: none;
-      display: inline;
-      padding-left: 7px;
-    }
-
-    li {
-      counter-increment: pagination;
-      &:hover {
-        a {
-          color: lighten($main-color, 5%);
-          background-color: $secondary-color;
-          border: solid 1px $secondary-color;
-        }
-      }
-      &.active {
-        a {
-          color: lighten($main-color, 5%);
-          background-color: $secondary-color;
-          border: solid 1px $secondary-color;
-        }
-      }
-
-      &:nth-child(2) {
-        counter-reset: pagination;
-      }
-      &:last-child {
-        float: right;
-        a {
-          &:after {
-            content: "Next";
-          }
-        }
-      }
-      a {
-        border: solid 1px darken($main-color, 10%);
-        border-radius: 0.2rem;
-        color: darken($main-color, 45%);
-        text-decoration: none;
-        text-transform: uppercase;
-        display: inline-block;
-        text-align: center;
-        padding: 0.5rem 0.9rem;
-      }
-      a:after {
-        content: " " counter(pagination) " ";
-      }
-    }
 
     .large {
       li {

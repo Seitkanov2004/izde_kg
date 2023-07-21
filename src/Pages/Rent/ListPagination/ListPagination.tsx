@@ -6,6 +6,9 @@ import {BiSelection} from 'react-icons/bi'
 import {BiBed} from 'react-icons/bi'
 
 const ListPagination = () => {
+
+    const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
     return (
         <div id='ListPagination'>
             <div className="container">
@@ -202,23 +205,14 @@ const ListPagination = () => {
                         </div>
 
                     </div>
-                    <div className="container xlarge">
-                        <div className="pagination">
-                            <ul>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li className="active"><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-
-                            </ul>
+                    <div className="ListPagination--pagination">
+                        <div className="ListPagination--pagination__block">
+                            {
+                                pages.map(el => (
+                                    <button>{el}</button>
+                                ))
+                            }
+                            <button className="ListPagination--pagination__block--next">next</button>
                         </div>
                     </div>
                 </div>
