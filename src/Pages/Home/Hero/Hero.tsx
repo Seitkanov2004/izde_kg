@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './hero.scss';
 import {FiSearch} from 'react-icons/fi'
 import {BiChevronDown} from 'react-icons/bi'
@@ -6,6 +6,9 @@ import {Simulate} from "react-dom/test-utils";
 import click = Simulate.click;
 
 const Hero = () => {
+
+    const [type, setType] = useState("")
+
     return (
         <div id='Hero'>
             <div className="container">
@@ -18,19 +21,16 @@ const Hero = () => {
                                 <div className="buy">Buy</div>
                             </div>
                             <div className="Hero--block__filter--options">
-                                <div  className="type">
-                                    <input type="text" className='textBox' placeholder='Property type' readOnly/>
-                                    <BiChevronDown className='down' />
-                                    <div className="option">
-                                        <div><span>Apartment</span></div>
-                                        <div><span>Villa</span></div>
-                                        <div><span>Townhouse</span></div>
-                                        <div><span>Penthouse</span></div>
-                                        <div><span>Whole Building</span></div>
-                                    </div>
-                                </div>
+                                <select className="type">
+                                    <option style={{display: "none"}}>Property type</option>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Villa">Villa</option>
+                                    <option value="Townhouse">Townhouse</option>
+                                    <option value="Penthouse">Penthouse</option>
+                                    <option value="Whole Building">Whole Building</option>
+                                </select>
                                 <select name="" id="" className='room'>
-                                    <option value="">Room</option>
+                                    <option value="" style={{display: "none"}}>Room</option>
                                     <option value="">1</option>
                                     <option value="">2</option>
                                     <option value="">3</option>
