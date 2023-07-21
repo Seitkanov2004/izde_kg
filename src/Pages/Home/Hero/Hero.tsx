@@ -18,7 +18,7 @@ const Hero = () => {
                                 <div className="buy">Buy</div>
                             </div>
                             <div className="Hero--block__filter--options">
-                                <div className="type">
+                                <div  className="type">
                                     <input type="text" className='textBox' placeholder='Property type' readOnly/>
                                     <BiChevronDown className='down' />
                                     <div className="option">
