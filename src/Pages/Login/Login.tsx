@@ -17,8 +17,8 @@ const Login = () => {
 
     const {register, handleSubmit, setError, formState: {errors, isValid}} = useForm({
         defaultValues: {
-            email: "text@gmail.com",
-            password: "1234578"
+            email: "",
+            password: ""
         },
         mode: "onChange"
     })

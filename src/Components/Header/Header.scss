@@ -6,13 +6,62 @@
     justify-content: space-between;
     align-items: center;
 
-    &--navAdap{
-      display: none;
-      position: absolute;
-      top: 0;
-      right: 10%;
-      transition: .6s;
+    &--navClose{
+      &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: -40%;
+        width: 20%;
+        padding: 20px 40px;
+        border-radius: 32px 0 0 32px;
+        background: #FFFFFF;
+        z-index: 999;
+        transition: 1s;
+        &--close{
+          font-size: 26px;
+          padding-bottom: 40px;
+          padding-top: 20px;
+
+        }
+        &--btn{
+          color: var(--color-bg, #FFF) !important;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          padding: 8px 16px !important;
+          border-radius: 8px;
+          background: var(--color-main, #1B76F9);
+          border: none;
+          margin: 16px 0;
+        }
+
+        a {
+          color: var(--color-text, #004A60);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding: 16px 0;
+        }
+        select{
+          color: var(--color-text, #004A60);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          border-radius: 8px;
+          padding: 8px 2px;
+          border: 1px solid rgba(0, 74, 96, 0.50);
+          outline: none;
+          margin: 16px 0;
+        }
+      }
     }
+
 
     &--openMenu{
       display: none;
@@ -94,6 +143,9 @@
           display: flex;
           align-items: end ;
           flex-direction: column;
+          position: absolute;
+          top: 12px;
+          right: 50px;
           &--big{
             width: 35px;
             height: 3px;
@@ -107,7 +159,7 @@
           }
         }
       }
-      &--navAdap{
+      &--navOpen{
         position: absolute;
         top: 0;
         left: 0;
@@ -117,6 +169,7 @@
         backdrop-filter: blur(2px);
         z-index: 998;
         &__block{
+          transition: 1s;
           display: flex;
           flex-direction: column;
           align-items: end;
@@ -167,6 +220,22 @@
             outline: none;
             margin: 16px 0;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #header{
+    .header{
+      &--openMenu{
+        &__showMenu{}
+
+      }
+      &--navOpen{
+        &__block{
+
         }
       }
     }

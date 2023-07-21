@@ -41,12 +41,12 @@ const Header = () => {
                             <div className="header--openMenu__showMenu--big"/>
                         </div>
                     </div>
-                    <div style={{display: menu ? "block" : ""}} className="header--navAdap">
-                        <div className="header--navAdap__block">
+                    <div  className={menu ? "header--navOpen" : "header--navClose"}>
+                        <div className={`header--${menu ? "navOpen" : "navClose"}__block`}>
                             <GrClose onClick={() => {
                                 window.scroll(0,0)
                                 setMenu(false)
-                            }} className="header--navAdap__block--close"/>
+                            }} className={`header--${menu ? "navOpen" : "navClose"}__block--close`}/>
                             <NavLink onClick={() => {
                                 window.scroll(0,0)
                                 setMenu(false)
@@ -70,7 +70,7 @@ const Header = () => {
                             <NavLink onClick={() => {
                                 window.scroll(0,0)
                                 setMenu(false)
-                            }} to="/login" className="header--navAdap__block--btn">login</NavLink>
+                            }} to="/login" className={`header--${menu ? "navOpen" : "navClose"}__block--btn`}>login</NavLink>
                         </div>
                     </div>
                 </div>
