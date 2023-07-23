@@ -125,3 +125,67 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  #ListPagination {
+    .ListPagination {
+      &--homeBlock {
+        &__homes {
+          .home {
+            width: 500px !important;
+            flex-direction: column;
+            .homeText {
+              .conditions {
+                margin: 40px 0 20px 0 !important;
+                gap: 8px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+@media (max-width: 480px) {
+  #ListPagination {
+    .ListPagination {
+      &--homeBlock {
+        &__homes {
+          .home {
+            width: 413px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  #ListPagination {
+    .ListPagination {
+      &--homeBlock {
+        &__homes {
+          .home {
+            width: 353px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  #ListPagination {
+    .ListPagination {
+      &--homeBlock {
+        &__homes {
+          .home {
+            width: 314px !important;
+          }
+        }
+      }
+    }
+  }
+}

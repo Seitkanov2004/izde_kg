@@ -42,8 +42,8 @@ const SearchFilter = () => {
                     </div>
                     <div className="SearchFilter--Filter">
                         <div className="SearchFilter--Filter__block">
-                                <button>SuperAgents<RiMedalFill className='icon'/></button>
-                               <button>Verified<RiCheckboxCircleFill className='icon'/></button>
+                                <button className='super'>SuperAgents<RiMedalFill className='icon'/></button>
+                               <button className='verified'>Verified<RiCheckboxCircleFill className='icon'/></button>
                         </div>
                         <div className="SearchFilter--Filter__sort">
                             <p>Sort by:</p>
