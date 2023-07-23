@@ -93,6 +93,7 @@
 @media (max-width: 768px) {
   #header {
     .header {
+      position: relative;
       &--nav {
         display: none;
       }
@@ -103,8 +104,6 @@
 
       &--openMenu {
         display: block;
-        width: 35px;
-
 
         &__showMenu {
           display: flex;
@@ -112,7 +111,7 @@
           flex-direction: column;
           position: absolute;
           top: 12px;
-          right: 50px;
+          right: 0;
 
           &--big {
             width: 35px;
@@ -222,7 +221,7 @@
 
       &--navOpen {
         &__block {
-
+          width: 27%;
         }
       }
     }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logoLogin from "../../img/logo-login.svg";
 import {Navigate, NavLink} from "react-router-dom";
 import {FcGoogle} from "react-icons/fc";
@@ -7,12 +7,15 @@ import {fetchUserData, fetchUserRegister, selectIsAuth} from "../../store/Reduce
 import {useAppDispatch} from "../../Hooks/useAppDispatch";
 import {useForm} from "react-hook-form";
 import "./Register.scss"
+import {BsEyeFill, BsEyeSlashFill} from "react-icons/bs";
 
 const Register = () => {
 
 
     const isAuth = useAppSelector(selectIsAuth)
     const dispatch = useAppDispatch()
+    const [eye, setEye] = useState(false)
+
 
     const {register, handleSubmit, setError, formState: {errors, isValid}} = useForm({
         defaultValues: {
@@ -47,7 +50,7 @@ const Register = () => {
                     <h1 className="register--title"><img src={logoLogin} alt="img"/><span>WELCOME TO IZDE.KG</span></h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="register--form">
                         <ul className={`${Boolean(errors.fullName?.message) ? "errorInput": ""}`}>
-                            <input type="text" {...register("fullName", {required: "Укажите почту"})} name="fullName"
+                            <input type="text" {...register("fullName", {required: "Укажите name"})} name="fullName"
                                    placeholder="Full Name" />
                             <h5>{errors.fullName?.message}</h5>
                         </ul>
@@ -57,12 +60,22 @@ const Register = () => {
                             <h5>{errors.email?.message}</h5>
                         </ul>
                         <ul className={`${Boolean(errors.password?.message) ? "errorInput": ""}`}>
-                            <input type="text" {...register("password", {required: "Укажите пароль"})} name="password"
+                            <div>
+                                {
+                                    eye ? <BsEyeSlashFill onClick={() => setEye(false)}/> : <BsEyeFill onClick={() => setEye(true)}/>
+                                }
+                            </div>
+                            <input type={eye ? "text" : "password"} {...register("password", {required: "Укажите пароль"})} name="password"
                                    placeholder="Password" />
                             <h5>{errors.password?.message}</h5>
                         </ul>
                         <ul className={`${Boolean(errors.confirm_password?.message) ? "errorInput": ""}`}>
-                            <input type="text" {...register("confirm_password", {required: "Укажите пароль"})} name="confirm_password"
+                            <div>
+                                {
+                                    eye ? <BsEyeSlashFill onClick={() => setEye(false)}/> : <BsEyeFill onClick={() => setEye(true)}/>
+                                }
+                            </div>
+                            <input type={eye ? "text" : "password"} {...register("confirm_password", {required: "Укажите пароль"})} name="confirm_password"
                                    placeholder="Confirm password" />
                             <h5>{errors.confirm_password?.message}</h5>
                         </ul>

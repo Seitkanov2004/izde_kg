@@ -10,6 +10,8 @@ import {fetchUserData, getToken, selectIsAuth} from "../../store/Reducers/Action
 import {useAppSelector} from "../../Hooks/useAppSelector";
 import {Navigate} from "react-router-dom";
 import {GoogleLogin} from "@react-oauth/google";
+import { useGoogleLogin } from '@react-oauth/google';
+import {BsEyeFill, BsEyeSlashFill} from "react-icons/bs";
 
 //809510400798-udfdbo3fculoernhe06p3273l19m731d.apps.googleusercontent.com
 //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
@@ -19,6 +21,7 @@ const Login = () => {
 
     const isAuth = useAppSelector(selectIsAuth)
     const dispatch = useAppDispatch()
+    const [eye, setEye] = useState(false)
 
     console.log("isAuth", isAuth)
 
@@ -51,15 +54,6 @@ const Login = () => {
 
     const clientId = "809510400798-udfdbo3fculoernhe06p3273l19m731d.apps.googleusercontent.com"
 
-    const onSuccess = (res: any) => {
-        console.log("login user:" + res.profileObj)
-    }
-
-
-    const onFailure = (res: any) => {
-        console.log("login res:" + res)
-    }
-
 
     return (
         <div id="login">
@@ -67,13 +61,18 @@ const Login = () => {
                 <div className="login">
                     <h1 className="login-title"><img src={logoLogin} alt="img"/><span>WELCOME TO IZDE.KG</span></h1>
                     <form onSubmit={handleSubmit(onSubmit)} className="login--form">
-                        <ul className={`${Boolean(errors.email?.message) ? "errorInput" : ""}`}>
+                        <ul className={`${Boolean(errors.email?.message) ? "errorEmail" : ""}`}>
                             <input type="email" {...register("email", {required: "Укажите почту"})} name="email"
                                    placeholder="Email"/>
                             <h5>{errors.email?.message}</h5>
                         </ul>
-                        <ul className={`${Boolean(errors.email?.message) ? "errorInput" : ""}`}>
-                            <input type="text" {...register("password", {required: "Укажите пароль"})} name="password"
+                        <ul className={`${Boolean(errors.password?.message) ? "errorPassword" : ""}`}>
+                            <div>
+                                {
+                                    eye ? <BsEyeSlashFill onClick={() => setEye(false)}/> : <BsEyeFill onClick={() => setEye(true)}/>
+                                }
+                            </div>
+                            <input type={eye ? "text" : "password"} {...register("password", {required: "Укажите пароль"})} name="password"
                                    placeholder="Password"/>
                             <h5>{errors.password?.message}</h5>
                         </ul>
@@ -93,8 +92,6 @@ const Login = () => {
                                 console.log('Login Failed');
                             }}
                         />
-                        {/*<NavLink to="/with-google" className="login--form__withGoogle"><FcGoogle*/}
-                        {/*    className="login--form__withGoogle--icon"/><span>Continue with Google</span></NavLink>*/}
                     </form>
                 </div>
             </div>
