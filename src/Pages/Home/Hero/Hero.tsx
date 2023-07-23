@@ -17,11 +17,11 @@ const Hero = () => {
                     <div className="Hero--block">
                         <div className="Hero--block__filter">
                             <div className="Hero--block__filter--rentOrBuy">
-                                <div className="rent">Rent</div>
-                                <div className="buy">Buy</div>
+                                <div className="rentBuy">Rent</div>
+                                <div className="rentBuy">Buy</div>
                             </div>
                             <div className="Hero--block__filter--options">
-                                <select className="type">
+                                <select className='type'>
                                     <option style={{display: "none"}}>Property type</option>
                                     <option value="Apartment">Apartment</option>
                                     <option value="Villa">Villa</option>
@@ -29,8 +29,8 @@ const Hero = () => {
                                     <option value="Penthouse">Penthouse</option>
                                     <option value="Whole Building">Whole Building</option>
                                 </select>
-                                <select name="" id="" className='room'>
-                                    <option value="" style={{display: "none"}}>Room</option>
+                                <select className='roomPrice'>
+                                    <option value="" style={{display: "none"}}>Rooms</option>
                                     <option value="">1</option>
                                     <option value="">2</option>
                                     <option value="">3</option>
@@ -38,8 +38,8 @@ const Hero = () => {
                                     <option value="">5</option>
                                     <option value="">5+</option>
                                 </select>
-                                <select name="" id="" className='price'>
-                                    <option value="">Price</option>
+                                <select className='roomPrice'>
+                                    <option value="" style={{display: "none"}} >Price</option>
                                     <option value="">| Min</option>
                                     <option value="">| Max</option>
                                 </select>

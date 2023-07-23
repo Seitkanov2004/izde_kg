@@ -71,3 +71,58 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  #SuperAgents {
+    .SuperAgents {
+      &--text {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  #SuperAgents {
+    .SuperAgents {
+      &--text {
+        flex-direction: column;
+        gap: 20px;
+        h1 {
+          text-align: center !important;
+        }
+       a{
+         margin-left: 260px;
+      }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  #SuperAgents {
+    .SuperAgents {
+      &--text {
+        h1 {
+          font-size: 25.43px;
+        }
+        a{
+          margin-left: 220px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #SuperAgents {
+    .SuperAgents {
+      &--text {
+        a{
+          margin-left: 176px;
+        }
+      }
+    }
+  }
+}

@@ -16,7 +16,7 @@ const SearchFilter = () => {
                             <button><RiSearchLine className='searchLine'/>Search</button>
                         </div>
                         <div className="SearchFilter--SearchBlock__options">
-                            <select>
+                            <select className='type'>
                                 <option>Property type</option>
                                 <option>Apartment</option>
                                 <option>Villa</option>
@@ -24,8 +24,8 @@ const SearchFilter = () => {
                                 <option>Penthouse</option>
                                 <option>Whole Building</option>
                             </select>
-                            <select>
-                                <option>Room</option>
+                            <select className='roomPrice'>
+                                <option>Rooms</option>
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -33,7 +33,7 @@ const SearchFilter = () => {
                                 <option>5</option>
                                 <option>5 +</option>
                             </select>
-                            <select>
+                            <select className='roomPrice'>
                                 <option>Price</option>
                                 <option>| Min</option>
                                 <option>| Max</option>

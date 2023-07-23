@@ -80,3 +80,103 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  #homeSearch {
+    .homeSearch {
+      &--cards {
+        display: flex;
+        justify-content: space-between;
+
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  #homeSearch {
+    padding: 45% 0 10% 0;
+    .homeSearch {
+      &--cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #homeSearch {
+    padding: 55% 0 10% 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #homeSearch {
+    padding: 60% 0 20% 0;
+  }
+}
+
+@media (max-width: 414px) {
+  #homeSearch {
+    .homeSearch {
+      .text {
+        font-size: 25px;
+      }
+      .title {
+        font-size: 16px;
+      }
+      &--cards {
+        .card {
+          width: 369px;
+          height: 350px;
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  #homeSearch {
+    .homeSearch {
+      .text {
+        font-size: 25px;
+      }
+      .title {
+        font-size: 16px;
+      }
+      &--cards {
+        .card {
+          width: 327px;
+          height: 350px;
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #homeSearch {
+    padding: 70% 0 20% 0;
+    .homeSearch {
+      .text {
+        font-size: 25px;
+      }
+      .title {
+        font-size: 16px;
+      }
+      &--cards {
+        margin-top: 35px;
+        .card {
+          width: 275px;
+          height: 378px;
+        }
+
+      }
+    }
+  }
+}

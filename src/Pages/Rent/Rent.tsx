@@ -5,7 +5,7 @@ import ListPagination from "./ListPagination/ListPagination";
 const Rent = () => {
     return (
         <>
-          <SearchFilter/>
+            <SearchFilter/>
             <ListPagination/>
         </>
     );

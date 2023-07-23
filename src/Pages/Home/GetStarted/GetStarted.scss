@@ -42,3 +42,69 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  #GetStarted {
+    .GetStarted {
+      &--addProperty {
+        padding: 64px 280px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #GetStarted {
+    .GetStarted {
+      &--addProperty {
+        padding: 64px 260px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #GetStarted {
+    .GetStarted {
+      &--addProperty {
+        padding: 64px 163px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #GetStarted {
+    .GetStarted {
+      &--addProperty {
+        padding: 64px 75px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #GetStarted {
+    .GetStarted {
+      &--addProperty {
+        padding: 64px 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  #GetStarted {
+    .GetStarted {
+      &--addProperty {
+        h1 {
+          text-align: center;
+          font-size: 25.43px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

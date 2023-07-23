@@ -48,7 +48,16 @@
       &__options {
         display: flex;
         gap: 8px;
-        select {
+        .type {
+          color: rgba(0, 74, 96, 0.70);
+          font-size: 16px;
+          font-weight: 400;
+          padding: 10px 10px 10px 16px;
+          border-radius: 8px;
+          border: 1px solid rgba(0, 74, 96, 0.50);
+
+        }
+        .roomPrice {
           color: rgba(0, 74, 96, 0.70);
           font-size: 16px;
           font-weight: 400;
@@ -104,6 +113,45 @@
           border-radius: 8px;
           border: 1px solid rgba(0, 74, 96, 0.50);
 
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #SearchFilter {
+    .SearchFilter {
+      &--SearchBlock {
+        flex-direction: column;
+        align-items: start;
+        gap: 1em;
+        &__search {
+          width: 685px;
+        }
+      }
+      &--Filter {
+        gap: 11.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #SearchFilter {
+    .SearchFilter {
+      &--SearchBlock {
+        &__search {
+          width: 500px;
+        }
+        &__options {
+          flex-wrap: wrap;
+          .type {
+            padding: 10px 353px 10px 16px;
+          }
+          .roomPrice {
+            padding: 10px 161px 10px 16px;
+          }
         }
       }
     }

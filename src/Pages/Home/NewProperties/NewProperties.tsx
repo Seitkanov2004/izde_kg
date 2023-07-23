@@ -29,11 +29,12 @@ const NewProperties = () => {
                         <h1>Explore the New Properties</h1>
                         <div className="NewProperties--explore__filterBtn">
                             <select>
-                                <option value="">Recently added</option>
-                                <option value="">Recently added</option>
-                                <option value="">Recently added</option>
+                                <option value="recently" style={{display: "none"}}>Recently added</option>
+                                <option value="">Most popular</option>
+                                <option value="">Cheapest</option>
+                                <option value="">The most expensive</option>
                             </select>
-                            <NavLink to="/agents" onClick={() => window.scroll(0,0)}>See more</NavLink>
+                            <NavLink to="/buy" onClick={() => window.scroll(0,0)}>See more</NavLink>
                         </div>
                     </div>
                     <div className="NewProperties--blocks">
