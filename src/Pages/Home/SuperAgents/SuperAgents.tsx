@@ -13,7 +13,7 @@ import {NavLink} from "react-router-dom";
 const SuperAgents = () => {
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,

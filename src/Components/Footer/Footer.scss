@@ -1,18 +1,23 @@
-#footer{
+#footer {
   padding: 50px 0;
-  .footer{
+
+  .footer {
     display: flex;
     flex-direction: column;
-    &--start{
+
+    &--start {
       display: flex;
       justify-content: space-between;
       align-items: start;
-      &__logoBlock{
+
+      &__logoBlock {
         width: 20%;
-        div{
+
+        div {
           display: flex;
           align-items: start;
-          span{
+
+          span {
             color: var(--color-text, #004A60);
             font-size: 21.33px;
             font-style: normal;
@@ -22,7 +27,8 @@
             margin-right: 8px;
           }
         }
-        p{
+
+        p {
           color: rgba(0, 74, 96, 0.70);
           font-size: 16px;
           font-style: normal;
@@ -33,16 +39,18 @@
       }
 
 
-      &__navigateBlock{
+      &__navigateBlock {
         width: 55%;
         display: flex;
         justify-content: space-between;
         align-items: start;
-        &--block{
+
+        &--block {
           display: flex;
           flex-direction: column;
           align-items: start;
-          h3{
+
+          h3 {
             color: var(--color-text, #004A60);
             font-size: 21.33px;
             font-style: normal;
@@ -50,15 +58,18 @@
             line-height: normal;
             padding-bottom: 16px;
           }
-          &__icons{
+
+          &__icons {
             display: flex;
             align-items: center;
-            &--nav{
+
+            &--nav {
               font-size: 24px !important;
               padding-right: 6px;
             }
           }
-          a{
+
+          a {
             color: rgba(0, 74, 96, 0.70);
             font-size: 16px;
             margin: 8px 0;
@@ -70,17 +81,67 @@
       }
     }
 
-    &--end{
+    &--end {
       display: flex;
       justify-content: center;
       margin-top: 40px;
-      a{
+
+      a {
         color: var(--color-main, #1B76F9);
         font-size: 12.8px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         margin: 0 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #footer {
+    .footer {
+      &--start {
+        &__navigateBlock {
+          width: 62%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  #footer {
+    .footer {
+      &--start {
+         flex-wrap: wrap;
+        &__navigateBlock {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 450px) {
+  #footer {
+    .footer {
+      &--start {
+        flex-direction: column;
+        &__logoBlock{
+          width: 60%;
+        }
+        &__navigateBlock {
+          &--block{
+            margin: 20px 0;
+            a{
+              margin: 4px 0;
+            }
+          }
+        }
       }
     }
   }
