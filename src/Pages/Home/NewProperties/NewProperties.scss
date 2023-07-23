@@ -5,7 +5,7 @@
     &--explore {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      //align-items: center;
       h1 {
         color: var(--color-text, #004A60);
         font-size: 28.43px;
@@ -13,6 +13,21 @@
       }
       &__filterBtn {
         display: flex;
+        select {
+          display: flex;
+          padding: 10px 10px 10px 16px;
+          align-items: flex-start;
+          gap: 8px;
+          align-self: stretch;
+          border: 1px solid rgba(0, 74, 96, 0.50);
+          color: rgba(0, 74, 96, 0.70);
+          font-size: 16px;
+          font-weight: 400;
+          border-radius: 8px;
+          //border: none;
+          outline: none;
+          cursor: pointer;
+        }
         a {
           padding: 8px 16px;
           color: var(--color-main, #1B76F9);
@@ -89,4 +104,69 @@
       }
     }
   }
+}
+
+@media (max-width: 768px) {
+  #NewProperties {
+    .NewProperties {
+      &--explore {
+        flex-direction: column;
+        gap: 20px;
+        h1 {
+          text-align: center !important;
+        }
+        &__filterBtn {
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 414px) {
+  #NewProperties {
+    .NewProperties {
+      &--explore {
+        h1 {
+          font-size: 25.43px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 370px) {
+  #NewProperties {
+    .NewProperties {
+      &--explore {
+        h1 {
+          font-size: 24.43px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 320px) {
+  #NewProperties {
+    .NewProperties {
+      &--explore {
+        h1 {
+          //font-size: 21.43px;
+        }
+        &__filterBtn {
+          select {
+            padding: 8px;
+          }
+          a {
+            padding: 8px 6px;
+          }
+        }
+      }
+    }
+  }
+
 }
