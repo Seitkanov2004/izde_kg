@@ -6,6 +6,8 @@ import Login from "./Pages/Login/Login";
 import Home from "./Pages/Home/Home";
 import Buy from "./Pages/Buy/Buy";
 import Rent from "./Pages/Rent/Rent";
+import Register from "./Pages/Register/Register";
+import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
 
 
 const App = () => {
@@ -17,6 +19,8 @@ const App = () => {
                 <Route path="/login" element={<Login/>}/>
                 <Route path='/buy' element={<Buy/>}/>
                 <Route path='/rent' element={<Rent/>}/>
+                <Route path="/register" element={<Register/>}/>
+                <Route path="/forgot-password" element={<ForgotPassword/>}/>
             </Routes>
             <Footer/>
         </div>

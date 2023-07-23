@@ -1,69 +1,19 @@
 #header {
   border-bottom: 1px solid rgba(0, 74, 96, 0.50);
+
   .header {
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    &--navClose{
-      &__block{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        position: absolute;
-        top: 0;
-        right: -40%;
-        width: 20%;
-        padding: 20px 40px;
-        border-radius: 32px 0 0 32px;
-        background: #FFFFFF;
-        z-index: 999;
-        transition: 1s;
-        &--close{
-          font-size: 26px;
-          padding-bottom: 40px;
-          padding-top: 20px;
 
-        }
-        &--btn{
-          color: var(--color-bg, #FFF) !important;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-          padding: 8px 16px !important;
-          border-radius: 8px;
-          background: var(--color-main, #1B76F9);
-          border: none;
-          margin: 16px 0;
-        }
-
-        a {
-          color: var(--color-text, #004A60);
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          padding: 16px 0;
-        }
-        select{
-          color: var(--color-text, #004A60);
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          border-radius: 8px;
-          padding: 8px 2px;
-          border: 1px solid rgba(0, 74, 96, 0.50);
-          outline: none;
-          margin: 16px 0;
-        }
-      }
+    &--openMenu {
+      display: none;
     }
 
-
-    &--openMenu{
+    &--navClose {
+      outline: none;
       display: none;
     }
 
@@ -97,8 +47,8 @@
       }
     }
 
-    &--lan{
-      select{
+    &--lan {
+      select {
         color: var(--color-text, #004A60);
         font-size: 16px;
         font-style: normal;
@@ -109,7 +59,8 @@
         border: 1px solid rgba(0, 74, 96, 0.50);
         outline: none;
       }
-      &__btn{
+
+      &__btn {
         color: var(--color-bg, #FFF);
         font-size: 16px;
         font-style: normal;
@@ -121,45 +72,73 @@
         border: none;
         margin-left: 20px;
       }
+
+      &__btnOut {
+        color: var(--color-bg, #FFF);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 8px 16px;
+        border-radius: 8px;
+        background: var(--color-main, #e70000);
+        border: none;
+        margin-left: 20px;
+      }
     }
   }
 }
 
 
 @media (max-width: 768px) {
-  #header{
-    .header{
-      &--nav{
+  #header {
+    .header {
+      &--nav {
         display: none;
       }
-      &--lan{
+
+      &--lan {
         display: none;
       }
-      &--openMenu{
+
+      &--openMenu {
         display: block;
         width: 35px;
 
-        &__showMenu{
+
+        &__showMenu {
           display: flex;
-          align-items: end ;
+          align-items: end;
           flex-direction: column;
           position: absolute;
           top: 12px;
           right: 50px;
-          &--big{
+
+          &--big {
             width: 35px;
             height: 3px;
             margin: 10px 0;
             background: #004A60;
           }
-          &--let{
+
+          &--let {
             width: 26px;
             height: 3px;
             background: #004A60;
           }
         }
       }
-      &--navOpen{
+
+      @keyframes any {
+        0% {
+          right: -40%;
+        }
+        100% {
+          right: 0;
+        }
+      }
+
+      &--navOpen {
         position: absolute;
         top: 0;
         left: 0;
@@ -168,7 +147,10 @@
         background: rgba(0, 0, 0, 0.19);
         backdrop-filter: blur(2px);
         z-index: 998;
-        &__block{
+        animation: any 1s ease-in-out alternate;
+
+
+        &__block {
           transition: 1s;
           display: flex;
           flex-direction: column;
@@ -181,13 +163,15 @@
           border-radius: 32px 0 0 32px;
           background: #FFFFFF;
           z-index: 999;
-          &--close{
+
+          &--close {
             font-size: 26px;
             padding-bottom: 40px;
             padding-top: 20px;
 
           }
-          &--btn{
+
+          &--btn {
             color: var(--color-bg, #FFF) !important;
             font-size: 16px;
             font-style: normal;
@@ -208,7 +192,8 @@
             line-height: normal;
             padding: 16px 0;
           }
-          select{
+
+          select {
             color: var(--color-text, #004A60);
             font-size: 16px;
             font-style: normal;
@@ -227,14 +212,16 @@
 }
 
 @media (max-width: 576px) {
-  #header{
-    .header{
-      &--openMenu{
-        &__showMenu{}
+  #header {
+    .header {
+      &--openMenu {
+        &__showMenu {
+        }
 
       }
-      &--navOpen{
-        &__block{
+
+      &--navOpen {
+        &__block {
 
         }
       }

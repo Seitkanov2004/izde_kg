@@ -1,0 +1,153 @@
+#register {
+  background: url("../../img/login-bg.png") no-repeat center/cover;
+  min-height: 100vh;
+
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      color: #FFF;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 50px 0;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+
+    &--form {
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+      border-radius: 32px;
+      border: 1px solid rgba(0, 74, 96, 0.61);
+      background: #FFF;
+      width: 46.5%;
+
+      .errorInput {
+        ::placeholder {
+          color: red;
+        }
+        width: 93%;
+        input {
+          border-radius: 11px;
+          border: 1px solid red;
+          padding: 15px 20px;
+          margin: 8px 0;
+          font-size: 18px;
+          width: 100%;
+        }
+      }
+
+      ul {
+        ::placeholder {
+          color: rgba(0, 74, 96, 0.54);
+        }
+        width: 93%;
+        input {
+          border-radius: 11px;
+          border: 1px solid rgba(0, 74, 96, 0.46);
+          padding: 15px 20px;
+          margin: 8px 0;
+          font-size: 18px;
+          width: 100%;
+        }
+        h5 {
+          color: red;
+          font-weight: lighter;
+          margin-top: -4px;
+        }
+      }
+
+
+      button {
+        color: #FFF;
+        font-size: 20px;
+        border-radius: 11px;
+        border: 1px solid #0762E5;
+        background: #1B76F9;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 12px 0;
+        margin: 8px 0;
+        cursor: pointer;
+      }
+
+      &__withGoogle {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        color: #004A60;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-content: center;
+        margin-top: 12px;
+        padding: 10px 0;
+        border-radius: 11px;
+        border: 1px solid rgba(0, 74, 96, 0.46);
+
+        &--icon {
+          font-size: 30px;
+        }
+
+        span {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  #register{
+    .register{
+      h1{
+        font-size: 25px;
+        img{
+          width: 7%;
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #register{
+    .register{
+      &--form{
+        align-items: center;
+        padding: 18px;
+
+
+        &__withGoogle{
+          font-size: 18px;
+          width: 90%;
+        }
+        button{
+          font-size: 18px;
+          width: 90%;
+        }
+
+        p{
+          text-align: center;
+        }
+
+        ul{
+          input{
+            width: 88%;
+          }
+        }
+      }
+    }
+  }
+}
