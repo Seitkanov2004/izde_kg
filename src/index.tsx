@@ -17,6 +17,9 @@ import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
 import LoginAdmin from "./Pages/AdminPage/LoginAdmin/LoginAdmin";
 import ForgotAdmin from "./Pages/AdminPage/ForgotAdmin/ForgotAdmin";
 import AboutUser from "./Pages/AboutUser/AboutUser";
+import AdminPage from "./Pages/AdminPage/AdminPage";
+import NavButton from "./Pages/AdminPage/NavButton/NavButton";
+import Navigate from "./Pages/AdminPage/Navigate/Navigate";
 
 
 const root = ReactDOM.createRoot(
@@ -43,6 +46,9 @@ root.render(
                     </Route>
                     <Route path={"/admin"} element={<LoginAdmin/>}/>
                     <Route path={"/forgot-admin-pass"} element={<ForgotAdmin/>}/>
+                    <Route path="/about-admin" element={<AdminPage/>}>
+                        <Route index element={<Navigate/>}/>
+                    </Route>
                 </Routes>
             </GoogleOAuthProvider>
         </Provider>

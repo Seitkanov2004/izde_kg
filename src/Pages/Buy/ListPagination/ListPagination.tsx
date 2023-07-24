@@ -8,6 +8,7 @@ import {BiBed} from 'react-icons/bi'
 const ListPagination = () => {
 
     const pages = [1 ,2, 3, 4, 5, 6, 7, 8, 9, 10]
+    const smallPages = [1 ,2, 3, 4, 5]
 
     return (
         <div id='ListPagination'>
@@ -213,6 +214,15 @@ const ListPagination = () => {
                                 ))
                             }
                             <button className="ListPagination--pagination__block--next">next</button>
+                        </div>
+
+                        <div className="ListPagination--pagination__blockSmall">
+                            {
+                                smallPages.map(el => (
+                                    <button>{el}</button>
+                                ))
+                            }
+                            <button className="ListPagination--pagination__blockSmall--next">next</button>
                         </div>
                     </div>
                 </div>

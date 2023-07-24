@@ -1,0 +1,72 @@
+#adminPage {
+  position: relative;
+  .adminPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    &--helper{
+      display: flex;
+      flex-direction: column;
+      width: 74%;
+      background: white;
+      &--menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0;
+
+        &__lan{
+          select{
+            color: #1B76F9;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border: none;
+            margin-right: 40px;
+            outline: none;
+          }
+        }
+        &__search{
+          border-radius: 8px;
+          background: #e0e5f8;
+          position: relative;
+          ::placeholder{
+            color: #79B0FF;
+
+          }
+          input{
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-radius: 8px;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            border: none;
+            padding: 10px 30px;
+            background: #e0e5f8;
+
+          }
+          &--icon{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #79B0FF;
+          }
+        }
+      }
+    }
+
+    &--navBg {
+      position: absolute;
+      z-index: -10;
+      width: 24%;
+      height: 100%;
+      border-radius: 0 10px 10px 0;
+      background: rgba(187, 216, 255, 0.56);
+    }
+  }
+}
