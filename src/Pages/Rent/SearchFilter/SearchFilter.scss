@@ -259,7 +259,43 @@
 
           }
           .roomPrice {
-            padding: 10px 76px 10px 16px;
+            padding: 10px 77px 10px 16px;
+          }
+        }
+      }
+      &--Filter {
+        &__block {
+          .super {
+            width: 166px;
+          }
+          .verified {
+            width: 159px;
+          }
+        }
+        &__sort {
+          select {
+            padding: 10px 54px 10px 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #SearchFilter {
+    .SearchFilter {
+      &--SearchBlock {
+        &__search {
+          width: 286px;
+        }
+        &__options {
+          .type {
+            padding: 10px 185px 10px 16px;
+
+          }
+          .roomPrice {
+            padding: 10px 77px 10px 16px;
           }
         }
       }
