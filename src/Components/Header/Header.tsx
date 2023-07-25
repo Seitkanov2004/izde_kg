@@ -10,6 +10,8 @@ import {useAppSelector} from "../../Hooks/useAppSelector";
 const Header = () => {
 
     const isAuth = useAppSelector(selectIsAuth)
+
+    console.log(isAuth)
     const [menu, setMenu] = useState(false)
     const dispatch = useAppDispatch()
     const ClickLogOut = () => {
