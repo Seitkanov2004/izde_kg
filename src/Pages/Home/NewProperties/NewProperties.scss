@@ -124,6 +124,21 @@
 
 }
 
+@media (max-width: 480px) {
+  #NewProperties {
+    .NewProperties {
+      &--blocks {
+        .block {
+          width: 220px !important;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 414px) {
   #NewProperties {
     .NewProperties {
@@ -154,9 +169,6 @@
   #NewProperties {
     .NewProperties {
       &--explore {
-        h1 {
-          //font-size: 21.43px;
-        }
         &__filterBtn {
           select {
             padding: 8px;

@@ -285,7 +285,7 @@
 
           }
           .roomPrice {
-            padding: 10px 76px 10px 16px;
+            padding: 10px 77px 10px 16px;
           }
         }
       }
@@ -301,6 +301,61 @@
         &__sort {
           select {
             padding: 10px 54px 10px 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #SearchFilter {
+    .SearchFilter {
+      &--SearchBlock {
+        &__search {
+          width: 286px;
+          height: 49px;
+          input {
+            font-size: 14px;
+          }
+          button {
+            padding: 12px 8px;
+            font-size: 14px;
+            .searchLine {
+              font-size: 22px;
+            }
+          }
+        }
+        &__options {
+          .type {
+            padding: 10px 140px 10px 16px;
+
+          }
+          .roomPrice {
+            padding: 10px 55px 10px 16px;
+          }
+        }
+      }
+      &--Filter {
+        &__block {
+          .super {
+            width: 145px;
+            font-size: 14px;
+            .icon {
+              font-size: 20px;
+            }
+          }
+          .verified {
+            width: 134px;
+            font-size: 14px;
+            .icon {
+              font-size: 20px;
+            }
+          }
+        }
+        &__sort {
+          select {
+            padding: 10px 30px 10px 16px;
           }
         }
       }

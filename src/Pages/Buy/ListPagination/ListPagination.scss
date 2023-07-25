@@ -153,6 +153,19 @@
   }
 }
 
+@media (max-width: 768px) {
+  #ListPagination {
+    .ListPagination {
+      &--homeBlock {
+        display: flex;
+        flex-direction: column;
+        }
+      }
+    }
+  }
+
+
+
 @media (max-width: 576px) {
   #ListPagination {
     .ListPagination {
@@ -177,6 +190,9 @@
               }
             }
           }
+        &__popularSearch {
+          width: 96% !important;
+        }
         }
       }
     }
@@ -218,6 +234,45 @@
         &__homes {
           .home {
             width: 314px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #ListPagination {
+    .ListPagination {
+      &--homeBlock {
+        &__homes {
+          .home {
+            width: 267px !important;
+            .homeText {
+              h2 {
+                font-size: 14px !important;
+              }
+              h1 {
+                font-size: 20px !important;
+              }
+              .conditions {
+                display: flex !important;
+                flex-direction: column !important;
+                .condi {
+                  p {
+                    font-size: 14px !important;
+                  }
+                }
+              }
+              .title {
+                .city {
+                  font-size: 14px !important;
+                }
+                .price {
+                  font-size: 14px !important;
+                }
+              }
+            }
           }
         }
       }
