@@ -55,7 +55,6 @@ root.render(
                         <Route path="/about-admin/agents" element={<Agents/>}/>
                         <Route path="/about-admin/realty" element={<Realty/>}/>
                         <Route path="/about-admin/payment" element={<Payment/>}/>
-
                     </Route>
                 </Routes>
             </GoogleOAuthProvider>
