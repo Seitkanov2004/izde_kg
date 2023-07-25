@@ -1,5 +1,7 @@
 #navButton {
   padding-top: 40px;
+    position: fixed;
+  width: 15%;
   h2 {
     color: var(--color-text, #004A60);
     font-size: 21.33px;
@@ -26,6 +28,9 @@
         background: red !important;
       }
     }
+
+
+
     a {
       color: #004A60;
       font-size: 19px;
@@ -36,6 +41,8 @@
       display: flex;
       align-items: center;
       margin: 6px 0;
+
+
 
       span {
         margin-left: 10px;
@@ -53,7 +60,6 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-
     &__user {
       display: flex;
       padding: 4px 10px;
@@ -93,6 +99,7 @@
       display: flex;
       align-items: center;
       margin: 10px 0;
+
 
       span {
         margin-left: 10px;

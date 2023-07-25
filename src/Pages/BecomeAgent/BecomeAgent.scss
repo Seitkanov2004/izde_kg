@@ -1,0 +1,26 @@
+#becomeAgent{
+  .becomeAgent{
+    padding-top: 100px;
+    &--close{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 24px;
+      &__back{
+        cursor: pointer;
+      }
+      &__down{
+        display: flex;
+        align-items: center;
+        &--icons{
+          padding: 6px;
+          margin: 0 10px;
+          border-radius: 6.1px;
+          border: 2px solid #AFC6CD;
+          background: rgba(0, 74, 96, 0.01);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

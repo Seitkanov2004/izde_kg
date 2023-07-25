@@ -21,7 +21,7 @@ const NavButton = () => {
                         <h5>Admin</h5>
                     </div>
                 </div>
-                <NavLink to="/about-admin/inbox"><LuMessageSquare/><span>Inbox</span></NavLink>
+                <NavLink to="/about-admin"><LuMessageSquare/><span>Inbox</span></NavLink>
                 <NavLink to="/about-admin/agents"><FiUser/><span>Agents</span></NavLink>
                 <NavLink to="/about-admin/realty"><GiBank/><span>Realty</span></NavLink>
                 <NavLink to="/about-admin/payment"><BsCurrencyDollar/><span>Payment</span></NavLink>

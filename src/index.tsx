@@ -18,8 +18,11 @@ import LoginAdmin from "./Pages/AdminPage/LoginAdmin/LoginAdmin";
 import ForgotAdmin from "./Pages/AdminPage/ForgotAdmin/ForgotAdmin";
 import AboutUser from "./Pages/AboutUser/AboutUser";
 import AdminPage from "./Pages/AdminPage/AdminPage";
-import NavButton from "./Pages/AdminPage/NavButton/NavButton";
-import Navigate from "./Pages/AdminPage/Navigate/Navigate";
+import Inbox from "./Pages/AdminPage/Inbox/Inbox";
+import Agents from "./Pages/AdminPage/Agents/Agents";
+import Realty from "./Pages/AdminPage/Realty/Realty";
+import Payment from "./Pages/AdminPage/Payment/Payment";
+import BecomeAgent from "./Pages/BecomeAgent/BecomeAgent";
 
 
 const root = ReactDOM.createRoot(
@@ -43,11 +46,16 @@ root.render(
                         <Route path="/register" element={<Register/>}/>
                         <Route path="/forgot-password" element={<ForgotPassword/>}/>
                         <Route path="/about-me" element={<AboutUser/>}/>
+                        <Route path="/become-agent" element={<BecomeAgent/>}/>
                     </Route>
                     <Route path={"/admin"} element={<LoginAdmin/>}/>
                     <Route path={"/forgot-admin-pass"} element={<ForgotAdmin/>}/>
                     <Route path="/about-admin" element={<AdminPage/>}>
-                        <Route index element={<Navigate/>}/>
+                        <Route index element={<Inbox/>}/>
+                        <Route path="/about-admin/agents" element={<Agents/>}/>
+                        <Route path="/about-admin/realty" element={<Realty/>}/>
+                        <Route path="/about-admin/payment" element={<Payment/>}/>
+
                     </Route>
                 </Routes>
             </GoogleOAuthProvider>
