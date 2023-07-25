@@ -77,8 +77,8 @@ const Login = () => {
                             <h5>{errors.password?.message}</h5>
                         </ul>
                         <p>We’ll call or text you to confirm your number. Standard message and data rates apply.</p>
-                        <NavLink to="/forgot-password" className="login--form__helper">Forgot your password?</NavLink>
-                        <NavLink to="/register" className="login--form__helper">Don’t have an account?
+                        <NavLink to="/forgot-password" onClick={() => window.scroll(0,0)} className="login--form__helper">Forgot your password?</NavLink>
+                        <NavLink to="/register" onClick={() => window.scroll(0,0)} className="login--form__helper">Don’t have an account?
                             Register</NavLink>
                         <button disabled={!isValid} type="submit"
                                 style={{background: !isValid ? "rgb(65,82,117)" : ""}}>Continue

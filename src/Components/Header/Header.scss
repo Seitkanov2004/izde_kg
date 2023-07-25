@@ -1,6 +1,9 @@
 #header {
   border-bottom: 1px solid rgba(0, 74, 96, 0.50);
-
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
   .header {
     padding: 20px 0;
     display: flex;
@@ -37,6 +40,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      .active{
+        color: #1B76F9;
+      }
+
 
       a {
         color: var(--color-text, #004A60);

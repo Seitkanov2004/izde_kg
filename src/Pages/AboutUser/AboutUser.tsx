@@ -21,7 +21,7 @@ const AboutUser = () => {
                         </div>
                         <div className="aboutUser--user__haveDo">
                             <NavLink to="/">Add property</NavLink>
-                            <NavLink to="/">Add property</NavLink>
+                            <NavLink to="/become-agent">Become agent</NavLink>
                         </div>
                     </div>
 

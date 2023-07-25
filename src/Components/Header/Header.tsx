@@ -37,7 +37,7 @@ const Header = () => {
                         {
                             isAuth ?
                                 <NavLink to="/" onClick={ClickLogOut} className="header--lan__btnOut">Logout</NavLink> :
-                                <NavLink to="/login" className="header--lan__btn">login</NavLink>
+                                <NavLink to="/login" onClick={() => window.scroll(0,0)} className="header--lan__btn">login</NavLink>
                         }
                     </div>
                     <div onClick={() => setMenu(true)} className="header--openMenu">
