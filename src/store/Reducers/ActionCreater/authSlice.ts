@@ -29,7 +29,7 @@ const authSlice = createSlice({
     reducers: {
         logout: (state) => {
             localStorage.setItem("token", JSON.stringify(
-                JSON.stringify(state.data = null)))
+                state.data = null))
         },
         getToken(state, {payload}: PayloadAction<any>) {
             localStorage.setItem("token", JSON.stringify(state.data = payload))
@@ -68,3 +68,8 @@ const authSlice = createSlice({
 export const selectIsAuth = (state: any) => Boolean(state.AuthSlice.data)
 export const {logout, getToken} = authSlice.actions
 export default authSlice.reducer
+
+
+//AIzaSyC5MuluLr_iD9YTptKrZk5XUgKPVNV7qR0
+
+//AIzaSyB8Z9YCSIyxqCiAfir3krrWMaDsDsSJUjI
