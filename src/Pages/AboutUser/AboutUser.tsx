@@ -20,7 +20,7 @@ const AboutUser = () => {
                             </div>
                         </div>
                         <div className="aboutUser--user__haveDo">
-                            <NavLink to="/">Add property</NavLink>
+                            <NavLink to="/add-property">Add property</NavLink>
                             <NavLink to="/become-agent">Become agent</NavLink>
                         </div>
                     </div>
