@@ -26,6 +26,7 @@ import Reviews from "./Pages/Reviews/Reviews";
 import DetailAg from "./Pages/Detail.Ag/DetailAg";
 import Agents from "./Pages/Agents/Agents";
 import AgentsAdmin from "./Pages/AdminPage/AgentsAdmin/AgentsAdmin";
+import AddProperty from "./Pages/AddProperty/AddProperty";
 
 
 const root = ReactDOM.createRoot(
@@ -53,6 +54,7 @@ root.render(
                         <Route path="/detailAg" element={<DetailAg/>}/>
                         <Route path="agents" element={<Agents/>}/>
                         <Route path="/become-agent" element={<BecomeAgent/>}/>
+                        <Route path="/add-property" element={<AddProperty/>}/>
                     </Route>
                     <Route path={"/admin"} element={<LoginAdmin/>}/>
                     <Route path={"/forgot-admin-pass"} element={<ForgotAdmin/>}/>
