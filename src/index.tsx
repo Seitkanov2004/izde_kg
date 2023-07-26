@@ -18,6 +18,11 @@ import LoginAdmin from "./Pages/AdminPage/LoginAdmin/LoginAdmin";
 import ForgotAdmin from "./Pages/AdminPage/ForgotAdmin/ForgotAdmin";
 import AboutUser from "./Pages/AboutUser/AboutUser";
 import AdminPage from "./Pages/AdminPage/AdminPage";
+import NavButton from "./Pages/AdminPage/NavButton/NavButton";
+import Navigate from "./Pages/AdminPage/Navigate/Navigate";
+import Agents from './Pages/Agents/Agents';
+import Reviews from './Pages/Reviews/Reviews';
+import DetailAg from './Pages/Detail.Ag/DetailAg';
 import Inbox from "./Pages/AdminPage/Inbox/Inbox";
 import Agents from "./Pages/AdminPage/Agents/Agents";
 import Realty from "./Pages/AdminPage/Realty/Realty";
@@ -46,6 +51,9 @@ root.render(
                         <Route path="/register" element={<Register/>}/>
                         <Route path="/forgot-password" element={<ForgotPassword/>}/>
                         <Route path="/about-me" element={<AboutUser/>}/>
+                        <Route path="/agents" element={<Agents/>}/>
+                        <Route path="/reviews" element={<Reviews/>}/>
+                        <Route path="/detailAg" element={<DetailAg/>}/>
                         <Route path="/become-agent" element={<BecomeAgent/>}/>
                     </Route>
                     <Route path={"/admin"} element={<LoginAdmin/>}/>

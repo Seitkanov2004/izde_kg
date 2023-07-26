@@ -27,7 +27,7 @@ const Header = () => {
                         <NavLink to="/buy" onClick={() => window.scroll(0, 0)}>Buy</NavLink>
                         <NavLink to="/rent" onClick={() => window.scroll(0, 0)}>Rent</NavLink>
                         <NavLink to="/agents" onClick={() => window.scroll(0, 0)}>Agents</NavLink>
-                        <NavLink to="/reciews" onClick={() => window.scroll(0, 0)}>Reviews</NavLink>
+                        <NavLink to="/reviews" onClick={() => window.scroll(0, 0)}>Reviews</NavLink>
                     </nav>
                     <div className="header--lan">
                         <select>
