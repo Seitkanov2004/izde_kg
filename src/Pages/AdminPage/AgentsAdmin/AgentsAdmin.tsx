@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {FiMoreHorizontal} from "react-icons/fi";
 import {NavLink} from "react-router-dom";
-import "./Agents.scss"
+import "./AgentsAdmin.scss"
 import {LuEdit} from "react-icons/lu";
 import awaAdmin from "./../../../img/admin-ava.svg"
 
-const Agents = () => {
+const AgentsAdmin = () => {
 
     const [openMore, setOpenMore] = useState(false)
 
@@ -37,4 +37,4 @@ const Agents = () => {
     );
 };
 
-export default Agents;
+export default AgentsAdmin;
