@@ -23,6 +23,11 @@ import Navigate from "./Pages/AdminPage/Navigate/Navigate";
 import Agents from './Pages/Agents/Agents';
 import Reviews from './Pages/Reviews/Reviews';
 import DetailAg from './Pages/Detail.Ag/DetailAg';
+import Inbox from "./Pages/AdminPage/Inbox/Inbox";
+import Agents from "./Pages/AdminPage/Agents/Agents";
+import Realty from "./Pages/AdminPage/Realty/Realty";
+import Payment from "./Pages/AdminPage/Payment/Payment";
+import BecomeAgent from "./Pages/BecomeAgent/BecomeAgent";
 
 
 const root = ReactDOM.createRoot(
@@ -49,11 +54,15 @@ root.render(
                         <Route path="/agents" element={<Agents/>}/>
                         <Route path="/reviews" element={<Reviews/>}/>
                         <Route path="/detailAg" element={<DetailAg/>}/>
+                        <Route path="/become-agent" element={<BecomeAgent/>}/>
                     </Route>
                     <Route path={"/admin"} element={<LoginAdmin/>}/>
                     <Route path={"/forgot-admin-pass"} element={<ForgotAdmin/>}/>
                     <Route path="/about-admin" element={<AdminPage/>}>
-                        <Route index element={<Navigate/>}/>
+                        <Route index element={<Inbox/>}/>
+                        <Route path="/about-admin/agents" element={<Agents/>}/>
+                        <Route path="/about-admin/realty" element={<Realty/>}/>
+                        <Route path="/about-admin/payment" element={<Payment/>}/>
                     </Route>
                 </Routes>
             </GoogleOAuthProvider>
