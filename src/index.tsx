@@ -20,6 +20,9 @@ import AboutUser from "./Pages/AboutUser/AboutUser";
 import AdminPage from "./Pages/AdminPage/AdminPage";
 import NavButton from "./Pages/AdminPage/NavButton/NavButton";
 import Navigate from "./Pages/AdminPage/Navigate/Navigate";
+import Agents from './Pages/Agents/Agents';
+import Reviews from './Pages/Reviews/Reviews';
+import DetailAg from './Pages/Detail.Ag/DetailAg';
 
 
 const root = ReactDOM.createRoot(
@@ -43,6 +46,9 @@ root.render(
                         <Route path="/register" element={<Register/>}/>
                         <Route path="/forgot-password" element={<ForgotPassword/>}/>
                         <Route path="/about-me" element={<AboutUser/>}/>
+                        <Route path="/agents" element={<Agents/>}/>
+                        <Route path="/reviews" element={<Reviews/>}/>
+                        <Route path="/detailAg" element={<DetailAg/>}/>
                     </Route>
                     <Route path={"/admin"} element={<LoginAdmin/>}/>
                     <Route path={"/forgot-admin-pass"} element={<ForgotAdmin/>}/>
