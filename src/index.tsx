@@ -28,6 +28,7 @@ import Agents from "./Pages/Agents/Agents";
 import AgentsAdmin from "./Pages/AdminPage/AgentsAdmin/AgentsAdmin";
 import DetailsPage from './Pages/DetailsPage/DetailsPage';
 import AddProperty from "./Pages/AddProperty/AddProperty";
+import AskProperty from "./Pages/AskProperty/AskProperty";
 
 
 const root = ReactDOM.createRoot(
@@ -54,6 +55,7 @@ root.render(
                         <Route path="/reviews" element={<Reviews/>}/>
                         <Route path="/detailAg" element={<DetailAg/>}/>
                         <Route path="agents" element={<Agents/>}/>
+                        <Route path="/ask-property" element={<AskProperty/>}/>
                         <Route path="/become-agent" element={<BecomeAgent/>}/>
                         <Route path='/details-page' element={<DetailsPage/>}/>
                         <Route path="/add-property" element={<AddProperty/>}/>
