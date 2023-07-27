@@ -6,7 +6,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 24px;
+      font-size: 34px;
 
       &__back {
         cursor: pointer;
@@ -205,11 +205,11 @@
               justify-content: space-between;
               width: 40px;
               top: 10px;
-              right: -80px;
+              right: -50px;
             }
 
             textarea {
-              width: 100%;
+              width: 120%;
               height: 100%;
               border-radius: 7.394px;
               border: 0.924px solid #AFC6CD;
@@ -276,7 +276,7 @@
             }
 
             textarea {
-              width: 100%;
+              width: 120%;
               height: 100%;
               border-radius: 7.394px;
               border: 0.924px solid #AFC6CD;

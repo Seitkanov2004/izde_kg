@@ -15,7 +15,8 @@
       font-weight: 700;
       line-height: normal;
       margin: 50px 0;
-
+      display: flex;
+      align-items: start;
       span {
         margin-left: 10px;
       }
@@ -35,7 +36,6 @@
           color: red;
         }
 
-        width: 100%;
 
         input {
           border-radius: 11px;
@@ -43,7 +43,6 @@
           padding: 15px 20px;
           margin: 8px 0;
           font-size: 18px;
-          width: 93%;
         }
       }
 
@@ -57,7 +56,7 @@
         div{
           font-size: 20px;
           position: absolute;
-          top: 23px;
+          top: 28px;
           right: 20px;
           cursor: pointer;
         }
@@ -68,7 +67,7 @@
           padding: 15px 20px;
           margin: 8px 0;
           font-size: 18px;
-          width: 93%;
+          width: 100%;
         }
 
         h5 {
@@ -121,34 +120,7 @@
 }
 
 
-@media (max-width: 1200px) {
-  #register {
-    .register {
-      &--form {
-        ul {
-          input {
-            width: 92%;
-          }
-        }
-      }
-    }
-  }
-}
 
-
-@media (max-width: 1024px) {
-  #register {
-    .register {
-      &--form {
-        ul {
-          input {
-            width: 91%;
-          }
-        }
-      }
-    }
-  }
-}
 
 
 @media (max-width: 768px) {
@@ -176,11 +148,6 @@
     .register {
       &--form {
         padding: 27px;
-        ul {
-          input {
-            width: 89%;
-          }
-        }
 
         h1 {
           font-size: 25px;
@@ -217,11 +184,7 @@
           text-align: center;
         }
 
-        ul {
-          input {
-            width: 88%;
-          }
-        }
+
       }
     }
   }
