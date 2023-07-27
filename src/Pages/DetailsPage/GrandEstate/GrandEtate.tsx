@@ -86,6 +86,7 @@ const GrandEtate = () => {
                                 <button>Contact owner</button>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
