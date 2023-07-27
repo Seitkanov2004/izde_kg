@@ -1,15 +1,14 @@
 #agents {
   padding-top: 80px;
   .persons {
-    background: url("../../img/image 2.png") no-repeat;
-    min-height: 60vh;
+    background: url("../../img/image 2.png") no-repeat center/cover;
+    min-height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
     h1 {
       color: var(--color-bg, #fff);
       text-align: center;
-      font-family: Poppins;
       font-size: 50.52px;
       font-style: normal;
       font-weight: 600;

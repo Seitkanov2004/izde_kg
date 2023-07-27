@@ -1,49 +1,21 @@
-#addProperty{
-  .addProperty{
+#addProperty {
+  .addProperty {
     padding-top: 100px;
 
-    &--title{
-      display: flex;
-      justify-content: space-evenly;
-      h1{
-        color: #000;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        width: 40%;
-      }
-     div{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       button{
-         border-radius: 8px;
-         border: 1px solid #AFC6CD;
-         color: #004A60;
-         font-size: 16px;
-         font-style: normal;
-         font-weight: 400;
-         line-height: normal;
-         width: 129px;
-         height: 40px;
-         background: transparent;
-         margin: 10px 0;
-         cursor: pointer;
-          &:hover{
-            color: white;
-            background: #1B76F7;
-          }
-       }
-     }
+    h2 {
+      color: #004A60;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
     }
 
-    &--images{
+    &--images {
       display: flex;
       flex-direction: column;
       align-items: start;
 
-      &__btn{
+      &__btn {
         color: #FDFFFF;
         font-size: 16px;
         font-style: normal;
@@ -54,12 +26,14 @@
         padding: 8px 10px;
         border: none;
       }
-      &__blocks{
+
+      &__blocks {
         display: flex;
         align-items: start;
         justify-content: space-between;
         width: 100%;
-        &--bigBlock{
+
+        &--bigBlock {
           border-radius: 26px 0 0 26px;
           background: #E5EDEF;
           height: 375px;
@@ -69,19 +43,23 @@
           justify-content: center;
           margin: 10px 10px 10px 0;
         }
-        &--letBlock{
+
+        &--letBlock {
           display: flex;
           flex-wrap: wrap;
           align-items: start;
           justify-content: space-between;
           width: 60%;
-          &__border1{
+
+          &__border1 {
             border-radius: 0 26px 0 0;
           }
-          &__border2{
+
+          &__border2 {
             border-radius: 0 0 26px 0;
           }
-          div{
+
+          div {
             background: #E5EDEF;
             height: 178px;
             margin: 10px;
@@ -94,17 +72,19 @@
       }
     }
 
-    &--inputs{
+    &--inputs {
       display: flex;
       flex-direction: column;
       align-items: start;
       margin-right: 20%;
-      label{
+
+      label {
         margin: 20px 0;
         display: flex;
         flex-direction: column;
         align-items: start;
-        span{
+
+        span {
           color: #004A60;
           font-size: 18px;
           font-style: normal;
@@ -112,7 +92,8 @@
           line-height: normal;
           padding-bottom: 10px;
         }
-        input{
+
+        input {
           color: rgba(0, 74, 96, 0.70);
           font-size: 16px;
           font-style: normal;
@@ -125,14 +106,17 @@
           background: rgba(0, 74, 96, 0.00);
           width: 234px;
         }
-        div{
+
+        div {
           display: flex;
           align-items: center;
-          .of{
-            width: 74px;
+
+          .of {
+            width: 160px;
             margin-right: 10px;
           }
-          span{
+
+          span {
             margin-right: 10px;
             color: #004A60;
             font-size: 20px;
@@ -140,7 +124,8 @@
             font-weight: 400;
             line-height: normal;
           }
-          input{
+
+          input {
             margin-right: 20px;
             width: auto;
           }
@@ -148,20 +133,21 @@
       }
     }
 
-    &--norm{
+    &--norm {
       display: flex;
       align-items: start;
       margin-top: 100px;
       margin-bottom: 80px;
     }
 
-    &--checks{
+    &--checks {
       display: flex;
       flex-direction: column;
       align-items: start;
       margin-top: 20px;
       margin-bottom: 40px;
-      h3{
+
+      h3 {
         color: #004A60;
         font-size: 20px;
         font-style: normal;
@@ -170,15 +156,17 @@
         margin-bottom: 20px;
       }
 
-      &__parent{
+      &__parent {
         display: flex;
         align-items: start;
         flex-direction: column;
-        &__blocks{
+
+        &__blocks {
           display: flex;
           flex-direction: column;
           align-items: start;
-          label{
+
+          label {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
@@ -188,16 +176,17 @@
             font-weight: 400;
             line-height: normal;
 
-            span{
+            span {
               font-size: 20px;
               margin-left: 10px;
               display: flex;
-              h4{
+
+              h4 {
                 color: red;
               }
             }
 
-            input{
+            input {
               border-radius: 8px;
               border: 1px solid rgba(0, 74, 96, 0.70);
               background: #FFFDFD;
@@ -210,7 +199,7 @@
       }
     }
 
-    &--send{
+    &--send {
       color: #FFF;
       font-size: 20px;
       border-radius: 11px;
