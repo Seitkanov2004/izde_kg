@@ -14,7 +14,7 @@
       &--menu{
         display: flex;
         position: fixed;
-        width: 66%;
+        width: 68%;
         z-index: 888;
         justify-content: space-between;
         align-items: center;
@@ -37,6 +37,7 @@
           border-radius: 8px;
           background: #e0e5f8;
           position: relative;
+          width: 300px;
           ::placeholder{
             color: #79B0FF;
 
@@ -57,7 +58,7 @@
           }
           &--icon{
             position: absolute;
-            top: 10px;
+            top: 14px;
             left: 10px;
             color: #79B0FF;
           }

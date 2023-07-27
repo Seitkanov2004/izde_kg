@@ -12,7 +12,11 @@
       font-weight: 700;
       line-height: normal;
       text-align: start;
-
+      display: flex;
+      align-items: start;
+      img{
+        margin-left: 10px;
+      }
     }
 
     &--form {
@@ -27,7 +31,7 @@
       width: 40%;
 
       form{
-        width: 80%;
+        width: 100%;
         padding: 0 10%;
 
         h1{
@@ -39,14 +43,12 @@
         ::placeholder {
           color: red;
         }
-        width: 100%;
         input {
           border-radius: 11px;
           border: 1px solid red;
           padding: 15px 20px;
           margin: 8px 0;
           font-size: 18px;
-          width: 93%;
         }
       }
 
@@ -54,14 +56,12 @@
         ::placeholder {
           color: red;
         }
-        width: 100%;
         input {
           border-radius: 11px;
           border: 1px solid red;
           padding: 15px 20px;
           margin: 12px 0;
           font-size: 18px;
-          width: 93%;
         }
       }
 
@@ -78,7 +78,7 @@
         div{
           font-size: 20px;
           position: absolute;
-          top: 23px;
+          top: 28px;
           right: 20px;
           cursor: pointer;
         }
@@ -89,7 +89,7 @@
           padding: 15px 20px;
           margin: 8px 0;
           font-size: 18px;
-          width: 90%;
+          width: 100%;
         }
         h5 {
           color: red;
@@ -128,9 +128,12 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        padding: 12px 43%;
+        padding: 12px 42%;
         margin: 14px 0;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       &__withGoogle {
