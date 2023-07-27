@@ -26,6 +26,7 @@ import Reviews from "./Pages/Reviews/Reviews";
 import DetailAg from "./Pages/Detail.Ag/DetailAg";
 import Agents from "./Pages/Agents/Agents";
 import AgentsAdmin from "./Pages/AdminPage/AgentsAdmin/AgentsAdmin";
+import DetailsPage from './Pages/DetailsPage/DetailsPage';
 import AddProperty from "./Pages/AddProperty/AddProperty";
 
 
@@ -54,6 +55,7 @@ root.render(
                         <Route path="/detailAg" element={<DetailAg/>}/>
                         <Route path="agents" element={<Agents/>}/>
                         <Route path="/become-agent" element={<BecomeAgent/>}/>
+                        <Route path='/details-page' element={<DetailsPage/>}/>
                         <Route path="/add-property" element={<AddProperty/>}/>
                     </Route>
                     <Route path={"/admin"} element={<LoginAdmin/>}/>
