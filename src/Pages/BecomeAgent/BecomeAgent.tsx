@@ -10,6 +10,14 @@ const BecomeAgent = () => {
 
     const [file, setFile] = useState<any>()
     const handleRef = useRef<any>()
+
+    const fileReader = new FileReader()
+    fileReader.onloadend = () => {
+        setFile(fileReader.result)
+    }
+
+    const handleFile = (e: any) => setFile(fileReader.readAsDataURL(e.target.files[0]))
+
     const nav = useNavigate()
 
 
@@ -28,9 +36,9 @@ const BecomeAgent = () => {
                     <div className="becomeAgent--user">
                         <div onClick={() => handleRef.current.click()} className="becomeAgent--user__photo">
                             {
-                                file ? <img src="" alt=""/> : <div>Profile</div>
+                                file ? <img src={file} alt=""/> : <div>Profile</div>
                             }
-                            <input type="file" ref={handleRef} style={{display: "none"}} accept="image/*"/>
+                            <input type="file" ref={handleRef} onChange={handleFile} style={{display: "none"}} accept="image/*"/>
                             <FaCamera className="becomeAgent--user__photo--icon"/>
                         </div>
                         <div className="becomeAgent--user__name">
