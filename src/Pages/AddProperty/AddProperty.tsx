@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import "./Addproperty.scss"
 import {BiLogoBaidu, BiSolidImageAlt} from "react-icons/bi";
 import {LuMicrowave, LuParkingSquare} from "react-icons/lu";
@@ -15,6 +15,17 @@ import {CgGym} from "react-icons/cg";
 
 const AddProperty = () => {
 
+    const [images, setImages] = useState([]);
+    const handleMultipleImages = (evnt: any) => {
+        const selectedFIles: any = [];
+        const targetFiles = evnt.target.files;
+        const targetFilesObject = [...targetFiles]
+        targetFilesObject.map((file) => {
+            return selectedFIles.push(URL.createObjectURL(file))
+        })
+        setImages(selectedFIles);
+    }
+
     const handleRef = useRef<any>()
 
     return (
@@ -24,20 +35,30 @@ const AddProperty = () => {
                     <h2>Property characteristics</h2>
                     <div className='addProperty--images'>
                         <div className="addProperty--images__blocks">
-                            <div className="addProperty--images__blocks--bigBlock"><BiSolidImageAlt/></div>
+                            <div style={{background: images[0] ? `url("${images[0]}") no-repeat center/cover` : ""}}
+                                 className="addProperty--images__blocks--bigBlock"><BiSolidImageAlt/></div>
                             <div className="addProperty--images__blocks--letBlock">
-                                <div><BiSolidImageAlt/></div>
-                                <div className="addProperty--images__blocks--letBlock__border1"><BiSolidImageAlt/>
+                                <div
+                                    style={{background: images[1] ? `url("${images[1]}") no-repeat center/cover` : ""}}>
+                                    <BiSolidImageAlt/>
                                 </div>
-                                <div><BiSolidImageAlt/></div>
-                                <div className="addProperty--images__blocks--letBlock__border2"><BiSolidImageAlt/>
+                                <div style={{background: images[2] ? `url("${images[2]}") no-repeat center/cover` : ""}}
+                                     className="addProperty--images__blocks--letBlock__border1"><BiSolidImageAlt/>
+                                </div>
+                                <div
+                                    style={{background: images[3] ? `url("${images[3]}") no-repeat center/cover` : ""}}>
+                                    <BiSolidImageAlt/>
+                                </div>
+                                <div style={{background: images[4] ? `url("${images[4]}") no-repeat center/cover` : ""}}
+                                     className="addProperty--images__blocks--letBlock__border2"><BiSolidImageAlt/>
                                 </div>
                             </div>
                         </div>
                         <button onClick={() => handleRef.current.click()} className="addProperty--images__btn">+ Add
                             photo
                         </button>
-                        <input type="file" style={{display: "none"}} ref={handleRef}/>
+                        <input type="file" style={{display: "none"}} onChange={handleMultipleImages} multiple
+                               accept="image/*" ref={handleRef}/>
                     </div>
                     <div className="addProperty--norm">
                         <div className="addProperty--inputs">
