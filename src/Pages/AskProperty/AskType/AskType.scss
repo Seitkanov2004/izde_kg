@@ -1,0 +1,67 @@
+#askType {
+  .askType {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+
+    a{
+      color: #FFF;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding: 12px 118px;
+      border-radius: 11px;
+      border: 1px solid #0762E5;
+      background: #1B76F9;
+      margin-top: 40px;
+      margin-bottom: 80px;
+    }
+
+    &--type {
+      border-radius: 32px;
+      border: 1px solid #AFC6CD;
+      background: #FFF;
+      width: 60%;
+      padding: 42px 46px;
+      display: flex;
+      align-items: start;
+
+      .firstLabel{
+        margin-right: 110px;
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        span {
+          color: #004A60;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding-bottom: 15px;
+        }
+        input{
+          color: rgba(0, 74, 96, 0.70);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding: 8px 16px;
+          border-radius: 8px;
+          border: 1px solid #80A4AF;
+          margin-right: 20px;
+          cursor: pointer;
+          &:hover{
+            color: #FFFFFF;
+            background: #1B76F7;
+          }
+        }
+      }
+    }
+  }
+}

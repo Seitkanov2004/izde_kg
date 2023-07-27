@@ -15,19 +15,13 @@ import {CgGym} from "react-icons/cg";
 
 const AddProperty = () => {
 
- const handleRef = useRef<any>()
+    const handleRef = useRef<any>()
 
     return (
         <div id="addProperty">
             <div className="container">
                 <div className="addProperty">
-                    <div className="addProperty--title">
-                        <h1>Fill out the form for the sale and rental of real estate</h1>
-                        <div>
-                            <button>Buy</button>
-                            <button>Rent</button>
-                        </div>
-                    </div>
+                    <h2>Property characteristics</h2>
                     <div className='addProperty--images'>
                         <div className="addProperty--images__blocks">
                             <div className="addProperty--images__blocks--bigBlock"><BiSolidImageAlt/></div>
@@ -40,7 +34,9 @@ const AddProperty = () => {
                                 </div>
                             </div>
                         </div>
-                        <button onClick={() => handleRef.current.click()} className="addProperty--images__btn">+ Add photo</button>
+                        <button onClick={() => handleRef.current.click()} className="addProperty--images__btn">+ Add
+                            photo
+                        </button>
                         <input type="file" style={{display: "none"}} ref={handleRef}/>
                     </div>
                     <div className="addProperty--norm">
@@ -92,6 +88,10 @@ const AddProperty = () => {
                                     <input type="button" value="Underground"/>
                                     <input type="button" value="📍No"/>
                                 </div>
+                            </label>
+                            <label>
+                                <span>Location: </span>
+                                <input type="text"/>
                             </label>
                             <label>
                                 <span>Square: </span>
