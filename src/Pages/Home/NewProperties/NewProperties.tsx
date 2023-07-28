@@ -16,8 +16,8 @@ const NewProperties = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 4000,
+        autoplaySpeed: 4000,
         cssEase: "linear"
     };
 

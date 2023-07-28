@@ -6,10 +6,12 @@ import pay3 from "./../../../img/pay3.svg"
 import pay4 from "./../../../img/pay4.svg"
 import pay5 from "./../../../img/pay5.svg"
 import pay6 from "./../../../img/pay6.svg"
+import {IoMdCheckmarkCircleOutline} from "react-icons/io";
 
 const AskPreHero = () => {
 
     const [menu, setMenu] = useState(false)
+    const [pay, setPay] = useState(false)
 
     return (
         <div id="askPreHero">
@@ -21,7 +23,8 @@ const AskPreHero = () => {
             </div>
 
             {
-                menu && <div><div className="askPrebg" onClick={() => setMenu(false)}/>
+                menu && <div>
+                    <div className="askPrebg" onClick={() => setMenu(false)}/>
                     <div className="askPreModal">
                         <h3>Choose a payment method</h3>
                         <div className="askPreModal--pay">
@@ -45,9 +48,28 @@ const AskPreHero = () => {
                         </label>
                         <div>
                             <button>Cancel</button>
-                            <button>Continue</button>
+                            <button onClick={() => {
+                                setPay(true)
+                                setTimeout(() => {
+                                    setPay(false)
+                                    setMenu(false)
+                                }, 3000)
+                            }}>Continue
+                            </button>
                         </div>
-                    </div></div>
+                    </div>
+                </div>
+            }
+
+            {
+                pay && <div className="pay">
+                    <div className="askPrebg"/>
+                    <div className="pay--check">
+                        <IoMdCheckmarkCircleOutline className="pay--check__icon"/>
+                        <h3>Congratulations! <br/>
+                            Your payment has been accepted</h3>
+                    </div>
+                </div>
             }
 
         </div>

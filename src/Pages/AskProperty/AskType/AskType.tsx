@@ -25,7 +25,7 @@ const AskType = () => {
                             </div>
                         </label>
                     </div>
-                    <NavLink to="/add-property">Continue</NavLink>
+                    <NavLink to="/add-property" onClick={() => window.scroll(0,0)}>Continue</NavLink>
                 </div>
             </div>
         </div>
