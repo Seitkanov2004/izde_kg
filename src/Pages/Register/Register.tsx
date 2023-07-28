@@ -79,7 +79,7 @@ const Register = () => {
                                    placeholder="Confirm password" />
                             <h5>{errors.confirm_password?.message}</h5>
                         </ul>
-                        <button disabled={!isValid} type="submit" style={{background: !isValid ? "rgb(65,82,117)" : "" }}>Continue</button>
+                        <button disabled={!isValid} type="submit" style={{background: !isValid ? "rgb(65,82,117)" : "" }}><NavLink to="/admin">Continue</NavLink></button>
                         <NavLink to="/with-google" className="register--form__withGoogle"><FcGoogle
                             className="login--form__withGoogle--icon"/><span>Continue with Google</span></NavLink>
                     </form>

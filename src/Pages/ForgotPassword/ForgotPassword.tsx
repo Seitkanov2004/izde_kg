@@ -47,7 +47,7 @@ const ForgotPassword = () => {
                                    placeholder="Email" />
                             <h5>{errors.email?.message}</h5>
                         </ul>
-                        <button disabled={!isValid} type="submit" style={{background: !isValid ? "rgb(65,82,117)" : "" }}>Send</button>
+                        <button disabled={!isValid} type="submit" style={{background: !isValid ? "rgb(65,82,117)" : "" }}><NavLink to="/about-me">Send</NavLink></button>
                     </form>
                 </div>
             </div>

@@ -15,16 +15,26 @@ import {CgGym} from "react-icons/cg";
 
 const AddProperty = () => {
 
-    const [images, setImages] = useState([]);
-    const handleMultipleImages = (evnt: any) => {
-        const selectedFIles: any = [];
-        const targetFiles = evnt.target.files;
+    const [images, setImages] = useState<any>([]);
+
+const [check, setCheck] = useState("")
+    console.log(images)
+
+    const handleMultipleImages = (e: any) => {
+        const selectedFiles: any = [];
+        const targetFiles = e.target.files;
         const targetFilesObject = [...targetFiles]
         targetFilesObject.map((file) => {
-            return selectedFIles.push(URL.createObjectURL(file))
+            return selectedFiles.push(URL.createObjectURL(file))
         })
-        setImages(selectedFIles);
+        if (images.length < 5) {
+            setImages([...selectedFiles, ...images]);
+        }else {
+            setImages(images)
+        }
+
     }
+
 
     const handleRef = useRef<any>()
 
@@ -140,7 +150,7 @@ const AddProperty = () => {
                             <div className="addProperty--checks__parent">
                                 <div className="addProperty--checks__parent__blocks">
                                     <label>
-                                        <input type="checkbox" value="Microwave"/>
+                                        <input onChange={(e) => setCheck(e.target.value)}  type="checkbox" value="Microwave"/>
                                         <LuMicrowave/>
                                         <span>Microwave <h4>*</h4></span>
                                     </label>
