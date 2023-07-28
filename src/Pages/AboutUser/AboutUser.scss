@@ -217,6 +217,12 @@
 @media (max-width: 768px) {
   #aboutUser {
     .aboutUser {
+      &--saved {
+        .home {
+          width: 100% !important;
+        }
+      }
+
       &--user {
         &__haveDo {
           a {
@@ -234,7 +240,7 @@
     .aboutUser {
       &--saved {
         .home {
-          width: 500px !important;
+          width: 100% !important;
           flex-direction: column;
 
           .homeText {
@@ -261,19 +267,6 @@
   }
 }
 
-@media (max-width: 480px) {
-  #aboutUser {
-    .aboutUser {
-      &--saved {
-        .home {
-          width: 100% !important;
-        }
-      }
-    }
-  }
-}
-
-
 
 @media (max-width: 320px) {
   #aboutUser {
@@ -284,22 +277,27 @@
             h2 {
               font-size: 14px !important;
             }
+
             h1 {
               font-size: 20px !important;
             }
+
             .conditions {
               display: flex !important;
               flex-direction: column !important;
+
               .condi {
                 p {
                   font-size: 14px !important;
                 }
               }
             }
+
             .title {
               .city {
                 font-size: 14px !important;
               }
+
               .price {
                 font-size: 14px !important;
               }
