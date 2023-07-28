@@ -14,7 +14,8 @@
       text-align: start;
       display: flex;
       align-items: start;
-      img{
+
+      img {
         margin-left: 10px;
       }
     }
@@ -30,11 +31,11 @@
       background: #FFF;
       width: 40%;
 
-      form{
+      form {
         width: 100%;
         padding: 0 10%;
 
-        h1{
+        h1 {
           text-align: center;
         }
       }
@@ -43,6 +44,7 @@
         ::placeholder {
           color: red;
         }
+
         input {
           border-radius: 11px;
           border: 1px solid red;
@@ -56,6 +58,7 @@
         ::placeholder {
           color: red;
         }
+
         input {
           border-radius: 11px;
           border: 1px solid red;
@@ -68,14 +71,16 @@
       ul {
         ::placeholder {
           color: rgba(0, 74, 96, 0.54);
-        };
+        }
+      ;
         display: flex;
         flex-direction: column;
         align-items: start;
         width: 100%;
         position: relative;
         margin: 10px 0;
-        div{
+
+        div {
           font-size: 20px;
           position: absolute;
           top: 28px;
@@ -91,6 +96,7 @@
           font-size: 18px;
           width: 100%;
         }
+
         h5 {
           color: red;
           font-weight: lighter;
@@ -163,13 +169,26 @@
   }
 }
 
+@media (max-width: 1440px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        button {
+          padding: 12px 41%;
+        }
+      }
+    }
+  }
+}
+
 
 @media (max-width: 576px) {
-  #loginAdmin{
-    .loginAdmin{
-      h1{
+  #loginAdmin {
+    .loginAdmin {
+      h1 {
         font-size: 25px;
-        img{
+
+        img {
           width: 7%;
         }
 
@@ -179,18 +198,19 @@
 }
 
 @media (max-width: 450px) {
-  #loginAdmin{
-    .loginAdmin{
-      &--form{
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
         align-items: center;
         padding: 18px;
 
 
-        &__withGoogle{
+        &__withGoogle {
           font-size: 18px;
           width: 90%;
         }
-        button{
+
+        button {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -199,12 +219,12 @@
           width: 80%;
         }
 
-        p{
+        p {
           text-align: center;
         }
 
-        ul{
-          input{
+        ul {
+          input {
             width: 88%;
           }
         }

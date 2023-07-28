@@ -17,6 +17,7 @@
       margin: 50px 0;
       display: flex;
       align-items: start;
+
       span {
         margin-left: 10px;
       }
@@ -53,7 +54,8 @@
 
         width: 100%;
         position: relative;
-        div{
+
+        div {
           font-size: 20px;
           position: absolute;
           top: 28px;
@@ -120,9 +122,6 @@
 }
 
 
-
-
-
 @media (max-width: 768px) {
   #register {
     .register {
@@ -142,12 +141,34 @@
   }
 }
 
+@media (max-width: 1024px) {
+  #register {
+    .register {
+      &--form {
+        width: 60%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  #register {
+    .register {
+      &--form {
+        width: 70%;
+      }
+    }
+  }
+}
+
 
 @media (max-width: 576px) {
   #register {
     .register {
       &--form {
         padding: 27px;
+        width: 100%;
 
         h1 {
           font-size: 25px;
@@ -169,7 +190,6 @@
         align-items: center;
         padding: 18px;
 
-        width: 93%;
         &__withGoogle {
           font-size: 18px;
           width: 90%;
@@ -183,8 +203,16 @@
         p {
           text-align: center;
         }
+      }
+    }
+  }
+}
 
-
+@media (max-width: 375px) {
+  #register {
+    .register {
+      h1 {
+        font-size: 18px;
       }
     }
   }
