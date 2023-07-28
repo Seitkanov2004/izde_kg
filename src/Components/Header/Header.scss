@@ -243,6 +243,18 @@
   }
 }
 
+@media (max-width: 465px) {
+  #header {
+    .header {
+      &--navOpen {
+        &__block {
+          width: 37%;
+        }
+      }
+    }
+  }
+}
+
 
 @media (max-width: 450px) {
   #header {
