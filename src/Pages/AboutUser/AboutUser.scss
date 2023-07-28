@@ -266,39 +266,13 @@
     .aboutUser {
       &--saved {
         .home {
-          width: 413px !important;
+          width: 100% !important;
         }
       }
     }
   }
 }
 
-
-
-@media (max-width: 414px) {
-  #aboutUser {
-    .aboutUser {
-      &--saved {
-        .home {
-          width: 353px !important;
-        }
-      }
-    }
-  }
-}
-
-
-@media (max-width: 370px) {
-  #aboutUser {
-    .aboutUser {
-      &--saved {
-        .home {
-          width: 314px !important;
-        }
-      }
-    }
-  }
-}
 
 
 @media (max-width: 320px) {
@@ -306,7 +280,6 @@
     .aboutUser {
       &--saved {
         .home {
-          width: 267px !important;
           .homeText {
             h2 {
               font-size: 14px !important;
