@@ -234,15 +234,48 @@
 @media (max-width: 576px) {
   #header {
     .header {
-      &--openMenu {
-        &__showMenu {
-        }
-
-      }
-
       &--navOpen {
         &__block {
-          width: 27%;
+          width: 33%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 450px) {
+  #header {
+    .header {
+      &--navOpen {
+        &__block {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
+  #header {
+    .header {
+      &--navOpen {
+        &__block {
+          width: 47%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+  #header {
+    .header {
+      &--navOpen {
+        &__block {
+          width: 54%;
         }
       }
     }
