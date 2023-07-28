@@ -5,7 +5,7 @@
     align-items: center;
     margin-top: 160px;
 
-    a{
+    a {
       color: #FFF;
       font-size: 20px;
       font-style: normal;
@@ -28,7 +28,7 @@
       display: flex;
       align-items: start;
 
-      .firstLabel{
+      .firstLabel {
         margin-right: 110px;
       }
 
@@ -45,7 +45,8 @@
           line-height: normal;
           padding-bottom: 15px;
         }
-        input{
+
+        input {
           color: rgba(0, 74, 96, 0.70);
           font-size: 16px;
           font-style: normal;
@@ -56,11 +57,92 @@
           border: 1px solid #80A4AF;
           margin-right: 20px;
           cursor: pointer;
-          &:hover{
+
+          &:hover {
             color: #FFFFFF;
             background: #1B76F7;
           }
         }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1440px) {
+  #askType {
+    .askType {
+      &--type {
+        width: 72%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  #askType {
+    .askType {
+      &--type {
+        width: 90%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  #askType {
+    .askType {
+      &--type {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #askType {
+    .askType {
+      &--type {
+        padding: 10px 46px;
+        width: 100%;
+        flex-direction: column;
+
+        label {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  #askType {
+    .askType {
+      &--type {
+        padding: 10px 46px;
+        width: 100%;
+        flex-direction: column;
+
+        label {
+          margin: 20px 0;
+
+          input {
+            margin: 10px 10px 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+  #askType {
+    .askType {
+      a{
+        padding: 12px 24%;
       }
     }
   }
