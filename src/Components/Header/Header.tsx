@@ -20,7 +20,9 @@ const Header = () => {
         }
     }
 
-    return (<div>
+    return (
+        <div>
+            <div style={{display: menu ? "block" : ""}} className="openedBg"/>
             <header id="header">
                 <div className="container">
                     <div className="header">
@@ -53,40 +55,40 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-            </header>
-            <div onClick={() => setMenu(false)} className={menu ? "header--navOpen" : "header--navClose"}>
-                <div className={`header--${menu ? "navOpen" : "navClose"}__block`}>
-                    <GrClose onClick={() => {
-                        window.scroll(0, 0)
-                        setMenu(false)
-                    }} className={`header--${menu ? "navOpen" : "navClose"}__block--close`}/>
-                    <NavLink onClick={() => {
-                        window.scroll(0, 0)
-                        setMenu(false)
-                    }} to="/buy">Buy</NavLink>
-                    <NavLink onClick={() => {
-                        window.scroll(0, 0)
-                        setMenu(false)
-                    }} to="/rent">Rent</NavLink>
-                    <NavLink onClick={() => {
-                        window.scroll(0, 0)
-                        setMenu(false)
-                    }} to="/agents">Agents</NavLink>
-                    <NavLink onClick={() => {
-                        window.scroll(0, 0)
-                        setMenu(false)
-                    }} to="/reciews">Reviews</NavLink>
-                    <select>
-                        <option value="en-US">🇺🇸&emsp;English</option>
-                        <option value="ru-RU">🇷🇺&emsp;Russia</option>
-                    </select>
-                    <NavLink onClick={() => {
-                        window.scroll(0, 0)
-                        setMenu(false)
-                    }} to="/login"
-                             className={`header--${menu ? "navOpen" : "navClose"}__block--btn`}>login</NavLink>
+                <div onClick={() => setMenu(false)} className={menu ? "header--navOpen" : "header--navClose"}>
+                    <div className={`header--${menu ? "navOpen" : "navClose"}__block`}>
+                        <GrClose onClick={() => {
+                            window.scroll(0, 0)
+                            setMenu(false)
+                        }} className={`header--${menu ? "navOpen" : "navClose"}__block--close`}/>
+                        <NavLink onClick={() => {
+                            window.scroll(0, 0)
+                            setMenu(false)
+                        }} to="/buy">Buy</NavLink>
+                        <NavLink onClick={() => {
+                            window.scroll(0, 0)
+                            setMenu(false)
+                        }} to="/rent">Rent</NavLink>
+                        <NavLink onClick={() => {
+                            window.scroll(0, 0)
+                            setMenu(false)
+                        }} to="/agents">Agents</NavLink>
+                        <NavLink onClick={() => {
+                            window.scroll(0, 0)
+                            setMenu(false)
+                        }} to="/reciews">Reviews</NavLink>
+                        <select>
+                            <option value="en-US">🇺🇸&emsp;English</option>
+                            <option value="ru-RU">🇷🇺&emsp;Russia</option>
+                        </select>
+                        <NavLink onClick={() => {
+                            window.scroll(0, 0)
+                            setMenu(false)
+                        }} to="/login"
+                                 className={`header--${menu ? "navOpen" : "navClose"}__block--btn`}>login</NavLink>
+                    </div>
                 </div>
-            </div>
+            </header>
         </div>
     );
 };
