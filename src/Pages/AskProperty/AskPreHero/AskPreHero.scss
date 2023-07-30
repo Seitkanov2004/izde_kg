@@ -99,7 +99,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      position: absolute;
+      position: fixed;
       top: 350px;
       left: 36%;
 
@@ -181,6 +181,13 @@
   #askPreHero {
     min-height: 40vh;
 
+    .pay{
+      &--check{
+        top: 320px;
+        left: 31%;
+      }
+    }
+
     .askPreModal {
       left: 22%;
       width: 60%;
@@ -206,6 +213,13 @@
   #askPreHero {
     min-height: 36vh;
 
+    .pay{
+      &--check{
+        top: 320px;
+        left: 28%;
+      }
+    }
+
     .askPreModal {
       div {
         button {
@@ -226,6 +240,13 @@
   #askPreHero {
     min-height: 48vh;
 
+    .pay{
+      &--check{
+        top: 320px;
+        left: 27%;
+      }
+    }
+
     .askPreHero {
       button {
         left: 28%;
@@ -244,6 +265,13 @@
 
 @media (max-width: 768px) {
   #askPreHero {
+
+    .pay{
+      &--check{
+        top: 305px;
+        left: 19%;
+      }
+    }
     .askPreModal {
       //height: 552px;
       left: 16%;
@@ -274,6 +302,16 @@
 @media (max-width: 600px) {
   #askPreHero {
 
+    .pay{
+      &--check{
+        top: 296px;
+        left: 16%;
+        h3{
+          font-size: 20px;
+        }
+      }
+    }
+
     .askPreModal {
       left: 11%;
       top: 150px;
@@ -302,6 +340,13 @@
 
 @media (max-width: 576px) {
   #askPreHero {
+
+    .pay{
+      &--check{
+        top: 296px;
+        left: 14%;
+      }
+    }
     .askPreHero {
       h1 {
         font-size: 35px;
@@ -312,6 +357,14 @@
 
 @media (max-width: 500px) {
   #askPreHero {
+
+    .pay{
+      &--check{
+        h3{
+          font-size: 17px;
+        }
+      }
+    }
 
     .askPreModal {
       padding: 30px;
@@ -335,13 +388,32 @@
   }
 }
 
+@media (max-width: 450px) {
+  #askPreHero{
+    .pay{
+      &--check{
+        left: 14%;
+        h3{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 375px) {
   #askPreHero {
-    #askPreHero {
+
+    .pay{
+      &--check{
+        h3{
+          padding: 20px 14px;
+        }
+      }
+    }
       .askPreModal {
         padding: 10px;
       }
-    }
 
     .askPreHero {
       button {
@@ -360,6 +432,12 @@
 
 @media (max-width: 320px) {
   #askPreHero {
+
+    .pay{
+      &--ckeck{
+        left: 6%;
+      }
+    }
     .askPreHero {
       button {
         left: 7%;
