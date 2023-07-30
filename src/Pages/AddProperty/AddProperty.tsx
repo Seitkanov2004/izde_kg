@@ -16,8 +16,6 @@ import AddMap, {MODES} from "./Map/addMap";
 import {useJsApiLoader} from "@react-google-maps/api";
 
 
-//
-
 const AddProperty = () => {
 
         const libraries: any[] = ["places"]
