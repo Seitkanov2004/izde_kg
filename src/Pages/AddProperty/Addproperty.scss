@@ -27,6 +27,10 @@
         border: none;
       }
 
+      &__blocksModal {
+        display: none;
+      }
+
 
       &__blocks {
         display: flex;
@@ -36,7 +40,7 @@
 
         &--bigBlock {
           border-radius: 26px 0 0 26px;
-          background: #E5EDEF ;
+          background: #E5EDEF;
           height: 375px;
           width: 40%;
           display: flex;
@@ -61,7 +65,7 @@
           }
 
           div {
-            background: #E5EDEF ;
+            background: #E5EDEF;
             height: 178px;
             margin: 10px;
             width: 47%;
@@ -212,7 +216,135 @@
       padding: 10px 50px;
       margin: 40px 0;
     }
+  }
+}
 
 
+@media (max-width: 1200px) {
+  #addProperty {
+    .addProperty {
+      &--inputs {
+        margin-right: 10%;
+      }
+
+      &--images {
+        &__blocks {
+
+          &--letBlock {
+            div {
+              margin: 10px 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  #addProperty {
+    .addProperty {
+      &--images {
+        &__blocks {
+          &--bigBlock {
+            height: 320px;
+          }
+
+          &--letBlock {
+            div {
+              height: 150px;
+            }
+          }
+        }
+      }
+
+      &--inputs {
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  #addProperty {
+    .addProperty {
+      &--norm {
+        flex-direction: column;
+      }
+
+      &--images {
+        &__blocks {
+          &--bigBlock {
+            height: 300px;
+          }
+
+          &--letBlock {
+            div {
+              height: 140px;
+              margin: 10px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  #addProperty {
+    .addProperty {
+      &--images {
+        &__btn {
+          margin: 20px 0;
+        }
+
+        &__blocks {
+          display: none;
+        }
+
+        &__blocksModal {
+          display: block;
+          overflow-x: auto;
+
+          &--bigBlock {
+            display: flex;
+            align-items: center;
+            overflow-x: scroll;
+            width: 100%;
+
+            img {
+              background: #E5EDEF;
+              width: 560px;
+              height: 310px;
+              display: flex !important;
+              justify-content: center;
+              align-items: center;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  #addProperty {
+    .addProperty {
+      &--inputs {
+        label {
+          div{
+            flex-wrap: wrap;
+            input{
+              margin: 10px 20px 10px 0;
+            }
+          }
+        }
+      }
+    }
   }
 }

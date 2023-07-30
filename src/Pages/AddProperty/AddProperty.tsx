@@ -11,13 +11,13 @@ import {MdOutlineComputer} from "react-icons/md";
 import {BsDoorClosed, BsThermometerHigh} from "react-icons/bs";
 import {LiaSwimmingPoolSolid} from "react-icons/lia";
 import {CgGym} from "react-icons/cg";
-
+import img from "./../../img/ad.svg"
 
 const AddProperty = () => {
 
     const [images, setImages] = useState<any>([]);
 
-const [check, setCheck] = useState("")
+    const [check, setCheck] = useState("")
     console.log(images)
 
     const handleMultipleImages = (e: any) => {
@@ -29,7 +29,7 @@ const [check, setCheck] = useState("")
         })
         if (images.length < 5) {
             setImages([...selectedFiles, ...images]);
-        }else {
+        } else {
             setImages(images)
         }
 
@@ -37,6 +37,7 @@ const [check, setCheck] = useState("")
 
 
     const handleRef = useRef<any>()
+
 
     return (
         <div id="addProperty">
@@ -62,6 +63,15 @@ const [check, setCheck] = useState("")
                                 <div style={{background: images[4] ? `url("${images[4]}") no-repeat center/cover` : ""}}
                                      className="addProperty--images__blocks--letBlock__border2"><BiSolidImageAlt/>
                                 </div>
+                            </div>
+                        </div>
+                        <div className="addProperty--images__blocksModal">
+                            <div className="addProperty--images__blocksModal--bigBlock">
+                                <img src={images[0] ? images[0] : img} alt=""/>
+                                <img src={images[1] ? images[1] : img} alt=""/>
+                                <img src={images[2] ? images[2] : img} alt=""/>
+                                <img src={images[3] ? images[3] : img} alt=""/>
+                                <img src={images[4] ? images[4] : img} alt=""/>
                             </div>
                         </div>
                         <button onClick={() => handleRef.current.click()} className="addProperty--images__btn">+ Add
@@ -150,7 +160,8 @@ const [check, setCheck] = useState("")
                             <div className="addProperty--checks__parent">
                                 <div className="addProperty--checks__parent__blocks">
                                     <label>
-                                        <input onChange={(e) => setCheck(e.target.value)}  type="checkbox" value="Microwave"/>
+                                        <input onChange={(e) => setCheck(e.target.value)} type="checkbox"
+                                               value="Microwave"/>
                                         <LuMicrowave/>
                                         <span>Microwave <h4>*</h4></span>
                                     </label>
@@ -225,6 +236,7 @@ const [check, setCheck] = useState("")
             </div>
         </div>
     );
-};
+}
+    ;
 
-export default AddProperty;
+    export default AddProperty;

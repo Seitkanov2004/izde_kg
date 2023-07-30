@@ -5,11 +5,11 @@
   .askPreModal {
     top: 200px;
     left: 30%;
-    position: absolute;
+    position: fixed;
     border-radius: 32px;
     background: #FFF;
     width: 678px;
-    height: 528px;
+    height: auto;
     padding: 58px 37px;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@
   }
 
   .askPrebg {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -181,6 +181,11 @@
   #askPreHero {
     min-height: 40vh;
 
+    .askPreModal {
+      left: 22%;
+      width: 60%;
+    }
+
     .askPreHero {
       button {
         top: 136%;
@@ -200,8 +205,17 @@
 @media (max-width: 1024px) {
   #askPreHero {
     min-height: 36vh;
-    .askPreHero{
-      button{
+
+    .askPreModal {
+      div {
+        button {
+          padding: 12px 76px;
+        }
+      }
+    }
+
+    .askPreHero {
+      button {
         left: 31.8%;
       }
     }
@@ -230,8 +244,27 @@
 
 @media (max-width: 768px) {
   #askPreHero {
-    .askPreHero{
-      h1{
+    .askPreModal {
+      //height: 552px;
+      left: 16%;
+      width: 70%;
+
+      &--pay {
+        flex-wrap: wrap;
+      }
+
+      div {
+        flex-wrap: wrap;
+
+        button {
+          width: 90%;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    .askPreHero {
+      h1 {
         width: 60%;
       }
     }
@@ -240,11 +273,25 @@
 
 @media (max-width: 600px) {
   #askPreHero {
-    .askPreHero{
+
+    .askPreModal {
+      left: 11%;
+      top: 150px;
+      width: 80%;
+
+      &--pay {
+        img {
+          margin: 5px;
+        }
+      }
+    }
+
+    .askPreHero {
       button {
         left: 19%;
       }
-      h1{
+
+      h1 {
         width: 60%;
         font-size: 37px;
       }
@@ -255,8 +302,8 @@
 
 @media (max-width: 576px) {
   #askPreHero {
-    .askPreHero{
-      h1{
+    .askPreHero {
+      h1 {
         font-size: 35px;
       }
     }
@@ -265,12 +312,22 @@
 
 @media (max-width: 450px) {
   #askPreHero {
-    .askPreHero{
+
+    .askPreModal {
+      padding: 30px;
+      top: 125px;
+      h3 {
+        font-size: 20px;
+      }
+    }
+
+    .askPreHero {
       button {
         left: 11%;
         padding: 12px 96px;
       }
-      h1{
+
+      h1 {
         width: 100%;
         font-size: 37px;
       }
@@ -280,12 +337,19 @@
 
 @media (max-width: 375px) {
   #askPreHero {
-    .askPreHero{
+    #askPreHero {
+      .askPreModal {
+        padding: 10px;
+      }
+    }
+
+    .askPreHero {
       button {
         left: 7%;
         padding: 12px 24%;
       }
-      h1{
+
+      h1 {
         width: 100%;
         font-size: 37px;
       }
@@ -296,12 +360,13 @@
 
 @media (max-width: 320px) {
   #askPreHero {
-    .askPreHero{
+    .askPreHero {
       button {
         left: 7%;
         padding: 12px 24%;
       }
-      h1{
+
+      h1 {
         width: 100%;
         font-size: 32px;
       }
