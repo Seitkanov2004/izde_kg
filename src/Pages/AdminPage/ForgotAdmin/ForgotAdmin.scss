@@ -159,50 +159,128 @@
   }
 }
 
-
-@media (max-width: 576px) {
-  #forgotAdmin{
-    .forgotAdmin{
-      h1{
-        font-size: 25px;
-        img{
-          width: 7%;
+@media (max-width: 1440px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        button {
+          padding: 12px 41%;
         }
-
       }
     }
   }
 }
 
-@media (max-width: 450px) {
-  #forgotAdmin{
-    .forgotAdmin{
-      &--form{
-        align-items: center;
-        padding: 18px;
+@media (max-width: 1200px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 50%;
+      }
+    }
+  }
+}
 
 
-        &__withGoogle{
-          font-size: 18px;
-          width: 90%;
+@media (max-width: 1024px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        button {
+          padding: 12px 39%;
         }
-        button{
-          display: flex;
-          align-items: center;
-          justify-content: center;
+      }
+    }
+  }
+}
 
-          font-size: 18px;
-          width: 80%;
+
+@media (max-width: 992px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 58%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 65%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 82%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 90%;
+
+        form {
+          padding: 0 5%;
         }
+      }
+    }
+  }
+}
 
-        p{
-          text-align: center;
+
+@media (max-width: 500px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 414px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        form {
+          padding: 0;
         }
+      }
+    }
+  }
+}
 
-        ul{
-          input{
-            width: 88%;
-          }
+
+@media (max-width: 375px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        padding: 26px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        button {
+          padding: 12px 37%;
         }
       }
     }
