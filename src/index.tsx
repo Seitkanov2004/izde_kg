@@ -64,7 +64,7 @@ root.render(
                     <Route path={"/forgot-admin-pass"} element={<ForgotAdmin/>}/>
                     <Route path="/about-admin" element={<AdminPage/>}>
                         <Route index element={<Inbox/>}/>
-                        <Route path="/about-admin/-=" element={<AgentsAdmin/>}/>
+                        <Route path="/about-admin/agents" element={<AgentsAdmin/>}/>
                         <Route path="/about-admin/realty" element={<Realty/>}/>
                         <Route path="/about-admin/payment" element={<Payment/>}/>
 
