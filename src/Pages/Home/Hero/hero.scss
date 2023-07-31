@@ -137,11 +137,252 @@
 
 }
 
+
+@media (max-width: 992px) {
+  #Hero {
+    .Hero {
+      &--block {
+        zoom: 99%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        &__filter {
+          &--rentOrBuy {
+            .rentBuy {
+              padding: 8px 143px;
+            }
+          }
+          &--options {
+            display: flex;
+            flex-wrap: wrap;
+            .type {
+              padding: 10px 492px 10px 16px;
+            }
+            .roomPrice {
+              padding: 10px 233px 10px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 850px) {
+  #Hero {
+    .Hero {
+      &--block {
+    
+        &__filter {
+          &--rentOrBuy {
+            .rentBuy {
+              padding: 8px 141px;
+            }
+          }
+          &--options {
+            display: flex;
+            flex-wrap: wrap;
+            .type {
+              padding: 10px 482px 10px 16px;
+            }
+            .roomPrice {
+              padding: 10px 228px 10px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  #Hero {
+    .Hero {
+      &--block {
+        &__filter {
+          &--rentOrBuy {
+            .rentBuy {
+              padding: 8px 140px;
+            }
+          }
+          &--options {
+            display: flex;
+            flex-wrap: wrap;
+            .type {
+              padding: 10px 480px 10px 16px;
+            }
+            .roomPrice {
+              padding: 10px 227px 10px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 835px) {
+  #Hero {
+    .Hero {
+      &--block {
+      
+        &__filter {
+          &--rentOrBuy {
+            .rentBuy {
+              padding: 8px 136.5px;
+            }
+          }
+          &--options {
+            display: flex;
+            flex-wrap: wrap;
+            .type {
+              padding: 10px 465px 10px 16px;
+            }
+            .roomPrice {
+              padding: 10px 219.5px 10px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  #Hero {
+    .Hero {
+      &--block {
+        &__filter {
+          &--rentOrBuy {
+            .rentBuy {
+              padding: 8px 136.5px;
+            }
+          }
+          &--options {
+            display: flex;
+            flex-wrap: wrap;
+            .type {
+              padding: 10px 465px 10px 16px;
+            }
+            .roomPrice {
+              padding: 10px 219.5px 10px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  #Hero {
+    .Hero {
+      &--block {
+        &__filter {
+          &--rentOrBuy {
+            .rentBuy {
+              padding: 8px 134.5px;
+            }
+          }
+          &--options {
+            display: flex;
+            flex-wrap: wrap;
+            .type {
+              padding: 10px 457px 10px 16px;
+            }
+            .roomPrice {
+              padding: 10px 215.5px 10px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  #Hero {
+    .Hero {
+      &--block {
+        &__filter {
+          &--rentOrBuy {
+            .rentBuy {
+              padding: 8px 132.5px;
+            }
+          }
+          &--options {
+            display: flex;
+            flex-wrap: wrap;
+            .type {
+              padding: 10px 449px 10px 16px;
+            }
+            .roomPrice {
+              padding: 10px 211.5px 10px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    .hero {
+      &--block {
+        &__filter {
+          &--rentOrBuy {
+            .rentBuy {
+              padding: 8px 132.5px;
+            }
+          }
+          &--options {
+            display: flex;
+            flex-wrap: wrap;
+            .type {
+              padding: 10px 449px 10px 16px;
+            }
+            .roomPrice {
+              padding: 10px 211.5px 10px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .hero {
+    .hero {
+      &--block {
+        &__filter {
+          &--rentOrBuy {
+            .rentBuy {
+              padding: 8px 130.5px;
+            }
+          }
+          &--options {
+            display: flex;
+            flex-wrap: wrap;
+            .type {
+              padding: 10px 442px 10px 16px;
+            }
+            .roomPrice {
+              padding: 10px 211.5px 10px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   #Hero {
     .Hero {
       &--block {
-        width: 82%;
+        zoom: 87%;
         display: flex;
         flex-wrap: wrap-reverse;
         &__filter {

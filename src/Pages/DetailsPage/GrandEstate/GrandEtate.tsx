@@ -1,6 +1,6 @@
 import React from 'react';
 import './GrandEstate.scss'
-import ApartmentOwn from './../../../img/Rectangle 2.png'
+import ApartmentOwn from './../../../img/Rectangle 2 (1).png'
 import ApartmentTwo from './../../../img/Rectangle 5.png'
 import ApartmentTree from './../../../img/Rectangle 6.png'
 import ApartmentFour from './../../../img/Rectangle 7.png'
