@@ -22,7 +22,7 @@
                     .amenity {
                         display: flex;
                         align-items: center;
-                        gap: 5px;
+                        gap: 10px;
                         margin: 15px 60px 15px 0;
 
                         .amenityIcons {
@@ -77,7 +77,7 @@
         &--RoulesBlock {
             display: flex;
             flex-direction: column;
-            margin-top: 20px;
+            margin-top: 50px;
 
             h2 {
                 color: #004A60;
@@ -91,7 +91,7 @@
 
                 .rules {
                     display: flex;
-                    gap: 5px;
+                    gap: 10px;
                     align-items: center;
                     margin-right: 50px;
 
