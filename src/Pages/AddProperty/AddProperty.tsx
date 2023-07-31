@@ -258,11 +258,12 @@ const AddProperty = () => {
                             </div>
                         </div>
                         <button className="addProperty--send">Send to admin</button>
-                        <button onClick={toggleMode} className="bg-red-500 py-2 px-8 rounded">set marker</button>
-
-                        {
-                            isLoaded ? <AddMap isLoaded={isLoaded} mode={mode} setMode={setMode}/> : <h2>Loading</h2>
-                        }
+                        <div className="addProperty--location">
+                            <button onClick={toggleMode} className="addProperty--location__btn">Choose place 📍</button>
+                            {
+                                isLoaded ? <AddMap isLoaded={isLoaded} mode={mode} setMode={setMode}/> : <h2>Loading</h2>
+                            }
+                        </div>
 
                     </div>
                 </div>

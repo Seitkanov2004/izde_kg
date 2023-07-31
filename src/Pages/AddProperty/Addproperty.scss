@@ -10,6 +10,24 @@
       line-height: normal;
     }
 
+    &--location{
+      width: 100%;
+      height: 600px;
+      position: relative;
+      &__btn{
+        position: absolute;
+        top: 62px;
+        right: 15px;
+        z-index: 10;
+        border-radius: 6px;
+        border: none;
+        background: #02328c;
+        padding: 12px 30px;
+        color: #FFFFFF;
+        font-size: 20px;
+      }
+    }
+
     &--images {
       display: flex;
       flex-direction: column;
