@@ -37,7 +37,7 @@ const SuperAgents = () => {
                                 <div className="medalFill">
                                     <RiMedalFill className='medal'/>
                                 </div>
-                                <img src={AgentOwn} alt="agent"/>
+                                <img className='agen' src={AgentOwn} alt="agent"/>
                             </div>
                             <div className="agent">
                                 <div className="medalFill">

@@ -174,21 +174,22 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #ListPagination {
     .ListPagination {
       &--homeBlock {
         display: flex;
         flex-direction: column;
+        }
       }
     }
   }
-}
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 710px) {
   #ListPagination {
+    padding: 40px 0 0 0 !important;
     .ListPagination {
       &--pagination{
         &__block{
@@ -199,35 +200,63 @@
         }
       }
       &--homeBlock {
+        align-items: center;
         &__homes {
           .home {
             width: 500px !important;
             flex-direction: column;
-
             .homeText {
               .conditions {
                 margin: 40px 0 20px 0 !important;
                 gap: 8px !important;
+                }
               }
             }
           }
-        }
         &__popularSearch {
           width: 96% !important;
+        }
+        }
+      }
+    }
+  }
+
+  
+@media (max-width: 576px) {
+  #ListPagination {
+    .ListPagination {
+      &--homeBlock {
+        &__homes {
+          .home {
+            width: 415px !important;
+          }
         }
       }
     }
   }
 }
 
-
-@media (max-width: 480px) {
+@media (max-width: 475px) {
   #ListPagination {
     .ListPagination {
       &--homeBlock {
         &__homes {
           .home {
-            width: 413px !important;
+            width: 400px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 457px) {
+  #ListPagination {
+    .ListPagination {
+      &--homeBlock {
+        &__homes {
+          .home {
+            width: 350px !important;
           }
         }
       }
@@ -241,7 +270,7 @@
       &--homeBlock {
         &__homes {
           .home {
-            width: 353px !important;
+            width: 330px !important;
           }
         }
       }
@@ -249,27 +278,13 @@
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 375px) {
   #ListPagination {
     .ListPagination {
       &--homeBlock {
         &__homes {
           .home {
-            width: 314px !important;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  #ListPagination {
-    .ListPagination {
-      &--homeBlock {
-        &__homes {
-          .home {
-            width: 267px !important;
+            width: 280px !important;
             .homeText {
               h2 {
                 font-size: 14px !important;
@@ -295,6 +310,20 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #ListPagination {
+    .ListPagination {
+      &--homeBlock {
+        &__homes {
+          .home {
+            width: 267px !important;
           }
         }
       }

@@ -145,3 +145,17 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    #GrandEstate {
+        .GrandEstate {
+            &--apartmentBlock {
+               &__apartmentImages {
+                .home {
+                    width: 600px !important;
+                }
+               }
+            }
+        }
+    }
+}
