@@ -2,19 +2,20 @@ import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {GoogleMap, Marker} from "@react-google-maps/api";
 import {useAppDispatch} from "../../../Hooks/useAppDispatch";
 import {useAppSelector} from "../../../Hooks/useAppSelector";
+import "./addMap.scss"
 import usePlacesAutocomplete, {
     getGeocode,
     getLatLng,
 } from "use-places-autocomplete";
 import useOnclickOutside from "react-cool-onclickoutside";
-import {addCenter} from "../../../store/Reducers/MapSlice";
+import {addCenter, getPlaceName} from "../../../store/Reducers/MapSlice";
 
 export const MODES: any = {
     MOVE: 0,
     SET_MARKER: 1
 }
 
-const AddMap = ({isLoaded, mode}: any) => {
+const AddMap = ({mode}: any) => {
 
 
     const dispatch = useAppDispatch()
@@ -22,60 +23,9 @@ const AddMap = ({isLoaded, mode}: any) => {
     const mapRef = useRef<any>(undefined)
 
 
-    const {
-        ready,
-        value,
-        suggestions: {status, data},
-        setValue,
-        init,
-        clearSuggestions,
-    } = usePlacesAutocomplete({
-        initOnMount: false,
-        debounce: 300,
-    });
-
-
-    const ref = useOnclickOutside(() => {
-        clearSuggestions();
-    });
-
-    const handleSelect = ({description}: any) => () => {
-        setValue(description, false);
-        clearSuggestions();
-        console.log(description)
-        getGeocode({address: description}).then((results) => {
-            const {lat, lng} = getLatLng(results[0]);
-            dispatch(addCenter({lat, lng}))
-            console.log({lat, lng})
-        });
-    };
-
-    const renderSuggestions = () =>
-    data.map((suggestion) => {
-        const {
-            place_id,
-            structured_formatting: {main_text, secondary_text},
-        } = suggestion;
-
-            return (
-                <li key={place_id} onClick={handleSelect(suggestion)}
-                    className="border-green-500 border-2 rounded px-4 py-2">
-                    <strong>{main_text}</strong> <small>{secondary_text}</small>
-                </li>
-            );
-        });
-
-    useEffect(() => {
-        if (isLoaded) {
-            init()
-        }
-    }, [isLoaded, init])
-
-
-
     ///////////////////////////////////////////////////////////////////
 
-    const {center} = useAppSelector(s => s.MapSlice)
+    const {center, placeName} = useAppSelector(s => s.MapSlice)
 
 
     const containerStyle = {
@@ -102,7 +52,7 @@ const AddMap = ({isLoaded, mode}: any) => {
         keyboardShortcuts: true,
         scrollwheel: false,
         disableDoubleClickZoom: true,
-        fullscreenControl: true
+        fullscreenControl: false
     }
 
 
@@ -114,46 +64,23 @@ const AddMap = ({isLoaded, mode}: any) => {
         mapRef.current = undefined
     }, [])
 
-    const [placeId, setPlaceId] = useState("")
+
 
     return (
-        <div>
-            <div>
-                <div ref={ref}>
-                    <input
-                        value={value}
-                        onChange={(e) => setValue(e.target.value)}
-                        disabled={!ready}
-                        placeholder="Where are you going?"
-                        className="border-2 rounded border-red-700 w-[300px] h-[50px] px-4"
-                        // onKeyDown={(e) => {
-                        //     data.map((suggestion) => {
-                        //         const {
-                        //             place_id,
-                        //             structured_formatting: {main_text, secondary_text},
-                        //         } = suggestion
-                        //         if (e.key === "Enter") {
-                        //             handleSelect(suggestion)
-                        //             setPlaceId(place_id)
-                        //         }
-                        //     })
-                        //
-                        // }}
-                    />
-                    {status === "OK" && <ul>{renderSuggestions()}</ul>}
-                </div>
+        <div id="addMap">
+            <div className="addMap">
+                <GoogleMap
+                    mapContainerStyle={containerStyle}
+                    center={center}
+                    zoom={16}
+                    onClick={modeClick}
+                    onLoad={onLoad}
+                    onUnmount={onUnmount}
+                    options={defaultOptions}
+                >
+                    <Marker position={center} icon={{url: "./place.svg"}}/>
+                </GoogleMap>
             </div>
-            <GoogleMap
-                mapContainerStyle={containerStyle}
-                center={center}
-                zoom={16}
-                onClick={modeClick}
-                onLoad={onLoad}
-                onUnmount={onUnmount}
-                options={defaultOptions}
-            >
-                <Marker position={center} icon={{url: "./place.svg"}}/>
-            </GoogleMap>
         </div>
     );
 };

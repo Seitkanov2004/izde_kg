@@ -55,7 +55,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div onClick={() => setMenu(false)} className={menu ? "header--navOpen" : "header--navClose"}>
+                <div className={menu ? "header--navOpen" : "header--navClose"}>
                     <div className={`header--${menu ? "navOpen" : "navClose"}__block`}>
                         <GrClose onClick={() => {
                             window.scroll(0, 0)
@@ -76,7 +76,7 @@ const Header = () => {
                         <NavLink onClick={() => {
                             window.scroll(0, 0)
                             setMenu(false)
-                        }} to="/reciews">Reviews</NavLink>
+                        }} to="/reviews">Reviews</NavLink>
                         <select>
                             <option value="en-US">🇺🇸&emsp;English</option>
                             <option value="ru-RU">🇷🇺&emsp;Russia</option>
