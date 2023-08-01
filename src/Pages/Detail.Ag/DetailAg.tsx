@@ -1,5 +1,6 @@
 import React from "react";
 import "../Detail.Ag/DetailAg.scss";
+import  "./media.scss"
 import Lop from "../../img/Rectangle 73.png";
 import { BiSolidMedal } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
@@ -18,6 +19,7 @@ const DetailAg = () => {
                 src={Lop}
                 style={{
                   borderRadius: "30px",
+                  
                 }}
                 alt=""
               />

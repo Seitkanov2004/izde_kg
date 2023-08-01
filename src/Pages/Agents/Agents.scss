@@ -1,8 +1,8 @@
 #agents {
+  padding-top: 80px;
+  // background: url("../../img/image 2.png") no-repeat center/cover;
+  // min-height: 20vh;
   .persons {
-    background: url("../../img/image 2.png") no-repeat;
-    min-height: 60vh;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,28 +20,53 @@
     }
   }
   .agents {
-    margin-bottom: 120px;
+    margin-bottom: 140px;
     position: relative;
+    &--btn {
+      display: flex;
+      padding: 8px 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 8px;
+      background: rgba(27, 118, 249, 0.3);
+      color: var(--color-main, #1b76f9);
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-left: 689px;
+      &:hover{
+        background:  var(--color-main, #1b76f9);
+        color:  white;
+
+      }
+    }
     &--hooks {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       gap: 2rem;
-      margin: 0 0 0 60px;
+      padding: 300px 0 150px 0;
       &__per {
-        width: 256px;
-        height: 456px;
+        width: 356px;
+        height: 569px;
         border-radius: 32px;
         border: 1px solid rgba(0, 74, 96, 0.5);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
+        img {
+          width: 360px;
+          height: 355px;
+        }
         h3 {
           color: var(--color-text, #004a60);
           font-family: Poppins;
-          font-size: 21.33px;
+          font-size: 25px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
@@ -50,22 +75,21 @@
           align-self: stretch;
           color: var(--color-text, #004a60);
           text-align: center;
-          /* Text/XXS */
           font-family: Poppins;
-          font-size: 12.8px;
+          font-size: 15px;
           font-style: normal;
           font-weight: 400;
         }
         button {
           display: flex;
-          padding: 8px 16px;
+          padding: 13px 28px;
           align-items: center;
           gap: 8px;
-          border-radius: 16px;
+          border-radius: 25px;
           background: var(--color-main, #1b76f9);
           color: var(--color-bg, #fff);
           font-family: Poppins;
-          font-size: 12.8px;
+          font-size: 15px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
@@ -82,8 +106,7 @@
     }
     &--inli {
       display: inline-flex;
-      height: 200px;
-      padding: 24px;
+      position: absolute;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -92,12 +115,16 @@
       border-radius: 32px;
       border: 1px solid rgba(0, 74, 96, 0.5);
       background: #fff;
-      position: absolute;
-      top: -378px;
-      left: 279px;
+      height: 236px;
+      width: 883px;
+      padding: 24px;
+
+      top: -105px;
+      left: 301px;
       select {
         display: flex;
-        padding: 8px 8px 8px 16px;
+
+        padding: 8px 29px 14px 12px;
         align-items: center;
         gap: 8px;
         // align-self: stretch;
@@ -111,19 +138,37 @@
         line-height: normal;
         border: 1px solid rgba(0, 74, 96, 0.7);
         border-radius: 6px;
+        position: absolute;
+        top: 149px;
       }
       &__search {
         display: flex;
         position: relative;
+        h1 {
+          width: 555px;
+          color: var(--color-bg, #fff);
+          text-align: center;
+          font-size: 59px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          position: absolute;
+          bottom: 224px;
+          right: -292px;
+        }
         input {
+          position: absolute;
+          right: -402px;
+          top: -91px;
           display: flex;
-          width: 662px;
-          height: 92px;
+          width: 804px;
+          height: 98px;
           padding: 16px 16px 16px 32px;
           justify-content: space-between;
           align-items: center;
           border-radius: 16px;
           background: rgba(0, 74, 96, 0.1);
+          outline: none;
         }
         button {
           position: absolute;
@@ -134,13 +179,13 @@
           font-weight: 500;
           line-height: normal;
           display: flex;
-          padding: 16px;
+          padding: 18px;
           align-items: center;
           gap: 8px;
           border-radius: 8px;
           background: var(--color-main, #1b76f9);
-          left: 533px;
-          top: 18px;
+          left: 263px;
+          top: -72px;
           &:hover {
             background: white;
             border: 1px solid #1b76f9;

@@ -24,7 +24,6 @@ import Agents from './Pages/Agents/Agents';
 import Reviews from './Pages/Reviews/Reviews';
 import DetailAg from './Pages/Detail.Ag/DetailAg';
 import Inbox from "./Pages/AdminPage/Inbox/Inbox";
-import Agents from "./Pages/AdminPage/Agents/Agents";
 import Realty from "./Pages/AdminPage/Realty/Realty";
 import Payment from "./Pages/AdminPage/Payment/Payment";
 import BecomeAgent from "./Pages/BecomeAgent/BecomeAgent";
@@ -60,7 +59,6 @@ root.render(
                     <Route path={"/forgot-admin-pass"} element={<ForgotAdmin/>}/>
                     <Route path="/about-admin" element={<AdminPage/>}>
                         <Route index element={<Inbox/>}/>
-                        <Route path="/about-admin/agents" element={<Agents/>}/>
                         <Route path="/about-admin/realty" element={<Realty/>}/>
                         <Route path="/about-admin/payment" element={<Payment/>}/>
                     </Route>

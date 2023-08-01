@@ -10,21 +10,26 @@ import Rop4 from "../../img/rop4.png"
 import Rop5 from "../../img/rop5.png"
 import Rop6 from "../../img/rop6.png"
 import Rop7 from "../../img/rop7.png"
+import Opo from "../../img/image 2.png"
 import { url } from "inspector";
 import { NavLink } from "react-router-dom";
+import "../../Pages/Agents/media.scss"
 
 const Agents = () => {
+  
   return (
     <div id="agents">
-      <div className="persons">
-        <h1>Find your agent to find your home</h1>
-      </div>
+      <img style={{
+
+        width:"100%"
+      }} src={Opo} alt="" className="imgg" />
       <div className="container">
         <div className="agents">
           <div className="agents--inli">
             <div className="agents--inli__search">
                 <input type="text" placeholder="Name or the location of the agent" />
                 <button><BsSearchHeart/>Search</button>
+    <h1>Find your agent to find your home</h1>
             </div>
               <select>
                 <option value="#">Language</option>
@@ -102,6 +107,7 @@ const Agents = () => {
             </div>
             
           </div>
+         <button className="agents--btn">See more</button>
         </div>
       </div>
     </div>
