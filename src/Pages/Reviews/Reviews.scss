@@ -1,11 +1,6 @@
 #agentsas {
+  padding-top: 80px;
   .personsas {
-    background: url("../../img//Nature.png") no-repeat;
-    min-height: 60vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     h1 {
       color: var(--color-bg, #fff);
       text-align: center;
@@ -23,7 +18,7 @@
     &--hooksas {
       &__yed {
         display: flex;
-        align-items:flex-start;
+        align-items: flex-start;
         justify-content: space-evenly;
         &--yellow {
           display: flex;
@@ -31,24 +26,25 @@
           flex-wrap: wrap;
           flex-direction: column;
           padding: 8px;
-          // gap: 8px;
+          gap: 7px;
           border-radius: 16px;
           border: 1px solid rgba(0, 74, 96, 0.5);
-          width: 400px;
-          height: 270px;
+          width: 501px;
+          height: 335px;
           &__tup {
             display: flex;
-            padding: 8px 8px;
+            padding: 8px 19px;
+            font-size: 20px;
             align-items: flex-start;
             gap: 8px;
             border-radius: 8px;
             border: 1px solid rgba(0, 74, 96, 0.5);
-            margin-top: 25px ;
+            margin-top: 25px;
           }
           p {
             color: #004a60;
             font-family: Poppins;
-            font-size: 16px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -56,7 +52,7 @@
           h3 {
             color: var(--color-text, #004a60);
             font-family: Poppins;
-            font-size: 21.33px;
+            font-size: 25px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -64,7 +60,7 @@
           h2 {
             color: var(--color-text, #004a60);
             font-family: Poppins;
-            font-size: 16px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
@@ -72,7 +68,7 @@
           h6 {
             color: var(--color-text, #004a60);
             font-family: Poppins;
-            font-size: 16px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -80,7 +76,8 @@
         }
         &--red {
           display: flex;
-          width: 650px;
+          width: 730px;
+          height: 303px;
           padding: 8px;
           align-items: flex-start;
           gap: 8px;
@@ -90,11 +87,18 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            img {
+              width: 282px;
+            }
             &--tex {
+              display: flex;
+              align-items: flex-start;
+              flex-direction: column;
+              gap: 8px;
               p {
                 color: #004a60;
                 font-family: Poppins;
-                font-size: 16px;
+                font-size: 20px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -102,7 +106,7 @@
               h3 {
                 color: var(--color-text, #004a60);
                 font-family: Poppins;
-                font-size: 21.33px;
+                font-size: 25px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
@@ -112,14 +116,15 @@
               h2 {
                 color: var(--color-text, #004a60);
                 font-family: Poppins;
-                font-size: 16px;
+                font-size: 20px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
               }
               &__gop {
                 display: flex;
-                padding: 8px 8px;
+                padding: 8px 19px;
+                font-size: 20px;
                 align-items: flex-start;
                 gap: 8px;
                 border-radius: 8px;
@@ -134,11 +139,11 @@
         align-items: self-start;
         flex-wrap: wrap;
         margin: 120px 0 40px 50px;
-        
+
         h2 {
           color: var(--color-text, #004a60);
           font-family: Poppins;
-          font-size: 28.43px;
+          font-size: 38px;
           font-style: normal;
           font-weight: 600;
           line-height: normal;
@@ -167,37 +172,38 @@
         background: white;
         border-radius: 32px;
         border: 1px solid rgba(0, 74, 96, 0.5);
-        padding: 24px;
-        height: 136px;
-        width: 690px;
-        margin: -384px 0 140px 265px;
+        padding: 29px;
+        height: 174px;
+        width: 855px;
+        margin: -422px 0 140px 317px;
 
         input {
           display: flex;
-          width: 662px;
-          height: 92px;
-          padding: 16px 16px 16px 32px;
+          width: 791px;
+          height: 111px;
+          padding: 14px 16px 16px 32px;
           justify-content: space-between;
           align-items: center;
           border-radius: 16px;
           background: rgba(0, 74, 96, 0.1);
+          outline: none;
         }
         button {
           position: absolute;
           color: var(--color-bg, #fff);
           font-family: Poppins;
-          font-size: 16px;
+          font-size: 18px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
           display: flex;
-          padding: 16px;
+          padding: 21px 26px;
           align-items: center;
           gap: 8px;
           border-radius: 8px;
           background: var(--color-main, #1b76f9);
-          left: 533px;
-          top: 41px;
+          left: 656px;
+          top: 50px;
           &:hover {
             background: white;
             border: 1px solid #1b76f9;

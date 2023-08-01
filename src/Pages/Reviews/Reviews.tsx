@@ -1,14 +1,22 @@
 import React from "react";
 import "../Reviews/Reviews.scss";
-import { BsSearchHeart, BsPencil,BsStarHalf } from "react-icons/bs";
+import { BsSearchHeart, BsPencil, BsStarHalf } from "react-icons/bs";
 import { BiSolidStar } from "react-icons/bi";
 import { MdOutlineSms } from "react-icons/md";
 import Imarat from "../../img/imarat.png";
+import Nature from "../../img/Nature.png";
 
 const Reviews = () => {
   return (
     <div>
       <div id="agentsas">
+        <img
+          src={Nature}
+          style={{
+            width: "100%",
+          }}
+          alt=""
+        />
         <div className="personsas">
           <h1>Building Reviews</h1>
         </div>
@@ -33,182 +41,188 @@ const Reviews = () => {
               </div>
               <div className="agentsas--hooksas__yed">
                 <div className="flex items-center flex-wrap column gap-8 ml-[48px]">
-                   <div className="agentsas--hooksas__yed--red">
-                  <div className="agentsas--hooksas__yed--red__mini gap-4">
-                    <img src={Imarat} alt="" />
-                    <div className="agentsas--hooksas__yed--red__mini--tex">
-                      <p>Apartment</p>
-                      <h3>The Grand Estate</h3>
-                      <h2 className="flex gap-2 mb-4">
-                        <BiSolidStar />
-                        5/5
-                      </h2>
-                      <div className="flex gap-2">
-                        <div className="agentsas--hooksas__yed--red__mini--tex__gop">
-                          <MdOutlineSms />
-                          <h4>Read reviews</h4>
+                  <div className="agentsas--hooksas__yed--red">
+                    <div className="agentsas--hooksas__yed--red__mini gap-4">
+                      <img src={Imarat} alt="" />
+                      <div className="agentsas--hooksas__yed--red__mini--tex">
+                        <p>Apartment</p>
+                        <h3>The Grand Estate</h3>
+                        <h2 className="flex gap-2 mb-4">
+                          <BiSolidStar />
+                          5/5
+                        </h2>
+                        <div className="flex gap-2">
+                          <div className="agentsas--hooksas__yed--red__mini--tex__gop">
+                            <MdOutlineSms />
+                            <h4>Read reviews</h4>
+                          </div>
+                          <div className="agentsas--hooksas__yed--red__mini--tex__gop">
+                            <BsPencil />
+                            <h4>Write review</h4>
+                          </div>
                         </div>
-                        <div className="agentsas--hooksas__yed--red__mini--tex__gop">
-                          <BsPencil />
-                          <h4>Write review</h4>
-                          
+                      </div>
+                    </div>
+                  </div>
+                  <div className="agentsas--hooksas__yed--red">
+                    <div className="agentsas--hooksas__yed--red__mini gap-4">
+                      <img src={Imarat} alt="" />
+                      <div className="agentsas--hooksas__yed--red__mini--tex">
+                        <p>Apartment</p>
+                        <h3>The Grand Estate</h3>
+                        <h2 className="flex gap-2 mb-4">
+                          <BiSolidStar />
+                          5/5
+                        </h2>
+                        <div className="flex gap-2">
+                          <div className="agentsas--hooksas__yed--red__mini--tex__gop">
+                            <MdOutlineSms />
+                            <h4>Read reviews</h4>
+                          </div>
+                          <div className="agentsas--hooksas__yed--red__mini--tex__gop">
+                            <BsPencil />
+                            <h4>Write review</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="agentsas--hooksas__yed--red">
+                    <div className="agentsas--hooksas__yed--red__mini gap-4">
+                      <img src={Imarat} alt="" />
+                      <div className="agentsas--hooksas__yed--red__mini--tex">
+                        <p>Apartment</p>
+                        <h3>The Grand Estate</h3>
+                        <h2 className="flex gap-2 mb-4">
+                          <BiSolidStar />
+                          5/5
+                        </h2>
+                        <div className="flex gap-2">
+                          <div className="agentsas--hooksas__yed--red__mini--tex__gop">
+                            <MdOutlineSms />
+                            <h4>Read reviews</h4>
+                          </div>
+                          <div className="agentsas--hooksas__yed--red__mini--tex__gop">
+                            <BsPencil />
+                            <h4>Write review</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="agentsas--hooksas__yed--red">
+                    <div className="agentsas--hooksas__yed--red__mini gap-4">
+                      <img src={Imarat} alt="" />
+                      <div className="agentsas--hooksas__yed--red__mini--tex">
+                        <p>Apartment</p>
+                        <h3>The Grand Estate</h3>
+                        <h2 className="flex gap-2 mb-4">
+                          <BiSolidStar />
+                          5/5
+                        </h2>
+                        <div className="flex gap-2">
+                          <div className="agentsas--hooksas__yed--red__mini--tex__gop">
+                            <MdOutlineSms />
+                            <h4>Read reviews</h4>
+                          </div>
+                          <div className="agentsas--hooksas__yed--red__mini--tex__gop">
+                            <BsPencil />
+                            <h4>Write review</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="agentsas--hooksas__yed--red">
+                    <div className="agentsas--hooksas__yed--red__mini gap-4">
+                      <img src={Imarat} alt="" />
+                      <div className="agentsas--hooksas__yed--red__mini--tex">
+                        <p>Apartment</p>
+                        <h3>The Grand Estate</h3>
+                        <h2 className="flex gap-2 mb-4">
+                          <BiSolidStar />
+                          5/5
+                        </h2>
+                        <div className="flex gap-2">
+                          <div className="agentsas--hooksas__yed--red__mini--tex__gop">
+                            <MdOutlineSms />
+                            <h4>Read reviews</h4>
+                          </div>
+                          <div className="agentsas--hooksas__yed--red__mini--tex__gop">
+                            <BsPencil />
+                            <h4>Write review</h4>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="agentsas--hooksas__yed--red">
-                  <div className="agentsas--hooksas__yed--red__mini gap-4">
-                    <img src={Imarat} alt="" />
-                    <div className="agentsas--hooksas__yed--red__mini--tex">
-                      <p>Apartment</p>
-                      <h3>The Grand Estate</h3>
-                      <h2 className="flex gap-2 mb-4">
-                        <BiSolidStar />
-                        5/5
-                      </h2>
-                      <div className="flex gap-2">
-                        <div className="agentsas--hooksas__yed--red__mini--tex__gop">
-                          <MdOutlineSms />
-                          <h4>Read reviews</h4>
-                        </div>
-                        <div className="agentsas--hooksas__yed--red__mini--tex__gop">
-                          <BsPencil />
-                          <h4>Write review</h4>
-                          
-                        </div>
-                      </div>
+                <div className="flex items-center flex-wrap column gap-8 mr-[134px]">
+                  <div className="agentsas--hooksas__yed--yellow">
+                    <p>Apartment</p>
+                    <h3>The Grand Estate</h3>
+                    <h2 className="flex gap-2 mb-4">
+                      <BsStarHalf />
+                      4/5
+                    </h2>
+                    <h6>
+                      It’s an awesome home with a great view to a city. I would
+                      definitely recommend to rent this property
+                    </h6>
+                    <div className="agentsas--hooksas__yed--yellow__tup">
+                      <MdOutlineSms />
+                      <h4>More reviews</h4>
+                    </div>
+                  </div>
+                  <div className="agentsas--hooksas__yed--yellow">
+                    <p>Apartment</p>
+                    <h3>The Grand Estate</h3>
+                    <h2 className="flex gap-2 mb-4">
+                      <BsStarHalf />
+                      4/5
+                    </h2>
+                    <h6>
+                      It’s an awesome home with a great view to a city. I would
+                      definitely recommend to rent this property
+                    </h6>
+                    <div className="agentsas--hooksas__yed--yellow__tup">
+                      <MdOutlineSms />
+                      <h4>More reviews</h4>
+                    </div>
+                  </div>
+                  <div className="agentsas--hooksas__yed--yellow">
+                    <p>Apartment</p>
+                    <h3>The Grand Estate</h3>
+                    <h2 className="flex gap-2 mb-4">
+                      <BsStarHalf />
+                      4/5
+                    </h2>
+                    <h6>
+                      It’s an awesome home with a great view to a city. I would
+                      definitely recommend to rent this property
+                    </h6>
+                    <div className="agentsas--hooksas__yed--yellow__tup">
+                      <MdOutlineSms />
+                      <h4>More reviews</h4>
+                    </div>
+                  </div>
+                  <div className="agentsas--hooksas__yed--yellow">
+                    <p>Apartment</p>
+                    <h3>The Grand Estate</h3>
+                    <h2 className="flex gap-2 mb-4">
+                      <BsStarHalf />
+                      4/5
+                    </h2>
+                    <h6>
+                      It’s an awesome home with a great view to a city. I would
+                      definitely recommend to rent this property
+                    </h6>
+                    <div className="agentsas--hooksas__yed--yellow__tup">
+                      <MdOutlineSms />
+                      <h4>More reviews</h4>
                     </div>
                   </div>
                 </div>
-                <div className="agentsas--hooksas__yed--red">
-                  <div className="agentsas--hooksas__yed--red__mini gap-4">
-                    <img src={Imarat} alt="" />
-                    <div className="agentsas--hooksas__yed--red__mini--tex">
-                      <p>Apartment</p>
-                      <h3>The Grand Estate</h3>
-                      <h2 className="flex gap-2 mb-4">
-                        <BiSolidStar />
-                        5/5
-                      </h2>
-                      <div className="flex gap-2">
-                        <div className="agentsas--hooksas__yed--red__mini--tex__gop">
-                          <MdOutlineSms />
-                          <h4>Read reviews</h4>
-                        </div>
-                        <div className="agentsas--hooksas__yed--red__mini--tex__gop">
-                          <BsPencil />
-                          <h4>Write review</h4>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="agentsas--hooksas__yed--red">
-                  <div className="agentsas--hooksas__yed--red__mini gap-4">
-                    <img src={Imarat} alt="" />
-                    <div className="agentsas--hooksas__yed--red__mini--tex">
-                      <p>Apartment</p>
-                      <h3>The Grand Estate</h3>
-                      <h2 className="flex gap-2 mb-4">
-                        <BiSolidStar />
-                        5/5
-                      </h2>
-                      <div className="flex gap-2">
-                        <div className="agentsas--hooksas__yed--red__mini--tex__gop">
-                          <MdOutlineSms />
-                          <h4>Read reviews</h4>
-                        </div>
-                        <div className="agentsas--hooksas__yed--red__mini--tex__gop">
-                          <BsPencil />
-                          <h4>Write review</h4>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="agentsas--hooksas__yed--red">
-                  <div className="agentsas--hooksas__yed--red__mini gap-4">
-                    <img src={Imarat} alt="" />
-                    <div className="agentsas--hooksas__yed--red__mini--tex">
-                      <p>Apartment</p>
-                      <h3>The Grand Estate</h3>
-                      <h2 className="flex gap-2 mb-4">
-                        <BiSolidStar />
-                        5/5
-                      </h2>
-                      <div className="flex gap-2">
-                        <div className="agentsas--hooksas__yed--red__mini--tex__gop">
-                          <MdOutlineSms />
-                          <h4>Read reviews</h4>
-                        </div>
-                        <div className="agentsas--hooksas__yed--red__mini--tex__gop">
-                          <BsPencil />
-                          <h4>Write review</h4>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-               <div className="flex items-center flex-wrap column gap-8 mr-[134px]">
-                 <div className="agentsas--hooksas__yed--yellow">
-                <p>Apartment</p>
-                      <h3>The Grand Estate</h3>
-                      <h2 className="flex gap-2 mb-4">
-                        <BsStarHalf />
-                        4/5
-                      </h2>
-                      <h6>It’s an awesome home with a great view to a city. I would definitely recommend to rent this property</h6>
-                      <div className="agentsas--hooksas__yed--yellow__tup">
-                          <MdOutlineSms />
-                          <h4>More reviews</h4>
-                        </div>
-                </div>
-                <div className="agentsas--hooksas__yed--yellow">
-                <p>Apartment</p>
-                      <h3>The Grand Estate</h3>
-                      <h2 className="flex gap-2 mb-4">
-                        <BsStarHalf />
-                        4/5
-                      </h2>
-                      <h6>It’s an awesome home with a great view to a city. I would definitely recommend to rent this property</h6>
-                      <div className="agentsas--hooksas__yed--yellow__tup">
-                          <MdOutlineSms />
-                          <h4>More reviews</h4>
-                        </div>
-                </div>
-                <div className="agentsas--hooksas__yed--yellow">
-                <p>Apartment</p>
-                      <h3>The Grand Estate</h3>
-                      <h2 className="flex gap-2 mb-4">
-                        <BsStarHalf />
-                        4/5
-                      </h2>
-                      <h6>It’s an awesome home with a great view to a city. I would definitely recommend to rent this property</h6>
-                      <div className="agentsas--hooksas__yed--yellow__tup">
-                          <MdOutlineSms />
-                          <h4>More reviews</h4>
-                        </div>
-                </div>
-                <div className="agentsas--hooksas__yed--yellow">
-                <p>Apartment</p>
-                      <h3>The Grand Estate</h3>
-                      <h2 className="flex gap-2 mb-4">
-                        <BsStarHalf />
-                        4/5
-                      </h2>
-                      <h6>It’s an awesome home with a great view to a city. I would definitely recommend to rent this property</h6>
-                      <div className="agentsas--hooksas__yed--yellow__tup">
-                          <MdOutlineSms />
-                          <h4>More reviews</h4>
-                        </div>
-                </div>
-               </div>
-               
               </div>
             </div>
           </div>
