@@ -1,7 +1,8 @@
 #navButton {
   padding-top: 40px;
-    position: fixed;
+  position: fixed;
   width: 15%;
+
   h2 {
     color: var(--color-text, #004A60);
     font-size: 21.33px;
@@ -10,7 +11,12 @@
     font-weight: 600;
     line-height: 32px; /* 150.023% */
     padding: 4px 10px;
+    display: flex;
+    align-items: start;
 
+    img {
+      margin-left: 10px;
+    }
 
   }
 
@@ -21,14 +27,14 @@
     padding-bottom: 40px;
     margin-top: 230px;
 
-    &__logout{
+    &__logout {
       color: red !important;
-      &:hover{
+
+      &:hover {
         color: white !important;
         background: red !important;
       }
     }
-
 
 
     a {
@@ -41,7 +47,6 @@
       display: flex;
       align-items: center;
       margin: 6px 0;
-
 
 
       span {
@@ -60,17 +65,20 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+
     &__user {
       display: flex;
       padding: 4px 10px;
       margin-top: 40px;
       margin-bottom: 20px;
-    img{
-      width: 50px;
-    }
+
+      img {
+        width: 50px;
+      }
 
       &--name {
         margin-left: 10px;
+
         h4 {
           color: #004A60;
           font-size: 20px;

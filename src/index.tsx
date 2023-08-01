@@ -18,15 +18,17 @@ import LoginAdmin from "./Pages/AdminPage/LoginAdmin/LoginAdmin";
 import ForgotAdmin from "./Pages/AdminPage/ForgotAdmin/ForgotAdmin";
 import AboutUser from "./Pages/AboutUser/AboutUser";
 import AdminPage from "./Pages/AdminPage/AdminPage";
-import NavButton from "./Pages/AdminPage/NavButton/NavButton";
-import Navigate from "./Pages/AdminPage/Navigate/Navigate";
-import Agents from './Pages/Agents/Agents';
-import Reviews from './Pages/Reviews/Reviews';
-import DetailAg from './Pages/Detail.Ag/DetailAg';
 import Inbox from "./Pages/AdminPage/Inbox/Inbox";
 import Realty from "./Pages/AdminPage/Realty/Realty";
 import Payment from "./Pages/AdminPage/Payment/Payment";
 import BecomeAgent from "./Pages/BecomeAgent/BecomeAgent";
+import Reviews from "./Pages/Reviews/Reviews";
+import DetailAg from "./Pages/Detail.Ag/DetailAg";
+import Agents from "./Pages/Agents/Agents";
+import AgentsAdmin from "./Pages/AdminPage/AgentsAdmin/AgentsAdmin";
+import DetailsPage from './Pages/DetailsPage/DetailsPage';
+import AddProperty from "./Pages/AddProperty/AddProperty";
+import AskProperty from "./Pages/AskProperty/AskProperty";
 
 
 const root = ReactDOM.createRoot(
@@ -50,15 +52,19 @@ root.render(
                         <Route path="/register" element={<Register/>}/>
                         <Route path="/forgot-password" element={<ForgotPassword/>}/>
                         <Route path="/about-me" element={<AboutUser/>}/>
-                        <Route path="/agents" element={<Agents/>}/>
                         <Route path="/reviews" element={<Reviews/>}/>
                         <Route path="/detailAg" element={<DetailAg/>}/>
+                        <Route path="agents" element={<Agents/>}/>
+                        <Route path="/ask-property" element={<AskProperty/>}/>
                         <Route path="/become-agent" element={<BecomeAgent/>}/>
+                        <Route path='/details-page' element={<DetailsPage/>}/>
+                        <Route path="/add-property" element={<AddProperty/>}/>
                     </Route>
                     <Route path={"/admin"} element={<LoginAdmin/>}/>
                     <Route path={"/forgot-admin-pass"} element={<ForgotAdmin/>}/>
                     <Route path="/about-admin" element={<AdminPage/>}>
                         <Route index element={<Inbox/>}/>
+                        <Route path="/about-admin/-=" element={<AgentsAdmin/>}/>
                         <Route path="/about-admin/realty" element={<Realty/>}/>
                         <Route path="/about-admin/payment" element={<Payment/>}/>
                     </Route>

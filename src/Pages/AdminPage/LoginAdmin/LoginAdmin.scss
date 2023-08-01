@@ -12,7 +12,12 @@
       font-weight: 700;
       line-height: normal;
       text-align: start;
+      display: flex;
+      align-items: start;
 
+      img {
+        margin-left: 10px;
+      }
     }
 
     &--form {
@@ -26,11 +31,11 @@
       background: #FFF;
       width: 40%;
 
-      form{
-        width: 80%;
+      form {
+        width: 100%;
         padding: 0 10%;
 
-        h1{
+        h1 {
           text-align: center;
         }
       }
@@ -39,14 +44,13 @@
         ::placeholder {
           color: red;
         }
-        width: 100%;
+
         input {
           border-radius: 11px;
           border: 1px solid red;
           padding: 15px 20px;
           margin: 8px 0;
           font-size: 18px;
-          width: 93%;
         }
       }
 
@@ -54,31 +58,32 @@
         ::placeholder {
           color: red;
         }
-        width: 100%;
+
         input {
           border-radius: 11px;
           border: 1px solid red;
           padding: 15px 20px;
           margin: 12px 0;
           font-size: 18px;
-          width: 93%;
         }
       }
 
       ul {
         ::placeholder {
           color: rgba(0, 74, 96, 0.54);
-        };
+        }
+      ;
         display: flex;
         flex-direction: column;
         align-items: start;
         width: 100%;
         position: relative;
         margin: 10px 0;
-        div{
+
+        div {
           font-size: 20px;
           position: absolute;
-          top: 23px;
+          top: 28px;
           right: 20px;
           cursor: pointer;
         }
@@ -89,8 +94,9 @@
           padding: 15px 20px;
           margin: 8px 0;
           font-size: 18px;
-          width: 90%;
+          width: 100%;
         }
+
         h5 {
           color: red;
           font-weight: lighter;
@@ -128,9 +134,12 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        padding: 12px 43%;
+        padding: 12px 42%;
         margin: 14px 0;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       &__withGoogle {
@@ -160,50 +169,128 @@
   }
 }
 
-
-@media (max-width: 576px) {
-  #loginAdmin{
-    .loginAdmin{
-      h1{
-        font-size: 25px;
-        img{
-          width: 7%;
+@media (max-width: 1440px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        button {
+          padding: 12px 41%;
         }
-
       }
     }
   }
 }
 
-@media (max-width: 450px) {
-  #loginAdmin{
-    .loginAdmin{
-      &--form{
-        align-items: center;
-        padding: 18px;
+@media (max-width: 1200px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        width: 50%;
+      }
+    }
+  }
+}
 
 
-        &__withGoogle{
-          font-size: 18px;
-          width: 90%;
+@media (max-width: 1024px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        button {
+          padding: 12px 39%;
         }
-        button{
-          display: flex;
-          align-items: center;
-          justify-content: center;
+      }
+    }
+  }
+}
 
-          font-size: 18px;
-          width: 80%;
+
+@media (max-width: 992px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        width: 58%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        width: 65%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        width: 82%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        width: 90%;
+
+        form {
+          padding: 0 5%;
         }
+      }
+    }
+  }
+}
 
-        p{
-          text-align: center;
+
+@media (max-width: 500px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 414px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        form {
+          padding: 0;
         }
+      }
+    }
+  }
+}
 
-        ul{
-          input{
-            width: 88%;
-          }
+
+@media (max-width: 375px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        padding: 26px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #loginAdmin {
+    .loginAdmin {
+      &--form {
+        button {
+          padding: 12px 37%;
         }
       }
     }

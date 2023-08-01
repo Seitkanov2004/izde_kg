@@ -12,7 +12,11 @@
       font-weight: 700;
       line-height: normal;
       text-align: start;
-
+      display: flex;
+      align-items: start;
+      img{
+        margin-left: 10px;
+      }
     }
 
     &--form {
@@ -27,7 +31,7 @@
       width: 40%;
 
       form{
-        width: 80%;
+        width: 100%;
         padding: 0 10%;
 
         h1{
@@ -39,14 +43,12 @@
         ::placeholder {
           color: red;
         }
-        width: 100%;
         input {
           border-radius: 11px;
           border: 1px solid red;
           padding: 15px 20px;
           margin: 8px 0;
           font-size: 18px;
-          width: 93%;
         }
       }
 
@@ -54,14 +56,12 @@
         ::placeholder {
           color: red;
         }
-        width: 100%;
         input {
           border-radius: 11px;
           border: 1px solid red;
           padding: 15px 20px;
           margin: 8px 0;
           font-size: 18px;
-          width: 93%;
         }
       }
 
@@ -77,7 +77,7 @@
         div{
           font-size: 20px;
           position: absolute;
-          top: 23px;
+          top: 28px;
           right: 20px;
           cursor: pointer;
         }
@@ -88,7 +88,7 @@
           padding: 15px 20px;
           margin: 12px 0;
           font-size: 18px;
-          width: 90%;
+          width: 100%;
         }
         h5 {
           color: red;
@@ -159,50 +159,128 @@
   }
 }
 
-
-@media (max-width: 576px) {
-  #forgotAdmin{
-    .forgotAdmin{
-      h1{
-        font-size: 25px;
-        img{
-          width: 7%;
+@media (max-width: 1440px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        button {
+          padding: 12px 41%;
         }
-
       }
     }
   }
 }
 
-@media (max-width: 450px) {
-  #forgotAdmin{
-    .forgotAdmin{
-      &--form{
-        align-items: center;
-        padding: 18px;
+@media (max-width: 1200px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 50%;
+      }
+    }
+  }
+}
 
 
-        &__withGoogle{
-          font-size: 18px;
-          width: 90%;
+@media (max-width: 1024px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        button {
+          padding: 12px 39%;
         }
-        button{
-          display: flex;
-          align-items: center;
-          justify-content: center;
+      }
+    }
+  }
+}
 
-          font-size: 18px;
-          width: 80%;
+
+@media (max-width: 992px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 58%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 65%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 82%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 90%;
+
+        form {
+          padding: 0 5%;
         }
+      }
+    }
+  }
+}
 
-        p{
-          text-align: center;
+
+@media (max-width: 500px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 414px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        form {
+          padding: 0;
         }
+      }
+    }
+  }
+}
 
-        ul{
-          input{
-            width: 88%;
-          }
+
+@media (max-width: 375px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        padding: 26px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #forgotAdmin {
+    .forgotAdmin {
+      &--form {
+        button {
+          padding: 12px 37%;
         }
       }
     }

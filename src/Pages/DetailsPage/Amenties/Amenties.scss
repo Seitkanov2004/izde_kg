@@ -1,0 +1,111 @@
+#Amenties {
+    .Amenties {
+        display: flex;
+        flex-direction: column;
+
+        &--amentiesBlocks {
+            display: flex;
+            justify-content: space-between;
+
+            .block {
+                h1 {
+                    color: #004A60;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                }
+
+                .amenityBlock {
+                    display: grid;
+                    grid-template-columns: repeat(3, 3fr);
+
+                    .amenity {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        margin: 15px 60px 15px 0;
+
+                        .amenityIcons {
+                            font-size: 24px;
+                        }
+
+                        p {
+                            color: #004A60;
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            .Owner {
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+
+                h2 {
+                    color: #004A60;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                a {
+                    color: var(--color-main, #1B76F9);
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-decoration-line: underline;
+                }
+
+                button {
+                    width: 263px;
+                    height: 40px;
+                    border-radius: 8px;
+                    border: 2px solid rgba(0, 74, 96, 0.38);
+                    background: #FFF;
+                    color: #004A60;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                button:hover {
+                    background: #0762E5;
+                    color: #FFF;
+                }
+            }
+        }
+        &--RoulesBlock {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+            h2 {
+                color: #004A60;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 20px 0;
+            }
+
+            .roules {
+                display: flex;
+
+                .rules {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    margin-right: 50px;
+
+                    .roulesIcons {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        color: #004A60;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

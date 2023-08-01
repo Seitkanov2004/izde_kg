@@ -18,8 +18,8 @@ const SuperAgents = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 4000,
+        autoplaySpeed: 4000,
         cssEase: "linear"
     };
 
@@ -37,7 +37,7 @@ const SuperAgents = () => {
                                 <div className="medalFill">
                                     <RiMedalFill className='medal'/>
                                 </div>
-                                <img src={AgentOwn} alt="agent"/>
+                                <img className='agen' src={AgentOwn} alt="agent"/>
                             </div>
                             <div className="agent">
                                 <div className="medalFill">
