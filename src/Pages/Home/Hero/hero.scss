@@ -1,5 +1,6 @@
 #Hero {
   padding: 144px 0 0 0;
+
   .Hero {
     background: url("./../../../img/Image.png") no-repeat center/cover;
     height: 400px;
@@ -50,6 +51,7 @@
         &--options {
           display: flex;
           gap: 8px;
+
           .type {
             display: flex;
             padding: 10px 10px 10px 16px;
@@ -65,6 +67,7 @@
             outline: none;
             cursor: pointer;
           }
+
           .roomPrice {
             display: flex;
             padding: 10px 10px 10px 16px;
@@ -142,23 +145,38 @@
   #Hero {
     .Hero {
       &--block {
-        zoom: 99%;
         display: flex;
         flex-wrap: wrap-reverse;
+
         &__filter {
+          width: 100%;
           &--rentOrBuy {
             .rentBuy {
-              padding: 8px 143px;
+              padding: 8px 0;
+              width: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
             }
           }
+
           &--options {
             display: flex;
             flex-wrap: wrap;
+
             .type {
-              padding: 10px 492px 10px 16px;
+             padding: 10px 0;
+             width: 100%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
             }
+
             .roomPrice {
-              padding: 10px 233px 10px 16px;
+              padding: 10px 0;
+              width: 49.3%;
+              justify-content: center;
+              align-self: center;
             }
           }
         }
@@ -167,241 +185,52 @@
   }
 }
 
-
-@media (max-width: 850px) {
-  #Hero {
-    .Hero {
-      &--block {
-    
-        &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 141px;
-            }
-          }
-          &--options {
-            display: flex;
-            flex-wrap: wrap;
-            .type {
-              padding: 10px 482px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 228px 10px 16px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 840px) {
+@media(max-width: 768px) {
   #Hero {
     .Hero {
       &--block {
         &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 140px;
-            }
-          }
-          &--options {
-            display: flex;
-            flex-wrap: wrap;
-            .type {
-              padding: 10px 480px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 227px 10px 16px;
-            }
+           &--options {
+          .roomPrice {
+             width: 49.1%;
           }
         }
+        }
+       
       }
     }
   }
 }
 
-@media (max-width: 835px) {
-  #Hero {
-    .Hero {
-      &--block {
-      
-        &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 136.5px;
-            }
-          }
-          &--options {
-            display: flex;
-            flex-wrap: wrap;
-            .type {
-              padding: 10px 465px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 219.5px 10px 16px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 830px) {
+@media(max-width: 665px) {
   #Hero {
     .Hero {
       &--block {
         &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 136.5px;
-            }
-          }
-          &--options {
-            display: flex;
-            flex-wrap: wrap;
-            .type {
-              padding: 10px 465px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 219.5px 10px 16px;
-            }
+           &--options {
+          .roomPrice {
+             width: 49.1%;
           }
         }
+        }
+       
       }
     }
   }
 }
 
-@media (max-width: 820px) {
+@media(max-width: 609px) {
   #Hero {
     .Hero {
       &--block {
         &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 134.5px;
-            }
-          }
-          &--options {
-            display: flex;
-            flex-wrap: wrap;
-            .type {
-              padding: 10px 457px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 215.5px 10px 16px;
-            }
+           &--options {
+          .roomPrice {
+             width: 49%;
           }
         }
-      }
-    }
-  }
-}
-
-@media (max-width: 810px) {
-  #Hero {
-    .Hero {
-      &--block {
-        &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 132.5px;
-            }
-          }
-          &--options {
-            display: flex;
-            flex-wrap: wrap;
-            .type {
-              padding: 10px 449px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 211.5px 10px 16px;
-            }
-          }
         }
-      }
-    }
-  }
-}
-
-@media (max-width: 800px) {
-  .hero {
-    .hero {
-      &--block {
-        &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 132.5px;
-            }
-          }
-          &--options {
-            display: flex;
-            flex-wrap: wrap;
-            .type {
-              padding: 10px 449px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 211.5px 10px 16px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 790px) {
-  .hero {
-    .hero {
-      &--block {
-        &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 130.5px;
-            }
-          }
-          &--options {
-            display: flex;
-            flex-wrap: wrap;
-            .type {
-              padding: 10px 442px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 211.5px 10px 16px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  #Hero {
-    .Hero {
-      &--block {
-        zoom: 87%;
-        display: flex;
-        flex-wrap: wrap-reverse;
-        &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 122px;
-            }
-          }
-          &--options {
-            display: flex;
-            flex-wrap: wrap;
-            .type {
-              padding: 10px 420px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 194px 10px 16px;
-            }
-          }
-        }
+       
       }
     }
   }
@@ -411,31 +240,19 @@
 @media (max-width: 576px) {
   #Hero {
     background: url("./../../../img/Image (1).png") no-repeat center/cover;
+
     .Hero {
       background: none;
       margin: 0;
+
       h1 {
         font-size: 42.7px;
-        padding-top: 50px;
-        padding-bottom: 155px;
+        padding-top: 38px;
+        padding-bottom: 87px;
       }
       &--block {
-        &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 87px;
-            }
-          }
-          &--options {
-            .type {
-              padding: 10px 278px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 124px 10px 16px;
-            }
-          }
-        }
-        &__field {
+        width: 100%;
+        &__field  {
           padding: 10px;
         }
       }
@@ -443,68 +260,103 @@
   }
 }
 
+@media(max-width: 554px) {
+  #Hero {
+    .Hero {
+      &--block {
+        &__filter {
+           &--options {
+          .roomPrice {
+             width: 48.9%;
+          }
+        }
+        }
+       
+      }
+    }
+  }
+}
+
+
+
+@media(max-width: 508px) {
+  #Hero {
+    .Hero {
+      &--block {
+        &__filter {
+           &--options {
+          .roomPrice {
+             width: 48.8%;
+          }
+        }
+        }
+       
+      }
+    }
+  }
+}
 
 @media (max-width: 480px) {
   #Hero {
     .Hero {
       h1 {
-        font-size: 29.7px;
-        padding-top: 92px;
-        padding-bottom: 120px;
+        font-size: 41.7px;
       }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  #Hero {
+    .Hero {
+      h1 {
+        font-size: 40.7px;
+      }
+    }
+  }
+}
+
+@media(max-width: 425px) {
+  #Hero {
+    .Hero {
       &--block {
         &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 69px;
-            }
-          }
-          &--options {
-            .type {
-              padding: 10px 207px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 88px 10px 16px;
-            }
+           &--options {
+          .roomPrice {
+             width: 48.7%;
           }
         }
-        &__field {
-          padding: 10px;
         }
+       
       }
     }
   }
 }
 
 
-@media (max-width: 414px) {
+@media (max-width: 416px) {
   #Hero {
     .Hero {
       h1 {
-        font-size: 29.7px;
-        padding-top: 91px;
-        padding-bottom: 118px;
+        font-size: 35.7px;
+        padding-top: 44px;
+
       }
+
       &--block {
         &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 57px;
-            }
-          }
           &--options {
-            .type {
-              padding: 10px 160px 10px 16px;
-            }
             .roomPrice {
-              padding: 10px 64px 10px 16px;
+              width: 48.7%;
             }
           }
         }
+
         &__field {
           .search {
             font-size: 14px;
           }
+
           .btnSearch {
             padding: 10px;
           }
@@ -514,39 +366,106 @@
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 396px) {
+  #Hero {
+    .Hero {
+      &--block {
+        &__filter {
+          &--options {
+            .roomPrice {
+              width: 48.6%;
+            }
+          }
+        }
+
+        &__field {
+          .search {
+            font-size: 14px;
+          }
+
+          .btnSearch {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 372px) {
   #Hero {
     .Hero {
       h1 {
-        font-size: 27.7px;
-        padding-top: 99px;
-        padding-bottom: 114px;
+        font-size: 35.7px;
+        padding-top: 54px;
+
       }
       &--block {
         &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 49px;
-            }
-          }
           &--options {
-            .type {
-              padding: 10px 125px 10px 16px;
-            }
             .roomPrice {
-              padding: 10px 47px 10px 16px;
+              width: 48.5%;
             }
           }
         }
-        &__field {
-          padding: 9px;
-          .search {
-            margin-left: 5px;
-          }
-          .btnSearch {
 
+        &__field {
+          .search {
+            font-size: 14px;
+          }
+
+          .btnSearch {
+            padding: 10px;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 351px) {
+  #Hero {
+    .Hero {
+      h1 {
+        font-size: 30.7px;
+        padding-top: 66px;
+
+      }
+      &--block {
+        &__filter {
+          &--options {
+            .roomPrice {
+              width: 48.4%;
+            }
+          }
+        }
+
+        &__field {
+          .search {
+            font-size: 14px;
+          }
+
+          .btnSearch {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 333px) {
+  #Hero {
+    .Hero {
+      &--block {
+        &__filter {
+           &--options {
+          .roomPrice {
+             width: 48.3%;
+          }
+        }
+        }
+       
       }
     }
   }
@@ -556,32 +475,19 @@
   #Hero {
     .Hero {
       h1 {
-        font-size: 27.7px;
-        padding-top: 99px;
-        padding-bottom: 114px;
+        padding-top: 67px;
       }
+
       &--block {
-        &__filter {
-          &--rentOrBuy {
-            .rentBuy {
-              padding: 8px 41px;
-            }
-          }
-          &--options {
-            .type {
-              padding: 10px 94px 10px 16px;
-            }
-            .roomPrice {
-              padding: 10px 31px 10px 16px;
-            }
-          }
-        }
+
         &__field {
           padding: 9px;
+
           .search {
             margin-left: 5px;
             font-size: 12.5px;
           }
+
           .btnSearch {
             font-size: 13px;
           }
