@@ -1,4 +1,4 @@
-import React, {useCallback, useRef, useState} from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import "./Addproperty.scss"
 import {BiLogoBaidu, BiSolidImageAlt} from "react-icons/bi";
 import {LuMicrowave, LuParkingSquare} from "react-icons/lu";
@@ -14,6 +14,10 @@ import {CgGym} from "react-icons/cg";
 import img from "./../../img/ad.svg"
 import AddMap, {MODES} from "./Map/addMap";
 import {useJsApiLoader} from "@react-google-maps/api";
+import {useAppDispatch} from "../../Hooks/useAppDispatch";
+import usePlacesAutocomplete, {getGeocode, getLatLng} from "use-places-autocomplete";
+import useOnclickOutside from "react-cool-onclickoutside";
+import {addCenter} from "../../store/Reducers/MapSlice";
 
 
 const AddProperty = () => {
@@ -63,6 +67,61 @@ const AddProperty = () => {
             }
             console.log(mode)
         }, [mode])
+
+
+        ///////////////////////////////////////////
+        const dispatch = useAppDispatch()
+
+        const mapRef = useRef<any>(undefined)
+
+
+        const {
+            ready,
+            value,
+            suggestions: {status, data},
+            setValue,
+            init,
+            clearSuggestions,
+        } = usePlacesAutocomplete({
+            initOnMount: false,
+            debounce: 300,
+        });
+
+
+        const ref = useOnclickOutside(() => {
+            clearSuggestions();
+        });
+
+        const handleSelect = ({description}: any) => () => {
+            setValue(description, false);
+            clearSuggestions();
+            console.log(description)
+            getGeocode({address: description}).then((results) => {
+                const {lat, lng} = getLatLng(results[0]);
+                dispatch(addCenter({lat, lng}))
+                console.log({lat, lng})
+            });
+        };
+
+        const renderSuggestions = () =>
+            data.map((suggestion) => {
+                const {
+                    place_id,
+                    structured_formatting: {main_text, secondary_text},
+                } = suggestion;
+
+                return (
+                    <li key={place_id} onClick={handleSelect(suggestion)}>
+                        <strong>{main_text}</strong> <small>{secondary_text}</small>
+                    </li>
+                );
+            });
+
+        useEffect(() => {
+            if (isLoaded) {
+                init()
+            }
+        }, [isLoaded, init])
 
 
         return (
@@ -156,9 +215,21 @@ const AddProperty = () => {
                                         <input type="button" value="📍No"/>
                                     </div>
                                 </label>
-                                <label>
+                                <label ref={ref}>
                                     <span>Location: </span>
-                                    <input type="text"/>
+                                    <div>
+                                        <div>
+                                            <input
+                                                value={value}
+                                                onChange={(e) => setValue(e.target.value)}
+                                                disabled={!ready}
+                                                placeholder="Where your location?"
+                                            />
+                                            {status === "OK" && <ul>{renderSuggestions()}</ul>}
+                                        </div>
+                                        <a href="#addMap" onClick={toggleMode} className="choosePlace">Choose place 📍
+                                        </a>
+                                    </div>
                                 </label>
                                 <label>
                                     <span>Square: </span>
@@ -258,14 +329,12 @@ const AddProperty = () => {
                             </div>
                         </div>
                         <button className="addProperty--send">Send to admin</button>
-                        <div className="addProperty--location">
-                            <button onClick={toggleMode} className="addProperty--location__btn">Choose place 📍</button>
-                            {
-                                isLoaded ? <AddMap isLoaded={isLoaded} mode={mode} setMode={setMode}/> : <h2>Loading</h2>
-                            }
-                        </div>
-
                     </div>
+                </div>
+                <div className="addProperty--location">
+                    {
+                        isLoaded ? <AddMap isLoaded={isLoaded} mode={mode} setMode={setMode}/> : <h2>Loading</h2>
+                    }
                 </div>
             </div>
         );

@@ -16,12 +16,12 @@
       position: relative;
       &__btn{
         position: absolute;
-        top: 62px;
-        right: 15px;
+        top: 20px;
+        right: 5%;
         z-index: 10;
         border-radius: 6px;
         border: none;
-        background: #02328c;
+        background: #1B76F7;
         padding: 12px 30px;
         color: #FFFFFF;
         font-size: 20px;
@@ -106,6 +106,15 @@
         display: flex;
         flex-direction: column;
         align-items: start;
+        position: relative;
+
+        .choosePlace{
+          background: #1B76F7;
+          border-radius: 10px ;
+          padding: 10px 20px;
+          border:none;
+          color: #fff;
+        }
 
         span {
           color: #004A60;
@@ -128,6 +137,25 @@
           border: 1px solid #AFC6CD;
           background: rgba(0, 74, 96, 0.00);
           width: 234px;
+        }
+
+        ul{
+          position: absolute;
+          background: #fff;
+          z-index: 10;
+          top: 82px;
+          border-radius: 0 0 6px 6px;
+          border: 1px solid #AFC6CD;
+          width: 233px;
+          overflow: hidden;
+          li{
+            padding: 6px 20px;
+            cursor: pointer;
+            border-bottom: 1px solid #AFC6CD ;
+            width: 100%;
+            overflow: hidden;
+
+          }
         }
 
         div {
