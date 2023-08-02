@@ -10,8 +10,8 @@
         flex-direction: column;
         margin-top: 70px;
       &__end {
-        width: 270px;
-        height: 320px;
+        width: 316px;
+        height: 373px;
         display: flex;
         padding: 24px;
         flex-direction: column;
@@ -25,11 +25,14 @@
           color: var(--color-text, #004a60);
           text-align: center;
           font-family: Poppins;
-          font-size: 21.33px;
+          font-size: 26px;
           font-style: normal;
           font-weight: 300;
           line-height: normal;
           text-transform: uppercase;
+        }
+        img{
+          width: 243px;
         }
       }
       &__all {
@@ -40,20 +43,20 @@
         gap: 20px;
         border-radius: 16px;
         border: 1px solid rgba(0, 74, 96, 0.5);
-        width: 270px;
-        height: 248px;
+        width: 315px;
+        height: 299px;
         p {
           color: var(--color-text, #004a60);
           text-align: center;
           font-family: Poppins;
-          font-size: 21.33px;
+          font-size: 25px;
           font-style: normal;
           font-weight: 300;
           line-height: normal;
           text-transform: uppercase;
-          width: 222px;
+          width: 263px;
           height: 32px;
-          margin-bottom: 20px;
+          margin-bottom: 35px;
         }
         &--calls {
           display: flex;
@@ -61,8 +64,8 @@
           align-self: stretch;
           border-radius: 8px;
           border: 1px solid rgba(0, 74, 96, 0.5);
-          width: 222px;
-          height: 56px;
+          width: 256px;
+          height: 64px;
           .active {
             display: flex;
             align-items: flex-start;
@@ -73,7 +76,7 @@
             gap: 10px;
             color: rgba(0, 74, 96, 0.7);
             font-family: Poppins;
-            font-size: 16px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -86,8 +89,8 @@
           align-self: stretch;
           border-radius: 8px;
           border: 1px solid rgba(0, 74, 96, 0.5);
-          width: 222px;
-          height: 56px;
+          width: 256px;
+          height: 64px;
           .active {
             display: flex;
             align-items: flex-start;
@@ -98,7 +101,7 @@
             gap: 10px;
             color: rgba(0, 74, 96, 0.7);
             font-family: Poppins;
-            font-size: 16px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -126,7 +129,7 @@
       h1 {
         color: var(--color-text, #004a60);
         font-family: Poppins;
-        font-size: 21.33px;
+        font-size: 26px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -136,7 +139,7 @@
       p {
         color: #004a60;
         font-family: Poppins;
-        font-size: 16px;
+        font-size: 21px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -152,15 +155,18 @@
         align-items: flex-start;
         gap: 40px;
         margin-bottom: 32px;
+        img{
+          width: 300px;
+        }
         &--info {
           display: flex;
           align-items: flex-start;
           flex-direction: column;
-          gap: 16px;
+          gap: 23px;
           h2 {
             color: var(--color-text, #004a60);
             font-family: Poppins;
-            font-size: 28.43px;
+            font-size: 33px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -170,7 +176,7 @@
             text-align: center;
             /* Text/XS */
             font-family: Poppins;
-            font-size: 16px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
@@ -180,11 +186,11 @@
             padding: 8px 16px;
             align-items: center;
             gap: 8px;
-            border-radius: 16px;
+            border-radius: 25px;
             background: var(--color-main, #1b76f9);
             color: var(--color-bg, #fff);
             font-family: Poppins;
-            font-size: 12.8px;
+            font-size: 18px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -200,7 +206,7 @@
           p {
             color: #004a60;
             font-family: Poppins;
-            font-size: 16px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
