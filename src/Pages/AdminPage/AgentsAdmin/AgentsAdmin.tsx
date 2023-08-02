@@ -21,7 +21,7 @@ const AgentsAdmin = () => {
                 <NavLink to="/about-admin" onClick={() => setOpenMore(false)}><LuEdit/><span>Dicline</span></NavLink>
             </div>
             <div className="adminAgent">
-                <div className="adminAgent--block">
+                <NavLink to="/about-admin/resume" className="adminAgent--block">
                     <div className="adminAgent--block__user">
                         <img src={awaAdmin} alt=""/>
                         <h3>Eleanor Pane</h3>
@@ -31,7 +31,7 @@ const AgentsAdmin = () => {
                         <h4>Sat 17 June </h4>
                         <h5>12:00 PM </h5>
                     </div>
-                </div>
+                </NavLink>
             </div>
         </div>
     );
