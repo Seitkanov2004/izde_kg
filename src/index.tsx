@@ -29,6 +29,7 @@ import AgentsAdmin from "./Pages/AdminPage/AgentsAdmin/AgentsAdmin";
 import DetailsPage from './Pages/DetailsPage/DetailsPage';
 import AddProperty from "./Pages/AddProperty/AddProperty";
 import AskProperty from "./Pages/AskProperty/AskProperty";
+import Resume from "./Pages/AdminPage/AgentsAdmin/Resume/Resume";
 
 
 const root = ReactDOM.createRoot(
@@ -64,9 +65,10 @@ root.render(
                     <Route path={"/forgot-admin-pass"} element={<ForgotAdmin/>}/>
                     <Route path="/about-admin" element={<AdminPage/>}>
                         <Route index element={<Inbox/>}/>
-                        <Route path="/about-admin/-=" element={<AgentsAdmin/>}/>
                         <Route path="/about-admin/realty" element={<Realty/>}/>
                         <Route path="/about-admin/payment" element={<Payment/>}/>
+                        <Route path="/about-admin/agents" element={<AgentsAdmin/>}/>
+                        <Route path="/about-admin/resume" element={<Resume/>}/>
                     </Route>
                 </Routes>
             </GoogleOAuthProvider>
