@@ -8,6 +8,8 @@
   padding-top: 80px;
   .personsas {
     position: relative;
+  padding-top: 80px;
+  .personsas {
     h1 {
       // color: var(--color-bg, #fff);
       color: white;
@@ -53,6 +55,7 @@
           border: 1px solid rgba(0, 74, 96, 0.5);
           width: 501px;
           height: 335px;
+
           margin: -40px 1px 39px 1px;x
           &__tup {
             display: flex;
@@ -63,7 +66,9 @@
             border-radius: 8px;
             border: 1px solid rgba(0, 74, 96, 0.5);
             margin-top: 25px;
+
             background: black;
+
           }
           p {
             color: #004a60;

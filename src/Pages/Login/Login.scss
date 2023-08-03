@@ -15,6 +15,8 @@
       font-weight: 700;
       line-height: normal;
       margin: 50px 0;
+      display: flex;
+      align-items: start;
 
       span {
         margin-left: 10px;
@@ -35,14 +37,15 @@
         ::placeholder {
           color: red;
         }
-        width: 100%;
+
+        //width: 100%;
         input {
           border-radius: 11px;
           border: 1px solid red;
           padding: 15px 20px;
           margin: 8px 0;
           font-size: 18px;
-          width: 93%;
+          //width: 93%;
         }
       }
 
@@ -50,30 +53,34 @@
         ::placeholder {
           color: red;
         }
+
         width: 100%;
+
         input {
           border-radius: 11px;
           border: 1px solid red;
           padding: 15px 20px;
           margin: 8px 0;
           font-size: 18px;
-          width: 93%;
+          //width: 100%;
         }
       }
 
       ul {
         ::placeholder {
           color: rgba(0, 74, 96, 0.54);
-        };
+        }
+      ;
         display: flex;
         flex-direction: column;
         align-items: start;
         width: 100%;
         position: relative;
-        div{
+
+        div {
           font-size: 20px;
           position: absolute;
-          top: 23px;
+          top: 28px;
           right: 20px;
           cursor: pointer;
         }
@@ -84,8 +91,9 @@
           padding: 15px 20px;
           margin: 8px 0;
           font-size: 18px;
-          width: 93%;
+          width: 100%;
         }
+
         h5 {
           color: red;
           font-weight: lighter;
@@ -156,32 +164,34 @@
 
 
 @media (max-width: 576px) {
-    #login{
-      .login{
-        h1{
-          font-size: 25px;
-          img{
-            width: 7%;
-          }
+  #login {
+    .login {
+      h1 {
+        font-size: 25px;
 
+        img {
+          width: 7%;
         }
+
       }
     }
+  }
 }
 
 @media (max-width: 450px) {
-  #login{
-    .login{
-      &--form{
+  #login {
+    .login {
+      &--form {
         align-items: center;
         padding: 18px;
 
 
-        &__withGoogle{
+        &__withGoogle {
           font-size: 18px;
-          width: 90%;
+          width: 100%;
         }
-        button{
+
+        button {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -190,15 +200,21 @@
           width: 80%;
         }
 
-        p{
+        p {
           text-align: center;
         }
 
-        ul{
-          input{
-            width: 88%;
-          }
-        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
+  #login {
+    .login {
+      h1 {
+        font-size: 18px;
       }
     }
   }

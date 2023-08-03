@@ -1,0 +1,453 @@
+#askPreHero {
+  background: url("./../../../img/ask-property.png") no-repeat center/cover;
+  min-height: 55vh;
+
+  .askPreModal {
+    top: 200px;
+    left: 30%;
+    position: fixed;
+    border-radius: 32px;
+    background: #FFF;
+    width: 678px;
+    height: auto;
+    padding: 58px 37px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      color: #004A60;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-align: center;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 15px 0;
+
+      button {
+        border-radius: 11px;
+        border: 1px solid rgba(0, 74, 96, 0.46);
+        padding: 12px 100px;
+
+        &:hover {
+          background: #1B76F7;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin: 12px 0 12px 6%;
+
+      .parentInt {
+        width: 94%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .input1 {
+          width: 65%;
+        }
+
+        .input2 {
+          width: 25%;
+        }
+      }
+
+      span {
+        color: #004A60;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      input {
+        border-radius: 8px;
+        background: rgba(0, 74, 96, 0.10);
+        width: 94%;
+        color: rgba(0, 74, 96, 0.70);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  .askPrebg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.27);
+    backdrop-filter: blur(5px);
+  }
+
+  .pay {
+    &--check {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 350px;
+      left: 36%;
+
+      &__icon {
+        color: white;
+        font-size: 60px;
+      }
+
+      h3 {
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 36px 40px;
+        border-radius: 8px;
+        background: #004A60;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .askPreHero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    position: relative;
+
+    h1 {
+      color: #FFF;
+      text-align: center;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      width: 30%;
+      margin-top: 180px;
+    }
+
+    button {
+      color: #FFF;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border-radius: 11px;
+      border: 1px solid #0762E5;
+      background: #1B76F9;
+      padding: 12px 105px;
+      position: absolute;
+      top: 129%;
+      left: 40%;
+    }
+  }
+}
+
+
+@media (max-width: 1440px) {
+  #askPreHero {
+    min-height: 40vh;
+
+    .askPreHero {
+      button {
+        top: 120%;
+        left: 37%;
+      }
+
+      h1 {
+        width: 38%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #askPreHero {
+    min-height: 40vh;
+
+    .pay{
+      &--check{
+        top: 320px;
+        left: 31%;
+      }
+    }
+
+    .askPreModal {
+      left: 22%;
+      width: 60%;
+    }
+
+    .askPreHero {
+      button {
+        top: 136%;
+        left: 34%;
+      }
+
+      h1 {
+        width: 45%;
+        font-size: 46px;
+        line-height: 52px;
+        margin-top: 124px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #askPreHero {
+    min-height: 36vh;
+
+    .pay{
+      &--check{
+        top: 320px;
+        left: 28%;
+      }
+    }
+
+    .askPreModal {
+      div {
+        button {
+          padding: 12px 76px;
+        }
+      }
+    }
+
+    .askPreHero {
+      button {
+        left: 31.8%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #askPreHero {
+    min-height: 48vh;
+
+    .pay{
+      &--check{
+        top: 320px;
+        left: 27%;
+      }
+    }
+
+    .askPreHero {
+      button {
+        left: 28%;
+      }
+
+      h1 {
+        width: 55%;
+        font-size: 46px;
+        line-height: 52px;
+        margin-top: 124px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  #askPreHero {
+
+    .pay{
+      &--check{
+        top: 305px;
+        left: 19%;
+      }
+    }
+    .askPreModal {
+      //height: 552px;
+      left: 16%;
+      width: 70%;
+
+      &--pay {
+        flex-wrap: wrap;
+      }
+
+      div {
+        flex-wrap: wrap;
+
+        button {
+          width: 90%;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    .askPreHero {
+      h1 {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #askPreHero {
+
+    .pay{
+      &--check{
+        top: 296px;
+        left: 16%;
+        h3{
+          font-size: 20px;
+        }
+      }
+    }
+
+    .askPreModal {
+      left: 11%;
+      top: 150px;
+      width: 80%;
+
+      &--pay {
+        img {
+          margin: 5px;
+        }
+      }
+    }
+
+    .askPreHero {
+      button {
+        left: 19%;
+      }
+
+      h1 {
+        width: 60%;
+        font-size: 37px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  #askPreHero {
+
+    .pay{
+      &--check{
+        top: 296px;
+        left: 14%;
+      }
+    }
+    .askPreHero {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #askPreHero {
+
+    .pay{
+      &--check{
+        h3{
+          font-size: 17px;
+        }
+      }
+    }
+
+    .askPreModal {
+      padding: 30px;
+      top: 125px;
+      h3 {
+        font-size: 20px;
+      }
+    }
+
+    .askPreHero {
+      button {
+        left: 11%;
+        padding: 12px 96px;
+      }
+
+      h1 {
+        width: 100%;
+        font-size: 37px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #askPreHero{
+    .pay{
+      &--check{
+        left: 14%;
+        h3{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #askPreHero {
+
+    .pay{
+      &--check{
+        h3{
+          padding: 20px 14px;
+        }
+      }
+    }
+      .askPreModal {
+        padding: 10px;
+      }
+
+    .askPreHero {
+      button {
+        left: 7%;
+        padding: 12px 24%;
+      }
+
+      h1 {
+        width: 100%;
+        font-size: 37px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+  #askPreHero {
+
+    .pay{
+      &--ckeck{
+        left: 6%;
+      }
+    }
+    .askPreHero {
+      button {
+        left: 7%;
+        padding: 12px 24%;
+      }
+
+      h1 {
+        width: 100%;
+        font-size: 32px;
+      }
+    }
+  }
+}

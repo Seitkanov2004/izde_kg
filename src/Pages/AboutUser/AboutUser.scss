@@ -1,34 +1,35 @@
-#aboutUser{
-  .aboutUser{
+#aboutUser {
+  .aboutUser {
     width: 80%;
     margin: 0 auto;
-    &--user{
+
+    &--user {
       display: flex;
       align-items: start;
       justify-content: space-between;
       padding-top: 120px;
-      &__name{
+
+      &__name {
         width: 70%;
         border-bottom: 1px solid rgba(0, 74, 96, 0.50);
 
+        a {
+          color: var(--color-main, #1B76F9);
+          font-size: 21.33px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-decoration-line: underline;
+          display: flex;
+          align-items: start;
+          margin: 10px 0;
 
+          .edit-icon {
+            font-size: 31px;
+          }
+        }
 
-       a{
-         color: var(--color-main, #1B76F9);
-         font-size: 21.33px;
-         font-style: normal;
-         font-weight: 500;
-         line-height: normal;
-         text-decoration-line: underline;
-         display: flex;
-         align-items: start;
-         margin: 10px 0;
-         .edit-icon{
-           font-size: 31px;
-         }
-       }
-
-        h2{
+        h2 {
           color: var(--color-text, #004A60);
           font-size: 28.43px;
           font-style: normal;
@@ -37,7 +38,7 @@
           padding: 10px 0;
         }
 
-        div{
+        div {
           display: flex;
           align-items: start;
           color: var(--color-text, #004A60);
@@ -47,7 +48,7 @@
           line-height: normal;
           padding-bottom: 40px;
 
-          span{
+          span {
             margin-right: 15px;
             color: rgba(0, 74, 96, 0.70);
             font-size: 16px;
@@ -55,7 +56,8 @@
             font-weight: 400;
             line-height: normal;
           }
-          h4{
+
+          h4 {
             color: var(--color-text, #004A60);
             font-size: 16px;
             font-style: normal;
@@ -66,14 +68,14 @@
 
       }
 
-      &__haveDo{
+      &__haveDo {
         border-radius: 16px;
         border: 1px solid rgba(0, 74, 96, 0.50);
         padding: 24px;
         display: flex;
         flex-direction: column;
 
-        a{
+        a {
           color: var(--color-bg, #FFF);
           font-size: 16px;
           font-style: normal;
@@ -87,12 +89,13 @@
         }
       }
     }
-    &--saved{
+
+    &--saved {
       display: flex;
       flex-direction: column;
       align-items: start;
 
-      &__title{
+      &__title {
         color: var(--color-text, #004A60);
         font-size: 21.33px;
         font-style: normal;
@@ -101,6 +104,7 @@
         margin-bottom: 20px;
         margin-top: 60px;
       }
+
       .home {
         display: flex;
         width: 640px;
@@ -113,21 +117,25 @@
           padding: 8px;
           display: flex;
           flex-direction: column;
+
           h2 {
             color: #004A60;
             font-size: 16px;
             font-weight: 400;
           }
+
           h1 {
             color: var(--color-text, #004A60);
             font-size: 21.33px;
             font-weight: 500;
           }
+
           .conditions {
             display: grid;
             grid-template-columns: repeat(2, 2fr);
             gap: 8px 24px;
             margin: 70px 0 20px 0;
+
             .condi {
               display: flex;
               align-items: center;
@@ -137,6 +145,7 @@
                 font-size: 16px;
                 font-weight: 400;
               }
+
               .conditionsIcon {
                 font-size: 16px;
                 color: #004A60;
@@ -144,19 +153,154 @@
               }
             }
           }
+
           .title {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             .city {
               color: var(--color-text, #004A60);
               font-size: 16px;
               font-weight: 400;
             }
+
             .price {
               color: var(--color-main, #1B76F9);
               font-size: 16px;
               font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  #aboutUser {
+    .aboutUser {
+      &--user {
+        &__name {
+          width: 65%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #aboutUser {
+    .aboutUser {
+      width: 90%;
+
+      &--user {
+        &__name {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  #aboutUser {
+    .aboutUser {
+      width: auto;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  #aboutUser {
+    .aboutUser {
+      &--saved {
+        .home {
+          width: 100% !important;
+        }
+      }
+
+      &--user {
+        &__haveDo {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  #aboutUser {
+    .aboutUser {
+      &--saved {
+        .home {
+          width: 100% !important;
+          flex-direction: column;
+
+          .homeText {
+            .conditions {
+              margin: 40px 0 20px 0 !important;
+              gap: 8px !important;
+            }
+          }
+        }
+      }
+
+      &--user {
+        flex-direction: column;
+
+        &__haveDo {
+          margin-top: 40px;
+        }
+
+        &__name {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+  #aboutUser {
+    .aboutUser {
+      &--saved {
+        .home {
+          .homeText {
+            h2 {
+              font-size: 14px !important;
+            }
+
+            h1 {
+              font-size: 20px !important;
+            }
+
+            .conditions {
+              display: flex !important;
+              flex-direction: column !important;
+
+              .condi {
+                p {
+                  font-size: 14px !important;
+                }
+              }
+            }
+
+            .title {
+              .city {
+                font-size: 14px !important;
+              }
+
+              .price {
+                font-size: 14px !important;
+              }
             }
           }
         }

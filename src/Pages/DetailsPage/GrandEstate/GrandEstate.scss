@@ -1,0 +1,161 @@
+#GrandEstate {
+    padding: 105px 0  100px 0;
+
+    .GrandEstate {
+
+        &--apartmentBlock {
+            p {
+                color: #004A60;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            &__apartmentImages {
+                gap: 20px;
+                display: flex;
+
+                .home {
+                    width: 800px;
+                }
+
+                .images {
+                    display: grid;
+                    grid-template-columns: repeat(2, 2fr);
+                    gap: 30px 20px;
+
+                    img {
+                        width: 391px;
+                    }
+                }
+            }
+        }
+
+        &--GrandBlock {
+            margin-top: 20px;
+
+            &__title {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+
+
+                h1 {
+                    color: #004A60;
+                    font-size: 32px;
+                    font-weight: 600;
+                }
+
+                .bookmark {
+                    font-size: 40px;
+                }
+            }
+
+            &__conditionBlock {
+                width: 100%;
+                height: 120px;
+                border-radius: 32px;
+                background: var(--color-main, #1B76F9);
+                padding: 15px 50px 15px 100px;
+                display: grid;
+                grid-template-columns: repeat(4, 2fr);
+
+                margin: 40px 0;
+
+
+                .condition {
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+
+                    .conditionIcons {
+                        font-size: 24px;
+                        color: #fff;
+                    }
+
+                    p {
+                        color: #FFF;
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            &__GrandText {
+                display: flex;
+                justify-content: space-between;
+
+                .text {
+                    width: 700px;
+                    color: #004A60;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+
+                .GrandPrice {
+                    display: inline-flex;
+                    padding: 31px 25px;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 24px;
+                    border-radius: 32px;
+                    border: 1px solid #B9B9B9;
+
+                    h3 {
+                        color: #004A60;
+                        font-size: 20px;
+                        font-weight: 500;
+
+                        span {
+                            color: rgba(0, 74, 96, 0.68);
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .deposit {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        h4 {
+                            color: #004A60;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+
+                        p {
+                            color: #004A60;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    button {
+                        padding: 8px 71px;
+                        border-radius: 8px;
+                        background: #0762E5;
+                        color: #FFF;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    #GrandEstate {
+        .GrandEstate {
+            &--apartmentBlock {
+               &__apartmentImages {
+                .home {
+                    width: 600px !important;
+                }
+               }
+            }
+        }
+    }
+}

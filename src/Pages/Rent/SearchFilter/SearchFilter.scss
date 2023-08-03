@@ -107,19 +107,78 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #SearchFilter {
     .SearchFilter {
+      gap: 1em;
       &--SearchBlock {
         flex-direction: column;
-        align-items: start;
+        align-items: end;
         gap: 1em;
         &__search {
-          width: 685px;
+          width: 100%;
         }
       }
       &--Filter {
-        gap: 11.5em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 576px) {
+  #SearchFilter {
+    .SearchFilter {
+      gap: 8px;
+      &--SearchBlock {
+        align-items: start;
+        &__options {
+          width: 100%;
+          flex-wrap: wrap;
+          .type {
+            padding: 10px 10px 10px 16px;
+            width: 100%;
+          }
+          .roomPrice {
+            padding: 10px 10px 10px 16px;
+            width: 49.2%;
+          }
+        }
+      }
+      &--Filter {
+        width: 100%;
+        gap: 8px;
+        flex-direction: column;
+        align-items: end !important;
+        &__block {
+          width: 100%;
+          gap: 8px;
+          .super {
+            padding: 8px;
+            width: 100%;
+            justify-content: space-between;
+            gap: 0;
+          }
+          .verified {
+            padding: 8px;
+            width: 100%;
+            justify-content: space-between;
+            gap: 0;
+          }
+        }
+        &__sort {
+          width: 100%;
+          display: flex;
+          align-items: end;
+          justify-content: end;
+          select {
+            padding: 10px 10px 10px 16px;
+            width: 49.2%;
+          }
+        }
       }
     }
   }
@@ -128,43 +187,20 @@
 @media (max-width: 576px) {
   #SearchFilter {
     .SearchFilter {
-      gap: 8px;
       &--SearchBlock {
-        &__search {
-          width: 516px;
-        }
         &__options {
-          flex-wrap: wrap;
           .type {
-            padding: 10px 370px 10px 16px;
+            width: 100%;
           }
           .roomPrice {
-            padding: 10px 170px 10px 16px;
+            width: 49%;
           }
         }
       }
       &--Filter {
-        gap: 8px;
-        flex-direction: column;
-        align-items: end;
-        &__block {
-          gap: 8px;
-          .super {
-            padding: 8px;
-            width: 260px;
-            justify-content: space-between;
-            gap: 0;
-          }
-          .verified {
-            padding: 8px;
-            width: 249px;
-            justify-content: space-between;
-            gap: 0;
-          }
-        }
-        &__sort {
+        &__sort {       
           select {
-            padding: 10px 143px 10px 16px;
+            width: 49%;
           }
         }
       }
@@ -172,34 +208,21 @@
   }
 }
 
-@media (max-width: 480px) {
+
+@media (max-width: 443px) {
   #SearchFilter {
     .SearchFilter {
       &--SearchBlock {
-        &__search {
-          width: 430px;
-        }
         &__options {
-          .type {
-            padding: 10px 284px 10px 16px;
-          }
           .roomPrice {
-            padding: 10px 127px 10px 16px;
+            width: 48.9%;
           }
         }
       }
       &--Filter {
-        &__block {
-          .super {
-            width: 217px;
-          }
-          .verified {
-            width: 206px;
-          }
-        }
-        &__sort {
+        &__sort {       
           select {
-            padding: 10px 100px 10px 16px;
+            width: 48.9%;
           }
         }
       }
@@ -207,35 +230,20 @@
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 403px) {
   #SearchFilter {
     .SearchFilter {
       &--SearchBlock {
-        &__search {
-          width: 370px;
-        }
         &__options {
-          .type {
-            padding: 10px 224px 10px 16px;
-
-          }
           .roomPrice {
-            padding: 10px 97px 10px 16px;
+            width: 48.8%;
           }
         }
       }
       &--Filter {
-        &__block {
-          .super {
-            width: 187px;
-          }
-          .verified {
-            width: 175px;
-          }
-        }
-        &__sort {
+        &__sort {       
           select {
-            padding: 10px 71px 10px 16px;
+            width: 48.8%;
           }
         }
       }
@@ -247,31 +255,16 @@
   #SearchFilter {
     .SearchFilter {
       &--SearchBlock {
-        &__search {
-          width: 331px;
-        }
         &__options {
-          .type {
-            padding: 10px 185px 10px 16px;
-
-          }
           .roomPrice {
-            padding: 10px 77px 10px 16px;
+            width: 48.7%;
           }
         }
       }
       &--Filter {
-        &__block {
-          .super {
-            width: 166px;
-          }
-          .verified {
-            width: 159px;
-          }
-        }
-        &__sort {
+        &__sort {       
           select {
-            padding: 10px 54px 10px 16px;
+            width: 48.7%;
           }
         }
       }
@@ -279,35 +272,75 @@
   }
 }
 
+
+@media (max-width: 341px) {
+  #SearchFilter {
+    .SearchFilter {
+      &--SearchBlock {
+        &__options {
+          .roomPrice {
+            width: 48.6%;
+          }
+        }
+      }
+      &--Filter {
+        &__sort {       
+          select {
+            width: 48.6%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 @media (max-width: 320px) {
   #SearchFilter {
     .SearchFilter {
       &--SearchBlock {
         &__search {
-          width: 286px;
+          height: 48px;
+          input {
+            font-size: 14px;
+          }
+          button {
+            padding: 12px 8px;
+            font-size: 14px;
+            .searchLine {
+              font-size: 22px;
+            }
+          }
         }
         &__options {
           .type {
-            padding: 10px 185px 10px 16px;
-
+            font-size: 14px;
           }
           .roomPrice {
-            padding: 10px 77px 10px 16px;
+            font-size: 14px;
           }
         }
+   
       }
       &--Filter {
         &__block {
           .super {
-            width: 166px;
+            font-size: 14px;
+            .icon {
+              font-size: 20px;
+            }
           }
           .verified {
-            width: 159px;
+            font-size: 14px;
+            .icon {
+              font-size: 20px;
+            }
           }
         }
         &__sort {
           select {
-            padding: 10px 54px 10px 16px;
+            font-size: 14px;
           }
         }
       }

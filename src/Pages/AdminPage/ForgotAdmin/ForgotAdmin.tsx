@@ -53,7 +53,7 @@ const ForgotAdmin = () => {
                             </ul>
                             <NavLink to="/admin" className="forgotAdmin--form__helper">Back to login</NavLink>
                             <button disabled={!isValid} type="submit"
-                                    style={{background: !isValid ? "rgb(65,82,117)" : ""}}>Send
+                                    style={{background: !isValid ? "rgb(65,82,117)" : ""}}><NavLink to="/about-admin">Send</NavLink>
                             </button>
                         </form>
                     </div>
