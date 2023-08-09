@@ -5,18 +5,23 @@ import { BiSolidStar } from "react-icons/bi";
 import { MdOutlineSms } from "react-icons/md";
 import Imarat from "../../img/imarat.png";
 import Nature from "../../img/Nature.png";
+import Lolu from "../../img/lolu.svg"
+import "../../Pages/Reviews/media.scss"
 
 const Reviews = () => {
   return (
     <div>
       <div id="agentsas">
-        <img
+        <img className="bil1"
           src={Nature}
           style={{
             width: "100%",
           }}
           alt=""
         />
+        <img className="bil2" src={Lolu} style={{
+            width: "100%",
+          }} alt="" />
         <div className="personsas">
           <h1>Building Reviews</h1>
         </div>
@@ -37,7 +42,7 @@ const Reviews = () => {
             <div className="agentsas--hooksas mb-[128px]">
               <div className="agentsas--hooksas__persas">
                 <h2>Top reviewed buildings in Bishkek</h2>
-                <h2 className="flex ml-[210px]">Latest reviews</h2>
+                
               </div>
               <div className="agentsas--hooksas__yed">
                 <div className="flex items-center flex-wrap column gap-8 ml-[48px]">
@@ -158,7 +163,10 @@ const Reviews = () => {
                   </div>
                 </div>
                 <div className="flex items-center flex-wrap column gap-8 mr-[134px]">
+                  <h2 className="latest flex ml-[210px]">Latest reviews</h2>
                   <div className="agentsas--hooksas__yed--yellow">
+                 
+
                     <p>Apartment</p>
                     <h3>The Grand Estate</h3>
                     <h2 className="flex gap-2 mb-4">

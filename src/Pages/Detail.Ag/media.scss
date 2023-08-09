@@ -1,0 +1,842 @@
+@media (max-width: 1024px) {
+  #detailes {
+    .detailes {
+      &--two {
+        &__end {
+          width: 277px;
+          h5 {
+            padding: 0 65px 0 0;
+          }
+        }
+        &__all {
+          margin: 65px 0 0 0;
+          width: 275px;
+          height: 240px;
+          padding: 8px;
+          &--ema {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          &--calls {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          p {
+            font-size: 20px;
+            margin: 18px 0 0 -5px;
+          }
+        }
+      }
+      &--one {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &__jon {
+          &--info {
+            gap: 6px;
+            p {
+              font-size: 15px;
+            }
+            button {
+              font-size: 13px;
+            }
+            h6 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          img {
+            width: 216px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #detailes {
+    .detailes {
+      &--two {
+        margin-top: -77px;
+        &__end {
+          width: 277px;
+          h5 {
+            padding: 0 65px 0 0;
+          }
+        }
+        &__all {
+          margin: 65px 0 0 0;
+          width: 275px;
+          height: 240px;
+          padding: 8px;
+          &--ema {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          &--calls {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          p {
+            font-size: 20px;
+            margin: 18px 0 0 -5px;
+          }
+        }
+      }
+      &--one {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &__jon {
+          align-items: center;
+          flex-direction: column;
+          gap: 36px;
+          margin: 84px 1px 38px 1px;
+          &--info {
+            gap: 14px;
+            p {
+              font-size: 15px;
+            }
+            button {
+              font-size: 13px;
+              margin-bottom: 8px;
+            }
+            h6 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          img {
+            width: 216px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #detailes {
+    .detailes {
+      &--two {
+        margin-top: -77px;
+        &__end {
+          width: 277px;
+          h5 {
+            padding: 0 65px 0 0;
+          }
+        }
+        &__all {
+          margin: 65px 0 0 0;
+          width: 275px;
+          height: 240px;
+          padding: 8px;
+          &--ema {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          &--calls {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          p {
+            font-size: 20px;
+            margin: 18px 0 0 -5px;
+          }
+        }
+      }
+      &--one {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &__jon {
+          align-items: center;
+          flex-direction: column;
+          gap: 36px;
+          margin: 84px 1px 38px 1px;
+          &--info {
+            gap: 14px;
+            p {
+              font-size: 15px;
+            }
+            button {
+              font-size: 13px;
+              margin-bottom: 8px;
+            }
+            h6 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          img {
+            width: 216px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #detailes {
+    .detailes {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &--two {
+        margin-top: 7px;
+        &__end {
+          width: 277px;
+          h5 {
+            padding: 0 65px 0 0;
+          }
+        }
+        &__all {
+          margin: 65px 0 0 0;
+          width: 275px;
+          height: 240px;
+          padding: 8px;
+          &--ema {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          &--calls {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          p {
+            font-size: 20px;
+            margin: 18px 0 0 -5px;
+          }
+        }
+      }
+      &--one {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &__jon {
+          align-items: center;
+          flex-direction: column;
+          gap: 36px;
+          margin: 84px 1px 38px 1px;
+          &--info {
+            gap: 14px;
+            p {
+              font-size: 15px;
+            }
+            button {
+              font-size: 13px;
+              margin-bottom: 8px;
+            }
+            h6 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          img {
+            width: 216px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #detailes {
+    .detailes {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &--two {
+        margin-top: 7px;
+        &__end {
+          width: 277px;
+          h5 {
+            padding: 0 65px 0 0;
+          }
+        }
+        &__all {
+          margin: 65px 0 0 0;
+          width: 275px;
+          height: 240px;
+          padding: 8px;
+          &--ema {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          &--calls {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          p {
+            font-size: 20px;
+            margin: 18px 0 0 -5px;
+          }
+        }
+      }
+      &--one {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &__jon {
+          align-items: center;
+          flex-direction: column;
+          gap: 36px;
+          margin: 84px 1px 38px 1px;
+          &--info {
+            gap: 14px;
+            p {
+              font-size: 15px;
+            }
+            button {
+              font-size: 13px;
+              margin-bottom: 8px;
+            }
+            h6 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          img {
+            width: 216px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #detailes {
+    .detailes {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &--two {
+        margin-top: 7px;
+        &__end {
+          width: 277px;
+          h5 {
+            padding: 0 65px 0 0;
+          }
+        }
+        &__all {
+          margin: 65px 0 0 0;
+          width: 275px;
+          height: 240px;
+          padding: 8px;
+          &--ema {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          &--calls {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          p {
+            font-size: 20px;
+            margin: 18px 0 0 -5px;
+          }
+        }
+      }
+      &--one {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &__jon {
+          align-items: center;
+          flex-direction: column;
+          gap: 36px;
+          margin: 84px 1px 38px 1px;
+          &--info {
+            gap: 14px;
+            p {
+              font-size: 15px;
+            }
+            button {
+              font-size: 13px;
+              margin-bottom: 8px;
+            }
+            h6 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          img {
+            width: 216px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  #detailes {
+    .detailes {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &--two {
+        margin-top: 7px;
+        &__end {
+          width: 277px;
+          h5 {
+            padding: 0 65px 0 0;
+          }
+        }
+        &__all {
+          margin: 65px 0 0 0;
+          width: 275px;
+          height: 240px;
+          padding: 8px;
+          &--ema {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          &--calls {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          p {
+            font-size: 20px;
+            margin: 18px 0 0 -5px;
+          }
+        }
+      }
+      &--one {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &__jon {
+          align-items: center;
+          flex-direction: column;
+          gap: 36px;
+          margin: 84px 1px 38px 1px;
+          &--info {
+            gap: 14px;
+            p {
+              font-size: 15px;
+            }
+            button {
+              font-size: 13px;
+              margin-bottom: 8px;
+            }
+            h6 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          img {
+            width: 216px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  #detailes {
+    .detailes {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &--two {
+        margin-top: 7px;
+        &__end {
+          width: 277px;
+          h5 {
+            padding: 0 65px 0 0;
+          }
+        }
+        &__all {
+          margin: 65px 0 0 0;
+          width: 275px;
+          height: 240px;
+          padding: 8px;
+          &--ema {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          &--calls {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          p {
+            font-size: 20px;
+            margin: 18px 0 0 -5px;
+          }
+        }
+      }
+      &--one {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &__jon {
+          align-items: center;
+          flex-direction: column;
+          gap: 36px;
+          margin: 84px 1px 38px 1px;
+          &--info {
+            gap: 14px;
+            p {
+              font-size: 15px;
+            }
+            button {
+              font-size: 13px;
+              margin-bottom: 8px;
+            }
+            h6 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          img {
+            width: 216px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  #detailes {
+    .detailes {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &--two {
+        margin-top: 7px;
+        &__end {
+          width: 277px;
+          h5 {
+            padding: 0 65px 0 0;
+          }
+        }
+        &__all {
+          margin: 65px 0 0 0;
+          width: 275px;
+          height: 240px;
+          padding: 8px;
+          &--ema {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          &--calls {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          p {
+            font-size: 20px;
+            margin: 18px 0 0 -5px;
+          }
+        }
+      }
+      &--one {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &__jon {
+          align-items: center;
+          flex-direction: column;
+          gap: 36px;
+          margin: 84px 1px 38px 1px;
+          &--info {
+            gap: 14px;
+            p {
+              font-size: 15px;
+            }
+            button {
+              font-size: 13px;
+              margin-bottom: 8px;
+            }
+            h6 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          img {
+            width: 216px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  #detailes {
+    .detailes {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &--two {
+        margin-top: 7px;
+        &__end {
+          width: 277px;
+          h5 {
+            padding: 0 65px 0 0;
+          }
+        }
+        &__all {
+          margin: 65px 0 0 0;
+          width: 275px;
+          height: 240px;
+          padding: 8px;
+          &--ema {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          &--calls {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          p {
+            font-size: 20px;
+            margin: 18px 0 0 -5px;
+          }
+        }
+      }
+      &--one {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &__jon {
+          align-items: center;
+          flex-direction: column;
+          gap: 36px;
+          margin: 84px 1px 38px 1px;
+          &--info {
+            gap: 14px;
+            p {
+              font-size: 15px;
+            }
+            button {
+              font-size: 13px;
+              margin-bottom: 8px;
+            }
+            h6 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          img {
+            width: 216px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #detailes {
+    .detailes {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &--two {
+        margin-top: 7px;
+        &__end {
+          width: 277px;
+          h5 {
+            padding: 0 65px 0 0;
+          }
+        }
+        &__all {
+          margin: 65px 0 0 0;
+          width: 275px;
+          height: 240px;
+          padding: 8px;
+          &--ema {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          &--calls {
+            width: 226px;
+            height: 52px;
+            margin: 0 0 0 15px;
+            .active {
+              padding: 9px 18px;
+            }
+          }
+          p {
+            font-size: 20px;
+            margin: 18px 0 0 -5px;
+          }
+        }
+      }
+      &--one {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 17px;
+        }
+        &__jon {
+          align-items: center;
+          flex-direction: column;
+          gap: 36px;
+          margin: 84px 1px 38px 1px;
+          &--info {
+            gap: 14px;
+            p {
+              font-size: 15px;
+            }
+            button {
+              font-size: 13px;
+              margin-bottom: 8px;
+            }
+            h6 {
+              font-size: 15px;
+            }
+            h2 {
+              font-size: 28px;
+            }
+          }
+          img {
+            width: 216px;
+          }
+        }
+      }
+    }
+  }
+}
