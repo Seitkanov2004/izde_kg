@@ -14,6 +14,19 @@
 
     .agentsas {
       padding-top: 520px;
+    .bil1{
+      display: block;
+    }
+    .bil2{
+      display: none;
+    }
+    .agentsas {
+      &--personsas {
+        h1 {
+          bottom: 179px;
+          left: 473px;
+        }
+      }
       &--hooksas {
         &__persas {
           margin: 120px 0 40px -75px;
@@ -81,6 +94,10 @@
       display: block;
     }
     .bil2 {
+    .bil1{
+      display: block;
+    }
+    .bil2{
       display: none;
     }
     .personsas {
@@ -90,6 +107,10 @@
     }
     .agentsas {
       padding-top: 500px;
+        left: 391px;
+      }
+    }
+    .agentsas {
       &--hooksas {
         &__persas {
           margin: 120px 0 40px -75px;
@@ -104,6 +125,10 @@
           .latest {
             font-size: 30px;
             margin: -123px -31px 1px 1px;
+          margin: 7px 23px 1px 1px;
+          .dolb {
+            font-size: 30px;
+            margin-left: 1px;
           }
           &--yellow {
             display: flex;
@@ -164,11 +189,17 @@
       display: block;
     }
     .bil2 {
+    .bil1{
+      display: block;
+    }
+    .bil2{
       display: none;
     }
     .personsas {
       h1 {
         margin: -230px 0 0 265px;
+        left: 246px;
+        bottom: 124px;
       }
     }
     .agentsas {
@@ -185,6 +216,8 @@
           margin: 46px 41px 1px 1px;
           gap: 29px;
           .latest {
+          margin: 7px 91px 1px 1px;
+          .dolb {
             font-size: 23px;
             margin: -125px 1px 1px 1px;
           }
@@ -249,6 +282,10 @@
       display: block;
     }
     .bil2 {
+    .bil1{
+      display: block;
+    }
+    .bil2{
       display: none;
     }
     .personsas {
@@ -259,6 +296,11 @@
     }
     .agentsas {
       padding-top: 460px;
+        left: 240px;
+        bottom: 118px;
+      }
+    }
+    .agentsas {
       &--hooksas {
         &__persas {
           margin: 120px 0 40px -75px;
@@ -274,6 +316,9 @@
           .latest {
             font-size: 23px;
             margin: 44px 30px 1px 1px;
+          .dolb {
+            font-size: 23px;
+            margin: -115px 1px 1px 1px;
           }
 
           &--yellow {
@@ -337,11 +382,17 @@
       display: none;
     }
     .bil2 {
+    .bil1{
+      display: none;
+    }
+    .bil2{
       display: block;
     }
     .personsas {
       h1 {
         margin: -175px 0 0 243px;
+        left: 240px;
+        bottom: 118px;
         font-size: 33px;
       }
     }
@@ -360,7 +411,7 @@
           align-items: center;
           margin: 7px 151px 1px 1px;
           gap: 20px;
-          .fold {
+          .fold{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -370,11 +421,15 @@
             font-size: 23px;
             margin: 65px 213px 52px 75px;
             width: 190px;
+          .dolb {
+            font-size: 23px;
+            margin: -110px 293px 52px 1px;
           }
 
           &--yellow {
             display: flex;
             margin: 26px 66px -45px 76px;
+            margin-right: 173px;
             width: 293px;
             height: 289px;
             h3 {
@@ -442,15 +497,22 @@
       display: none;
     }
     .bil2 {
+    .bil1{
+      display: none;
+    }
+    .bil2{
       display: block;
     }
     .personsas {
       h1 {
         margin: -179px 0 0 147px;
+        left: 152px;
+        bottom: 118px;
         font-size: 33px;
       }
     }
     .agentsas {
+      
       &--hooksas {
         display: flex;
         align-items: center;
@@ -469,7 +531,8 @@
           align-items: center;
           margin: 7px 151px 1px 1px;
           gap: 20px;
-          .fold {
+
+          .fold{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -479,11 +542,15 @@
             font-size: 23px;
             margin: 65px 213px 52px 75px;
             width: 190px;
+          .dolb {
+            font-size: 23px;
+            margin: -110px 293px 52px 1px;
           }
 
           &--yellow {
             display: flex;
             margin: 26px 66px -45px 76px;
+            margin-right: 173px;
             width: 293px;
             height: 289px;
             h3 {
@@ -504,6 +571,7 @@
             height: 276px;
             padding: 3px;
             margin: -7px 10px 1px 24px;
+
             &__mini {
               &--tex {
                 gap: -22px;
@@ -552,11 +620,17 @@
       display: none;
     }
     .bil2 {
+    .bil1{
+      display: none;
+    }
+    .bil2{
       display: block;
     }
     .personsas {
       h1 {
         margin: -172px 0 0 81px;
+        left: 77px;
+        bottom: 118px;
         font-size: 33px;
       }
     }
@@ -582,7 +656,8 @@
           align-items: center;
           margin: 7px 151px 1px 1px;
           gap: 20px;
-          .fold {
+
+          .fold{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -592,11 +667,15 @@
             font-size: 23px;
             margin: 65px 213px 52px 75px;
             width: 190px;
+          .dolb {
+            font-size: 23px;
+            margin: -110px 245px 52px 1px;
           }
 
           &--yellow {
             display: flex;
             margin: 26px 66px -45px 76px;
+            margin-right: 118px;
             width: 293px;
             height: 289px;
             h3 {
@@ -666,6 +745,13 @@
       display: none;
     }
     .bil2 {
+
+@media (max-width: 425px) {
+  #agentsas {
+    .bil1{
+      display: none;
+    }
+    .bil2{
       display: block;
     }
     .personsas {
@@ -676,6 +762,7 @@
       }
     }
     .agentsas {
+
       &--hooksas {
         display: flex;
         align-items: center;
@@ -695,7 +782,8 @@
           align-items: center;
           margin: 7px 151px 1px 1px;
           gap: 20px;
-          .fold {
+
+          .fold{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -705,11 +793,15 @@
             font-size: 23px;
             margin: 65px 213px 52px 75px;
             width: 190px;
+          .dolb {
+            font-size: 23px;
+            margin: -110px 245px 52px 1px;
           }
 
           &--yellow {
             display: flex;
             margin: 26px 66px -45px 76px;
+            margin-right: 118px;
             width: 293px;
             height: 289px;
             h3 {
@@ -775,10 +867,12 @@
 
 @media (max-width: 415px) {
   #agentsas {
-    .bil1 {
+    
+    
+    .bil1{
       display: none;
     }
-    .bil2 {
+    .bil2{
       display: block;
     }
     .personsas {
@@ -789,6 +883,7 @@
       }
     }
     .agentsas {
+
       &--hooksas {
         display: flex;
         align-items: center;
@@ -808,7 +903,8 @@
           align-items: center;
           margin: 7px 151px 1px 1px;
           gap: 20px;
-          .fold {
+
+          .fold{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -818,11 +914,15 @@
             font-size: 23px;
             margin: 65px 213px 52px 75px;
             width: 190px;
+          .dolb {
+            font-size: 23px;
+            margin: -110px 245px 52px 1px;
           }
 
           &--yellow {
             display: flex;
             margin: 26px 66px -45px 76px;
+            margin-right: 118px;
             width: 293px;
             height: 289px;
             h3 {
@@ -888,19 +988,23 @@
 
 @media (max-width: 380px) {
   #agentsas {
-    .bil1 {
+
+    .bil1{
       display: none;
     }
-    .bil2 {
+    .bil2{
       display: block;
     }
     .personsas {
       h1 {
         margin: -179px -13px 1px 43px;
+        left: 51px;
+        bottom: 118px;
         font-size: 33px;
       }
     }
     .agentsas {
+
       &--hooksas {
         display: flex;
         align-items: center;
@@ -920,7 +1024,8 @@
           align-items: center;
           margin: 7px 257px 1px 1px;
           gap: 20px;
-          .fold {
+
+          .fold{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -931,11 +1036,15 @@
             margin: 65px 213px 52px 75px;
             width: 345px;
             padding-left: 158px;
+          .dolb {
+            font-size: 23px;
+            margin: -110px 134px 52px 1px;
           }
 
           &--yellow {
             display: flex;
             margin: 26px 66px -45px 231px;
+            margin-right: 19px;
             width: 293px;
             height: 289px;
             h3 {
@@ -954,6 +1063,8 @@
           &--red {
             width: 277px;
             height: 501px;
+
+            margin: 0 0 0 -32px;
             &__mini {
               flex-direction: column;
               &--tex {
@@ -1001,10 +1112,11 @@
 
 @media (max-width: 350px) {
   #agentsas {
-    .bil1 {
+
+    .bil1{
       display: none;
     }
-    .bil2 {
+    .bil2{
       display: block;
     }
     .personsas {
@@ -1015,6 +1127,7 @@
       }
     }
     .agentsas {
+
       &--hooksas {
         display: flex;
         align-items: center;
@@ -1034,7 +1147,8 @@
           align-items: center;
           margin: 7px 257px 1px 1px;
           gap: 20px;
-          .fold {
+
+          .fold{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -1045,11 +1159,15 @@
             margin: 65px 213px 52px 75px;
             width: 345px;
             padding-left: 158px;
+          .dolb {
+            font-size: 23px;
+            margin: -110px 119px 52px 1px;
           }
 
           &--yellow {
             display: flex;
             margin: 26px 66px -45px 231px;
+            margin-right: 3px;
             width: 293px;
             height: 289px;
             h3 {
@@ -1069,6 +1187,7 @@
             width: 277px;
             height: 501px;
             margin: 0 0 0 187px;
+            margin: 0 0 0 -32px;
             &__mini {
               flex-direction: column;
               &--tex {
@@ -1100,6 +1219,8 @@
           width: 321px;
 
           margin: -422px 0 42px -5px;
+          
+    margin: -422px 0 42px -5px;
           input {
             font-size: 8px;
           }
@@ -1117,10 +1238,11 @@
 
 @media (max-width: 320px) {
   #agentsas {
-    .bil1 {
+ 
+    .bil1{
       display: none;
     }
-    .bil2 {
+    .bil2{
       display: block;
     }
     .personsas {
@@ -1131,6 +1253,7 @@
       }
     }
     .agentsas {
+
       &--hooksas {
         display: flex;
         align-items: center;
@@ -1150,7 +1273,8 @@
           align-items: center;
           margin: 7px 257px 1px 1px;
           gap: 20px;
-          .fold {
+
+          .fold{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -1183,6 +1307,11 @@
             width: 277px;
             height: 501px;
             margin: 0 0 0 193px;
+          } 
+          &--red {
+            width: 277px;
+            height: 501px;
+            margin: 0 0 0 -40px;
             &__mini {
               flex-direction: column;
               &--tex {
@@ -1215,6 +1344,9 @@
           height: 102px;
 
           margin: -385px 0 42px -5px;
+    height: 102px;
+          
+    margin: -385px 0 42px -5px;
           input {
             font-size: 8px;
             height: 63px;
@@ -1231,4 +1363,5 @@
       }
     }
   }
+}
 }

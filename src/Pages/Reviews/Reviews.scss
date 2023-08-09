@@ -1,4 +1,13 @@
 #agentsas {
+  .bil1{
+    display: block;
+  }
+  .bil2{
+    display: none;
+  }
+  padding-top: 80px;
+  .personsas {
+    position: relative;
   padding-top: 80px;
   .bil1 {
     display: block;
@@ -8,7 +17,8 @@
   }
   .personsas {
     h1 {
-      color: var(--color-bg, #fff);
+      // color: var(--color-bg, #fff);
+      color: white;
       text-align: center;
       font-family: Poppins;
       font-size: 58px;
@@ -24,12 +34,26 @@
   .agentsas {
     // display: flex; 
     padding-top: 550px;
+      font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 530px;
+    display: flex;
+    position: absolute;
+    bottom: 212px;
+    left: 674px;
+    }
+  }
+  .agentsas {
+    margin-top: 340px;
     &--hooksas {
-      &__yed {
+      &__yed { 
         display: flex;
         align-items: flex-start;
         justify-content: space-evenly;
         .latest{
+        .dolb{
           color: var(--color-text, #004a60);
           font-family: Poppins;
           font-size: 38px;
@@ -39,6 +63,10 @@
           display: flex;
           margin: -136px 1px 1px 1px;
         }
+
+          margin: -135px 1px 8px 1px;
+        }
+       
         &--yellow {
           display: flex;
           align-items: start;
@@ -51,6 +79,8 @@
           width: 501px;
           height: 335px;
           margin: -36px 1px 36px 1px;
+
+          margin: -40px 1px 39px 1px;x
           &__tup {
             display: flex;
             padding: 8px 19px;
@@ -60,6 +90,9 @@
             border-radius: 8px;
             border: 1px solid rgba(0, 74, 96, 0.5);
             margin-top: 25px;
+
+            background: black;
+
           }
           p {
             color: #004a60;

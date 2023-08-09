@@ -1,6 +1,7 @@
 @media (max-width: 1440px) {
   #agents {
     .agents {
+      &--btn {
       btn {
         margin-left: 568px;
       }
@@ -30,7 +31,11 @@
 @media (max-width: 1200px) {
   #agents {
     .agents {
+
+      &--btn {
+
       btn {
+
         margin-left: 444px;
       }
       &--hooks {
@@ -75,7 +80,11 @@
 @media (max-width: 1024px) {
   #agents {
     .agents {
+
+      &--btn {
+
       btn {
+
         font-size: 22px;
         margin-left: 388px;
       }
@@ -116,9 +125,15 @@
             height: 90px;
           }
           h1 {
+
+            bottom: 90px;
+    right: -282px;
+    font-size: 40px;
+
             bottom: 120px;
             right: -282px;
             font-size: 50px;
+
           }
         }
       }
@@ -129,7 +144,11 @@
 @media (max-width: 992px) {
   #agents {
     .agents {
+
+      &--btn {
+
       btn {
+
         font-size: 15px;
         margin-left: 323px;
       }
@@ -190,7 +209,11 @@
 @media (max-width: 768px) {
   #agents {
     .agents {
+
+      &--btn {
+
       btn {
+
         font-size: 20px;
         margin-left: 388px;
       }
@@ -258,9 +281,14 @@
       padding-top: 48px;
     }
     .agents {
+
+      &--btn {
+        font-size: 20px;
+        margin-left: 178px;
       btn {
         font-size: 20px;
         margin-left: 191px;
+
       }
       &--hooks {
         gap: 3rem;
@@ -316,6 +344,7 @@
     }
   }
 }
+
 
 @media (max-width: 500px) {
   #agents {
@@ -769,4 +798,4 @@
       }
     }
   }
-}
+

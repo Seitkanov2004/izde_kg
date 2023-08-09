@@ -4,9 +4,15 @@ import { BsSearchHeart, BsPencil, BsStarHalf } from "react-icons/bs";
 import { BiSolidStar } from "react-icons/bi";
 import { MdOutlineSms } from "react-icons/md";
 import Imarat from "../../img/imarat.png";
+
+import Buil from "../../img/build.svg";
+import Nature from "../../img/Nature.png";
+import "../Reviews/media.scss"
+
 import Nature from "../../img/Nature.png";
 import Lolu from "../../img/lolu.svg"
 import "../../Pages/Reviews/media.scss"
+
 
 const Reviews = () => {
   return (
@@ -17,7 +23,18 @@ const Reviews = () => {
           style={{
             width: "100%",
           }}
+
+          alt="" className="bil1"
+        /> 
+        <img
+          src={Buil}
+          style={{
+            width: "100%",
+          }}
+          alt="" className="bil2"
+
           alt=""
+
         />
         <img className="bil2" src={Lolu} style={{
             width: "100%",
@@ -42,7 +59,7 @@ const Reviews = () => {
             <div className="agentsas--hooksas mb-[128px]">
               <div className="agentsas--hooksas__persas">
                 <h2>Top reviewed buildings in Bishkek</h2>
-                
+
               </div>
               <div className="agentsas--hooksas__yed">
                 <div className="flex items-center flex-wrap column gap-8 ml-[48px]">
@@ -162,8 +179,13 @@ const Reviews = () => {
                     </div>
                   </div>
                 </div>
+
+                <div className="fold flex items-center flex-wrap column gap-8 ">
+                <h2 className="dolb flex ml-[210px]">Latest reviews</h2>
+
                 <div className="flex items-center flex-wrap column gap-8 mr-[134px]">
                   <h2 className="latest flex ml-[210px]">Latest reviews</h2>
+
                   <div className="agentsas--hooksas__yed--yellow">
                  
 
@@ -177,7 +199,11 @@ const Reviews = () => {
                       It’s an awesome home with a great view to a city. I would
                       definitely recommend to rent this property
                     </h6>
+
+                    <div className="agentsas--hooksas__yed--red__mini--tex__gop flex mt-[15px]">
+
                     <div className="agentsas--hooksas__yed--yellow__tup">
+
                       <MdOutlineSms />
                       <h4>More reviews</h4>
                     </div>
@@ -193,7 +219,11 @@ const Reviews = () => {
                       It’s an awesome home with a great view to a city. I would
                       definitely recommend to rent this property
                     </h6>
+
+                    <div className="agentsas--hooksas__yed--red__mini--tex__gop flex mt-[15px]">
+
                     <div className="agentsas--hooksas__yed--yellow__tup">
+
                       <MdOutlineSms />
                       <h4>More reviews</h4>
                     </div>
@@ -209,7 +239,11 @@ const Reviews = () => {
                       It’s an awesome home with a great view to a city. I would
                       definitely recommend to rent this property
                     </h6>
+
+                    <div className="agentsas--hooksas__yed--red__mini--tex__gop flex mt-[15px]">
+
                     <div className="agentsas--hooksas__yed--yellow__tup">
+
                       <MdOutlineSms />
                       <h4>More reviews</h4>
                     </div>
@@ -225,7 +259,11 @@ const Reviews = () => {
                       It’s an awesome home with a great view to a city. I would
                       definitely recommend to rent this property
                     </h6>
+
+                    <div className="agentsas--hooksas__yed--red__mini--tex__gop flex mt-[15px]">
+
                     <div className="agentsas--hooksas__yed--yellow__tup">
+
                       <MdOutlineSms />
                       <h4>More reviews</h4>
                     </div>
