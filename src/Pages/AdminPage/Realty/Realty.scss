@@ -1,5 +1,63 @@
 #realty{
   .realty{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    &__block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(0, 74, 96, 0.39);
+
+      &--name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h3 {
+          color: #000;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-right: 40px;
+        }
+
+        h4 {
+          color: #353535;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+
+
+      &--data {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        h4 {
+          color: #353535;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        h5 {
+          color: #9A9A9A;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+
     &--more{
       position: fixed;
       font-size: 26px;
@@ -36,5 +94,7 @@
         }
       }
     }
+
+
   }
 }
