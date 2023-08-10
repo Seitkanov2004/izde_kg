@@ -13,17 +13,20 @@ import {LiaSwimmingPoolSolid} from "react-icons/lia";
 import {CgGym} from "react-icons/cg";
 import img from "./../../img/ad.svg"
 import AddMap, {MODES} from "./Map/addMap";
-import {useJsApiLoader} from "@react-google-maps/api";
+import {LoadScript, useJsApiLoader} from "@react-google-maps/api";
 import {useAppDispatch} from "../../Hooks/useAppDispatch";
 import usePlacesAutocomplete, {getGeocode, getLatLng} from "use-places-autocomplete";
 import useOnclickOutside from "react-cool-onclickoutside";
 import {addCenter} from "../../store/Reducers/MapSlice";
+import {CiEdit} from "react-icons/ci";
+import {Simulate} from "react-dom/test-utils";
+import dragOver = Simulate.dragOver;
 
+export const API_KEY_MAP = "AIzaSyC5MuluLr_iD9YTptKrZk5XUgKPVNV7qR0"
 
-const AddProperty = () => {
+const AddProperty = (e: React.DragEvent<HTMLDivElement>) => {
 
         const libraries: any[] = ["places"]
-        const API_KEY_MAP = "AIzaSyC5MuluLr_iD9YTptKrZk5XUgKPVNV7qR0"
         const [mode, setMode] = useState(MODES.MOVE)
 
         const {isLoaded}: any = useJsApiLoader({
@@ -32,7 +35,13 @@ const AddProperty = () => {
             libraries
         })
 
-        const [images, setImages] = useState<any>([]);
+        const localImages: any = localStorage.getItem("imagesL")
+
+        const [images, setImages] = useState<any[]>([]);
+
+
+        console.log(images)
+
 
         const [check, setCheck] = useState("")
 
@@ -41,12 +50,34 @@ const AddProperty = () => {
             const targetFiles = e.target.files;
             const targetFilesObject = [...targetFiles]
             targetFilesObject.map((file) => {
-                return selectedFiles.push(URL.createObjectURL(file))
+                return selectedFiles.unshift({
+                    id: Math.round(Math.random() * 100),
+                    image: URL.createObjectURL(file),
+                    idDone: false
+                })
             })
             if (images.length < 5) {
                 setImages([...selectedFiles, ...images]);
-            } else {
-                setImages(images)
+            }
+
+            // if (images.length === 4) {
+            //     if (images.find(el => el === null)) {
+            //         setImages([...selectedFiles, Array(3).fill({
+            //             id: Math.round(Math.random() * 100),
+            //             image: null,
+            //             isDone: false,
+            //         })])
+            //     }
+            // }
+            // if (images.length === 0) {
+            //     images.push(...selectedFiles, ...Array(4).fill({
+            //         id: Math.round(Math.random() * 100),
+            //         image: null,
+            //         isDone: false,
+            //     }))
+            // }
+            else {
+                setImages(images);
             }
 
         }
@@ -71,8 +102,6 @@ const AddProperty = () => {
 
         ///////////////////////////////////////////
         const dispatch = useAppDispatch()
-
-        const mapRef = useRef<any>(undefined)
 
 
         const {
@@ -124,6 +153,64 @@ const AddProperty = () => {
         }, [isLoaded, init])
 
 
+        const [currentCard, setCurrentCard] = useState<any>(null)
+
+        function startDrag(e: React.DragEvent<HTMLDivElement>, el: any) {
+            setCurrentCard(el)
+        }
+
+
+        function handleDrop(e: React.DragEvent<HTMLDivElement>, el: any) {
+            e.preventDefault()
+            setImages(images.map(c => {
+                if (c.id === el.id) {
+                    return {...c, id: currentCard.id}
+                }
+                if (c.id === currentCard.id) {
+                    return {...c, id: el.id}
+                }
+                return c
+            }))
+        }
+
+        const sortCards = (a: any, b: any) => {
+            if (a.id > b.id) {
+                return 1
+            } else {
+                return -1
+            }
+        }
+
+        const havingImages = (el: any, idx: any) => {
+
+            if (idx === 0) {
+                return (<div draggable={true}
+                             onDragStart={(e) => startDrag(e, el)}
+                             onDragOver={(e) => e.preventDefault()}
+                             onDrop={(e) => handleDrop(e, el)}
+                             style={{background: `url("${el.image}")no-repeat center/cover`}}
+                             className="addProperty--images__blocks--bigBlock"></div>)
+            }
+            if (el.image) {
+                return (<div draggable={true}
+                             onDragStart={(e) => startDrag(e, el)}
+                             onDragOver={(e) => e.preventDefault()}
+                             onDrop={(e) => handleDrop(e, el)}
+                             style={{background: `url("${el.image}")no-repeat center/cover`}}
+                             className="addProperty--images__blocks--letBlock"></div>)
+            }
+            if (el.image === null) {
+                return (<div draggable={true}
+                             className="addProperty--images__blocks--letBlock"><BiSolidImageAlt/></div>)
+            } else {
+                return (<div draggable={true}
+                             className="addProperty--images__blocks--letBlock"><BiSolidImageAlt/></div>)
+            }
+        }
+
+
+        const [notImages, setNotImages] = useState([1, 2, 3, 4, 5])
+
         return (
             <div id="addProperty">
                 <div className="container">
@@ -131,24 +218,14 @@ const AddProperty = () => {
                         <h2>Property characteristics</h2>
                         <div className='addProperty--images'>
                             <div className="addProperty--images__blocks">
-                                <div style={{background: images[0] ? `url("${images[0]}") no-repeat center/cover` : ""}}
-                                     className="addProperty--images__blocks--bigBlock"><BiSolidImageAlt/></div>
-                                <div className="addProperty--images__blocks--letBlock">
-                                    <div
-                                        style={{background: images[1] ? `url("${images[1]}") no-repeat center/cover` : ""}}>
-                                        <BiSolidImageAlt/>
-                                    </div>
-                                    <div style={{background: images[2] ? `url("${images[2]}") no-repeat center/cover` : ""}}
-                                         className="addProperty--images__blocks--letBlock__border1"><BiSolidImageAlt/>
-                                    </div>
-                                    <div
-                                        style={{background: images[3] ? `url("${images[3]}") no-repeat center/cover` : ""}}>
-                                        <BiSolidImageAlt/>
-                                    </div>
-                                    <div style={{background: images[4] ? `url("${images[4]}") no-repeat center/cover` : ""}}
-                                         className="addProperty--images__blocks--letBlock__border2"><BiSolidImageAlt/>
-                                    </div>
-                                </div>
+                                {
+                                    images.length ? images.sort(sortCards).map((el, idx) => havingImages(el, idx))
+                                        : notImages.map(el => el === 1 ? (<div draggable={true}
+                                                                               className="addProperty--images__blocks--bigBlock">
+                                                <BiSolidImageAlt/></div>)
+                                            : (<div draggable={true} className="addProperty--images__blocks--letBlock">
+                                                <BiSolidImageAlt/></div>))
+                                }
                             </div>
                             <div className="addProperty--images__blocksModal">
                                 <div className="addProperty--images__blocksModal--bigBlock">
@@ -332,12 +409,15 @@ const AddProperty = () => {
                     </div>
                 </div>
                 <div className="addProperty--location">
-                    {
-                        isLoaded ? <AddMap isLoaded={isLoaded} mode={mode} setMode={setMode}/> : <h2>Loading</h2>
-                    }
+                    <LoadScript googleMapsApiKey={API_KEY_MAP}>
+                        {
+                            isLoaded ? <AddMap isLoaded={isLoaded} mode={mode} setMode={setMode}/> : <h2>Loading</h2>
+                        }
+                    </LoadScript>
                 </div>
             </div>
-        );
+        )
+            ;
     }
 ;
 

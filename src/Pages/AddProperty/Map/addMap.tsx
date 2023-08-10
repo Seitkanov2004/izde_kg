@@ -1,14 +1,10 @@
-import React, {useCallback, useEffect, useRef, useState} from 'react';
-import {GoogleMap, Marker} from "@react-google-maps/api";
+import React, {useRef} from 'react';
+import {GoogleMap, LoadScript, Marker} from "@react-google-maps/api";
 import {useAppDispatch} from "../../../Hooks/useAppDispatch";
 import {useAppSelector} from "../../../Hooks/useAppSelector";
 import "./addMap.scss"
-import usePlacesAutocomplete, {
-    getGeocode,
-    getLatLng,
-} from "use-places-autocomplete";
-import useOnclickOutside from "react-cool-onclickoutside";
-import {addCenter, getPlaceName} from "../../../store/Reducers/MapSlice";
+import {addCenter} from "../../../store/Reducers/MapSlice";
+import {API_KEY_MAP} from "../AddProperty";
 
 export const MODES: any = {
     MOVE: 0,
@@ -65,21 +61,20 @@ const AddMap = ({mode}: any) => {
     }, [])
 
 
-
     return (
         <div id="addMap">
             <div className="addMap">
-                <GoogleMap
-                    mapContainerStyle={containerStyle}
-                    center={center}
-                    zoom={16}
-                    onClick={modeClick}
-                    onLoad={onLoad}
-                    onUnmount={onUnmount}
-                    options={defaultOptions}
-                >
-                    <Marker position={center} icon={{url: "./place.svg"}}/>
-                </GoogleMap>
+                    <GoogleMap
+                        mapContainerStyle={containerStyle}
+                        center={center}
+                        zoom={16}
+                        onClick={modeClick}
+                        onLoad={onLoad}
+                        onUnmount={onUnmount}
+                        options={defaultOptions}
+                    >
+                        <Marker position={center} icon={{url: "./place.svg"}}/>
+                    </GoogleMap>
             </div>
         </div>
     );
