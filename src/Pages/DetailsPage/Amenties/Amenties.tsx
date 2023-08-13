@@ -55,15 +55,7 @@ const Amenties = () => {
                                 <p>TV</p>
                             </div>
                         </div>
-                        </div>
-                       <div className="Owner">
-                        <h2>Owner</h2>
-                        <img src={Elippse} alt="img" />
-                        <a href="a">Timur Timurov</a>
-                        <button>Contact owner</button>
-                       </div>
-                    </div>
-                    <div className="Amenties--RoulesBlock">
+                         <div className="RoulesBlock">
                         <h2>House roules</h2>
                         <div className="roules">
                             <div className="rules">
@@ -76,6 +68,20 @@ const Amenties = () => {
                             </div>
                         </div>
                     </div>
+                        </div>
+                       <div className="Owner">
+                        <h2>Owner</h2>
+                        <img src={Elippse} alt="img" />
+                        <a href="a">Timur Timurov</a>
+                        <p className='text'>DreHomes proud to offer this stunning 2 Bedroom apartment with Marina view for rent in Dorrabay, Dubai Marina. Located nearby JBR and is a convenient short walk to the beach club with kids playing facilities and restaurants & shopping outlets nearby.</p>
+                        <p className='title'>
+                        Response rate 100% <br />
+                        Response time within a few hours
+                        </p>
+                        <button>Contact owner</button>
+                       </div>
+                    </div>
+                   
                 </div>
             </div>
         </div>

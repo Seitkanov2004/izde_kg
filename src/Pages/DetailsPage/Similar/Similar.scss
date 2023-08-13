@@ -13,24 +13,24 @@
             gap: 30px;
             margin-top: 30px;
 
-            .slick-slider{
+            .slick-slider {
                 display: flex;
-        
+
                 width: 100%;
                 overflow: hidden;
-              }
-        
-              .slick-track{
+            }
+
+            .slick-track {
                 display: flex;
                 width: 1200px;
                 overflow: hidden;
-              }
-        
-              .slick-slide{
+            }
+
+            .slick-slide {
                 margin: 0 20px;
                 width: 240px !important;
-              }
-              
+            }
+
             .block {
                 display: flex;
                 width: 256px;
@@ -64,6 +64,64 @@
                             color: var(--color-main, #1B76F9);
                             font-size: 16px;
                             font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    #Similar {
+        .Similar {
+            &--similarBlock {
+                .block {
+                    width: 256px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #Similar {
+        .Similar {
+            &--similarBlock {
+                .block {
+                    width: 230px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #Similar {
+        .Similar {
+            &--similarBlock {
+                .block {
+                    width: 210px !important;
+                    .blockText {
+                        h2 {
+                            font-size: 19.33px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #Similar {
+        .Similar {
+            &--similarBlock {
+                .block {
+                    width: 190px !important;
+                    .blockText {
+                        h2 {
+                            font-size: 18px;
                         }
                     }
                 }

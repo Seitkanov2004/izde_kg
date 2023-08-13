@@ -8,6 +8,9 @@
             justify-content: space-between;
 
             .block {
+                display: flex;
+                flex-direction: column;
+
                 h1 {
                     color: #004A60;
                     font-size: 20px;
@@ -36,6 +39,40 @@
                         }
                     }
                 }
+
+                .RoulesBlock {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 50px;
+
+                    h2 {
+                        color: #004A60;
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin: 20px 0;
+                    }
+
+                    .roules {
+                        display: flex;
+
+                        .rules {
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            margin-right: 50px;
+
+                            .roulesIcons {
+                                font-size: 20px;
+                            }
+
+                            p {
+                                color: #004A60;
+                                font-size: 18px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
             }
 
             .Owner {
@@ -57,6 +94,27 @@
                     text-decoration-line: underline;
                 }
 
+                .text {
+                    color: #004A60;
+                    font-family: Poppins;
+                    font-size: 12.33px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    display: none;
+                }
+
+                .title {
+                    color: #1B76F9;
+                    font-family: Poppins;
+                    font-size: 12.33px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    display: none;
+                    text-align: start;
+                }
+
                 button {
                     width: 263px;
                     height: 40px;
@@ -74,37 +132,122 @@
                 }
             }
         }
-        &--RoulesBlock {
-            display: flex;
-            flex-direction: column;
-            margin-top: 50px;
 
-            h2 {
-                color: #004A60;
-                font-size: 20px;
-                font-weight: 600;
-                margin: 20px 0;
-            }
 
-            .roules {
-                display: flex;
+    }
+}
 
-                .rules {
-                    display: flex;
-                    gap: 10px;
-                    align-items: center;
-                    margin-right: 50px;
-
-                    .roulesIcons {
-                        font-size: 20px;
-                    }
-
-                    p {
-                        color: #004A60;
-                        font-size: 18px;
-                        font-weight: 400;
+@media (max-width: 1200px) {
+    #Amenties {
+        .Amenties {
+            &--amentiesBlocks {
+                .block {
+                    .amenityBlock {
+                        .amenity {
+                            margin: 15px 15px 15px 0;
+                        }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    #Amenties {
+        .Amenties {
+            &--amentiesBlocks {
+                .block {
+                    .amenityBlock {
+                        display: grid;
+                        grid-template-columns: repeat(2, 4fr);
+                    }
+                    .RoulesBlock {
+                        .roules {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 786px) {
+    #Amenties {
+        .Amenties {
+            &--amentiesBlocks {
+                .block {
+                    .amenityBlock {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #Amenties {
+        .Amenties {
+            &--amentiesBlocks {
+                flex-direction: column;
+                gap: 5em;
+
+                .Owner {
+                    .text {
+                        display: block;
+                    }
+
+                    .title {
+                        display: block;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    #Amenties {
+        .Amenties {
+            &--amentiesBlocks {
+                .block {
+                    h1{
+                        font-size: 18px;
+                    }
+                    .amenityBlock {
+                        .amenity {
+                            .amenityIcons {
+                                font-size: 20px;
+                            }
+                            p {
+
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .RoulesBlock {
+                        h2 {
+                            font-size: 18px;
+                        }
+                        .roules {
+                            .roulesIcons {
+                                font-size: 18px !important;
+                            }
+                            p {
+                                font-size: 16px !important;
+                            }
+                        }
+                    }
+                }
+
+               
+
             }
         }
     }

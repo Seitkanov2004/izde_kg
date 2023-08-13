@@ -1,18 +1,20 @@
 #Location {
     padding: 100px 0;
     .Location {
-        h1 {
-            color: #004A60;
-            font-size: 20px;
-            font-weight: 600;
-        }
+   
 
         &--locationBlock {
             display: flex;
             justify-content: space-between;
-            margin-top: 30px;
+           
 
             .map {
+                h1 {
+                    color: #004A60;
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                }
                 position: relative;
                 .address {
                     width: 460px;
@@ -34,6 +36,157 @@
                 display: flex;
                 img {
                   width: 200px;  
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    #Location {
+        .Location {
+            &--locationBlock {
+                display: flex;
+                flex-wrap: wrap-reverse;
+                gap: 5em;
+                align-items: center !important;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    #Location {
+        .Location {
+            &--locationBlock {
+                .map {
+                    position: relative;
+                    iframe {
+                        width: 450px;
+                        height: 400px;
+                    }
+                    .address {
+                        position: absolute;
+                        width: 350px;
+                        height: 58px;
+                        right: 50px;
+                    }
+                }
+                .locationImages {
+                    img {
+                      width: 150px;  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #Location {
+        .Location {
+            &--locationBlock {
+                .map {
+                    position: relative;
+                    iframe {
+                        width: 400px;
+                        height: 300px;
+                    }
+                    .address {
+                        position: absolute;
+                        width: 300px;
+                        height: 48px;
+                        right: 50px;
+                    }
+                }
+                .locationImages {
+                    img {
+                      width: 130px;  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #Location {
+        .Location {
+            &--locationBlock {
+                .map {
+                    position: relative;
+                    iframe {
+                        width: 350px;
+                        height: 300px;
+                    }
+                    .address {
+                        position: absolute;
+                        width: 300px;
+                        height: 48px;
+                        right: 25px;
+                    }
+                }
+                .locationImages {
+                    img {
+                      width: 115px;  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    #Location {
+        .Location {
+            &--locationBlock {
+                .map {
+                    position: relative;
+                    iframe {
+                        width: 300px;
+                        height: 300px;
+                    }
+                    .address {
+                        position: absolute;
+                        width: 250px;
+                        height: 48px;
+                        right: 25px;
+                    }
+                }
+                .locationImages {
+                    img {
+                      width: 100px;  
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    #Location {
+        .Location {
+            &--locationBlock {
+                .map {
+                    position: relative;
+                    iframe {
+                        width: 270px;
+                        height: 270px;
+                    }
+                    .address {
+                        position: absolute;
+                        width: 230px;
+                        height: 38px;
+                        right: 20px;
+                        font-size: 14px;
+                    }
+                }
+                .locationImages {
+                    img {
+                      width: 90px;  
+                    }
                 }
             }
         }
