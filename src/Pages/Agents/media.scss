@@ -2,25 +2,30 @@
   #agents {
     .agents {
       &--btn {
-      btn {
-        margin-left: 568px;
-      }
-      &--hooks {
-        &__per {
-          width: 296px;
-          height: 522px;
-          img {
-            width: 360px;
-            height: 308px;
+        btn {
+          margin-left: 568px;
+        }
+
+        &--hooks {
+          &__per {
+            width: 296px;
+            height: 522px;
+
+            img {
+              width: 360px;
+              height: 308px;
+            }
           }
         }
-      }
-      &--inli {
-        left: 203px;
-        &__search {
-          h1 {
-            bottom: 154px;
-            right: -295px;
+
+        &--inli {
+          left: 203px;
+
+          &__search {
+            h1 {
+              bottom: 154px;
+              right: -295px;
+            }
           }
         }
       }
@@ -34,42 +39,50 @@
 
       &--btn {
 
-      btn {
+        btn {
 
-        margin-left: 444px;
-      }
-      &--hooks {
-        &__per {
-          width: 230px;
-          height: 446px;
-          h3 {
-            font-size: 24px;
-          }
-          img {
-            width: 360px;
-            height: 231px;
+          margin-left: 444px;
+        }
+
+        &--hooks {
+          &__per {
+            width: 230px;
+            height: 446px;
+
+            h3 {
+              font-size: 24px;
+            }
+
+            img {
+              width: 360px;
+              height: 231px;
+            }
           }
         }
-      }
-      &--inli {
-        height: 213px;
-        width: 822px;
-        left: 108px;
-        &__search {
-          button {
-            padding: 15px;
-            top: -60px;
-          }
-          input {
-            right: -391px;
-            top: -78px;
-            width: 782px;
-            height: 90px;
-          }
-          h1 {
-            bottom: 120px;
-            right: -282px;
-            font-size: 50px;
+
+        &--inli {
+          height: 213px;
+          width: 822px;
+          left: 108px;
+
+          &__search {
+            button {
+              padding: 15px;
+              top: -60px;
+            }
+
+            input {
+              right: -391px;
+              top: -78px;
+              width: 782px;
+              height: 90px;
+            }
+
+            h1 {
+              bottom: 120px;
+              right: -282px;
+              font-size: 50px;
+            }
           }
         }
       }
@@ -83,57 +96,67 @@
 
       &--btn {
 
-      btn {
+        btn {
 
-        font-size: 22px;
-        margin-left: 388px;
-      }
-      &--hooks {
-        &__per {
-          width: 205px;
-          height: 416px;
-          h3 {
-            font-size: 20px;
-          }
-          img {
-            width: 360px;
-            height: 205px;
-          }
-          button {
-            font-size: 12px;
+          font-size: 22px;
+          margin-left: 388px;
+        }
+
+        &--hooks {
+          &__per {
+            width: 205px;
+            height: 416px;
+
+            h3 {
+              font-size: 20px;
+            }
+
+            img {
+              width: 360px;
+              height: 205px;
+            }
+
+            button {
+              font-size: 12px;
+            }
           }
         }
-      }
-      &--inli {
-        height: 171px;
-        width: 710px;
-        left: 108px;
-        select {
-          padding: 1px 21px 5px 12px;
-          top: 122px;
-        }
-        &__search {
-          button {
-            padding: 13px;
-            top: -47px;
-            left: 217px;
+
+        &--inli {
+          height: 171px;
+          width: 710px;
+          left: 108px;
+
+          select {
+            padding: 1px 21px 5px 12px;
+            top: 122px;
           }
-          input {
-            right: -336px;
-            top: -66px;
-            width: 673px;
-            height: 90px;
-          }
-          h1 {
 
-            bottom: 90px;
-    right: -282px;
-    font-size: 40px;
+          &__search {
+            button {
+              padding: 13px;
+              top: -47px;
+              left: 217px;
+            }
 
-            bottom: 120px;
-            right: -282px;
-            font-size: 50px;
+            input {
+              right: -336px;
+              top: -66px;
+              width: 673px;
+              height: 90px;
+            }
 
+            h1 {
+
+              bottom: 90px;
+              right: -282px;
+              font-size: 40px;
+
+              bottom: 120px;
+              right: -282px;
+              font-size: 50px;
+
+            }
           }
         }
       }
@@ -147,58 +170,69 @@
 
       &--btn {
 
-      btn {
+        btn {
 
-        font-size: 15px;
-        margin-left: 323px;
-      }
-      &--hooks {
-        &__per {
-          width: 167px;
-          height: 335px;
-          gap: 10px;
-          p {
-            font-size: 13px;
-          }
-          h3 {
-            font-size: 15px;
-          }
-          img {
-            width: 360px;
-            height: 166px;
-          }
-          button {
-            font-size: 10px;
-            padding: 8px 20px;
+          font-size: 15px;
+          margin-left: 323px;
+        }
+
+        &--hooks {
+          &__per {
+            width: 167px;
+            height: 335px;
+            gap: 10px;
+
+            p {
+              font-size: 13px;
+            }
+
+            h3 {
+              font-size: 15px;
+            }
+
+            img {
+              width: 360px;
+              height: 166px;
+            }
+
+            button {
+              font-size: 10px;
+              padding: 8px 20px;
+            }
           }
         }
-      }
-      &--inli {
-        height: 137px;
-        width: 668px;
-        left: 59px;
-        top: -64px;
-        select {
-          padding: 1px 21px 5px 12px;
-          top: 97px;
-          font-size: 14px;
-        }
-        &__search {
-          button {
-            top: -40px;
-            left: 212px;
+
+        &--inli {
+          height: 137px;
+          width: 668px;
+          left: 59px;
+          top: -64px;
+
+          select {
+            padding: 1px 21px 5px 12px;
+            top: 97px;
             font-size: 14px;
           }
-          input {
-            top: -52px;
-            left: -317px;
-            width: 639px;
-            height: 71px;
-          }
-          h1 {
-            bottom: 96px;
-            right: -295px;
-            font-size: 40px;
+
+          &__search {
+            button {
+              top: -40px;
+              left: 212px;
+              font-size: 14px;
+            }
+
+            input {
+              top: -52px;
+              left: -317px;
+              width: 639px;
+              height: 71px;
+            }
+
+            h1 {
+              bottom: 96px;
+              right: -295px;
+              font-size: 40px;
+            }
           }
         }
       }
@@ -212,59 +246,69 @@
 
       &--btn {
 
-      btn {
+        btn {
 
-        font-size: 20px;
-        margin-left: 388px;
-      }
-      &--hooks {
-        gap: 5rem;
-        padding: 205px 0 150px 82px;
-        &__per {
-          width: 218px;
-          height: 416px;
-          gap: 28px;
+          font-size: 20px;
+          margin-left: 388px;
+        }
 
-          h3 {
-            font-size: 20px;
-          }
-          img {
-            width: 360px;
-            height: 205px;
-          }
-          button {
-            font-size: 12px;
+        &--hooks {
+          gap: 5rem;
+          padding: 205px 0 150px 82px;
+
+          &__per {
+            width: 218px;
+            height: 416px;
+            gap: 28px;
+
+            h3 {
+              font-size: 20px;
+            }
+
+            img {
+              width: 360px;
+              height: 205px;
+            }
+
+            button {
+              font-size: 12px;
+            }
           }
         }
-      }
-      &--inli {
-        height: 110px;
-        width: 462px;
-        left: 108px;
-        top: -54px;
-        select {
-          padding: 1px 21px 5px 12px;
-          top: 75px;
-          font-size: 11px;
-        }
-        &__search {
-          button {
-            padding: 7px;
-            top: -30px;
-            left: 119px;
-            font-size: 13px;
+
+        &--inli {
+          height: 110px;
+          width: 462px;
+          left: 108px;
+          top: -54px;
+
+          select {
+            padding: 1px 21px 5px 12px;
+            top: 75px;
+            font-size: 11px;
           }
-          input {
-            right: -432px;
-            left: -217px;
-            top: -41px;
-            width: 432px;
-            height: 54px;
-          }
-          h1 {
-            bottom: 120px;
-            right: -282px;
-            font-size: 50px;
+
+          &__search {
+            button {
+              padding: 7px;
+              top: -30px;
+              left: 119px;
+              font-size: 13px;
+            }
+
+            input {
+              right: -432px;
+              left: -217px;
+              top: -41px;
+              width: 432px;
+              height: 54px;
+            }
+
+            h1 {
+              bottom: 120px;
+              right: -282px;
+              font-size: 50px;
+            }
           }
         }
       }
@@ -280,64 +324,76 @@
       height: 206px;
       padding-top: 48px;
     }
+
     .agents {
 
       &--btn {
         font-size: 20px;
         margin-left: 178px;
-      btn {
-        font-size: 20px;
-        margin-left: 191px;
 
-      }
-      &--hooks {
-        gap: 3rem;
-        padding: 439px 0 150px 37px;
-        &__per {
-          width: 192px;
-          height: 416px;
-          gap: 28px;
+        btn {
+          font-size: 20px;
+          margin-left: 191px;
 
-          h3 {
-            font-size: 20px;
-          }
-          img {
-            width: 360px;
-            height: 205px;
-          }
-          button {
-            font-size: 12px;
+        }
+
+        &--hooks {
+          gap: 3rem;
+          padding: 439px 0 150px 37px;
+
+          &__per {
+            width: 192px;
+            height: 416px;
+            gap: 28px;
+
+            h3 {
+              font-size: 20px;
+            }
+
+            img {
+              width: 360px;
+              height: 205px;
+            }
+
+            button {
+              font-size: 12px;
+            }
           }
         }
-      }
-      &--inli {
-        height: 128px;
-        width: 462px;
-        left: 32px;
-        top: 199px;
-        select {
-          padding: 1px 21px 5px 12px;
-          top: 86px;
-          font-size: 11px;
-        }
-        &__search {
-          button {
-            padding: 7px;
-            top: -30px;
-            left: 119px;
-            font-size: 13px;
+
+        &--inli {
+          height: 128px;
+          width: 462px;
+          left: 32px;
+          top: 199px;
+
+          select {
+            padding: 1px 21px 5px 12px;
+            top: 86px;
+            font-size: 11px;
           }
-          input {
-            right: -432px;
-            left: -217px;
-            top: -41px;
-            width: 432px;
-            height: 54px;
-          }
-          h1 {
-            bottom: 120px;
-            right: -282px;
-            font-size: 50px;
+
+          &__search {
+            button {
+              padding: 7px;
+              top: -30px;
+              left: 119px;
+              font-size: 13px;
+            }
+
+            input {
+              right: -432px;
+              left: -217px;
+              top: -41px;
+              width: 432px;
+              height: 54px;
+            }
+
+            h1 {
+              bottom: 120px;
+              right: -282px;
+              font-size: 50px;
+            }
           }
         }
       }
@@ -354,36 +410,44 @@
       height: 206px;
       padding-top: 48px;
     }
+
     .agents {
       &--btn {
         font-size: 20px;
         margin-left: 147px;
       }
+
       &--hooks {
         gap: 3rem;
         padding: 439px 0 150px 109px;
+
         &__per {
           width: 230px;
           height: 446px;
+
           h3 {
             font-size: 24px;
           }
+
           img {
             width: 360px;
             height: 231px;
           }
         }
       }
+
       &--inli {
         height: 165px;
         width: 385px;
         left: 32px;
         top: 185px;
+
         select {
           padding: 5px 21px 5px 12px;
           top: 111px;
           font-size: 15px;
         }
+
         &__search {
           button {
             padding: 7px;
@@ -391,6 +455,7 @@
             left: 88px;
             font-size: 13px;
           }
+
           input {
             right: -432px;
             left: -182px;
@@ -399,6 +464,7 @@
             font-size: 13px;
             height: 70px;
           }
+
           h1 {
             bottom: 120px;
             right: -282px;
@@ -418,36 +484,44 @@
       height: 206px;
       padding-top: 48px;
     }
+
     .agents {
       btn {
         font-size: 20px;
         margin-left: 139px;
       }
+
       &--hooks {
         gap: 3rem;
         padding: 439px 0 150px 87px;
+
         &__per {
           width: 230px;
           height: 446px;
+
           h3 {
             font-size: 24px;
           }
+
           img {
             width: 360px;
             height: 231px;
           }
         }
       }
+
       &--inli {
         height: 186px;
         width: 336px;
         left: 32px;
         top: 185px;
+
         select {
           padding: 5px 21px 5px 12px;
           top: 127px;
           font-size: 15px;
         }
+
         &__search {
           button {
             padding: 13px;
@@ -455,6 +529,7 @@
             left: 59px;
             font-size: 11px;
           }
+
           input {
             right: -432px;
             left: -158px;
@@ -463,6 +538,7 @@
             font-size: 10px;
             height: 81px;
           }
+
           h1 {
             bottom: 182px;
             right: -193px;
@@ -483,36 +559,44 @@
       height: 206px;
       padding-top: 48px;
     }
+
     .agents {
       &--btn {
         font-size: 20px;
         margin-left: 129px;
       }
+
       &--hooks {
         gap: 3rem;
         padding: 439px 0 150px 87px;
+
         &__per {
           width: 230px;
           height: 446px;
+
           h3 {
             font-size: 24px;
           }
+
           img {
             width: 360px;
             height: 231px;
           }
         }
       }
+
       &--inli {
         height: 186px;
         width: 336px;
         left: 22px;
         top: 189px;
+
         select {
           padding: 5px 21px 5px 12px;
           top: 127px;
           font-size: 15px;
         }
+
         &__search {
           button {
             padding: 13px;
@@ -520,6 +604,7 @@
             left: 59px;
             font-size: 11px;
           }
+
           input {
             right: -432px;
             left: -158px;
@@ -528,6 +613,7 @@
             font-size: 10px;
             height: 81px;
           }
+
           h1 {
             bottom: 182px;
             right: -193px;
@@ -548,36 +634,44 @@
       height: 206px;
       padding-top: 48px;
     }
+
     .agents {
       btn {
         font-size: 16px;
         margin-left: 128px;
       }
+
       &--hooks {
         gap: 3rem;
         padding: 439px 0 150px 71px;
+
         &__per {
           width: 230px;
           height: 446px;
+
           h3 {
             font-size: 24px;
           }
+
           img {
             width: 360px;
             height: 231px;
           }
         }
       }
+
       &--inli {
         height: 186px;
         width: 336px;
         left: 18px;
         top: 189px;
+
         select {
           padding: 5px 21px 5px 12px;
           top: 127px;
           font-size: 15px;
         }
+
         &__search {
           button {
             padding: 13px;
@@ -585,6 +679,7 @@
             left: 59px;
             font-size: 11px;
           }
+
           input {
             right: -432px;
             left: -158px;
@@ -593,6 +688,7 @@
             font-size: 10px;
             height: 81px;
           }
+
           h1 {
             bottom: 182px;
             right: -193px;
@@ -613,36 +709,44 @@
       height: 206px;
       padding-top: 48px;
     }
+
     .agents {
       &--btn {
         font-size: 16px;
         margin-left: 110px;
       }
+
       &--hooks {
         gap: 3rem;
         padding: 439px 0 150px 53px;
+
         &__per {
           width: 230px;
           height: 446px;
+
           h3 {
             font-size: 24px;
           }
+
           img {
             width: 360px;
             height: 231px;
           }
         }
       }
+
       &--inli {
         height: 202px;
         width: 293px;
         left: 25px;
         top: 160px;
+
         select {
           padding: 5px 21px 5px 12px;
           top: 144px;
           font-size: 10px;
         }
+
         &__search {
           button {
             padding: 10px;
@@ -650,6 +754,7 @@
             left: 47px;
             font-size: 9px;
           }
+
           input {
             right: -432px;
             left: -133px;
@@ -658,6 +763,7 @@
             font-size: 8px;
             height: 92px;
           }
+
           h1 {
             bottom: 182px;
             right: -186px;
@@ -678,36 +784,44 @@
       height: 206px;
       padding-top: 48px;
     }
+
     .agents {
       &--btn {
         font-size: 16px;
         margin-left: 99px;
       }
+
       &--hooks {
         gap: 3rem;
         padding: 439px 0 150px 44px;
+
         &__per {
           width: 230px;
           height: 446px;
+
           h3 {
             font-size: 24px;
           }
+
           img {
             width: 360px;
             height: 231px;
           }
         }
       }
+
       &--inli {
         height: 202px;
         width: 293px;
         left: 11px;
         top: 160px;
+
         select {
           padding: 5px 21px 5px 12px;
           top: 144px;
           font-size: 10px;
         }
+
         &__search {
           button {
             padding: 10px;
@@ -715,6 +829,7 @@
             left: 47px;
             font-size: 9px;
           }
+
           input {
             right: -432px;
             left: -133px;
@@ -723,6 +838,7 @@
             font-size: 8px;
             height: 92px;
           }
+
           h1 {
             bottom: 182px;
             right: -186px;
@@ -743,36 +859,44 @@
       height: 206px;
       padding-top: 48px;
     }
+
     .agents {
       &--btn {
         font-size: 16px;
         margin-left: 94px;
       }
+
       &--hooks {
         gap: 3rem;
         padding: 439px 0 150px 29px;
+
         &__per {
           width: 230px;
           height: 446px;
+
           h3 {
             font-size: 24px;
           }
+
           img {
             width: 360px;
             height: 231px;
           }
         }
       }
+
       &--inli {
         height: 202px;
         width: 269px;
         left: 11px;
         top: 160px;
+
         select {
           padding: 5px 21px 5px 12px;
           top: 144px;
           font-size: 10px;
         }
+
         &__search {
           button {
             padding: 7px;
@@ -780,6 +904,7 @@
             left: 51px;
             font-size: 9px;
           }
+
           input {
             right: -432px;
             left: -127px;
@@ -788,6 +913,7 @@
             font-size: 8px;
             height: 91px;
           }
+
           h1 {
             bottom: 182px;
             right: -134px;
