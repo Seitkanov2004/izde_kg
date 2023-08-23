@@ -35,12 +35,16 @@ const AddProperty = (e: React.DragEvent<HTMLDivElement>) => {
             libraries
         })
 
+        const handleRef = useRef<any>()
+
+
         const localImages: any = localStorage.getItem("imagesL")
 
-        const [images, setImages] = useState<any[]>([]);
-
-
-        console.log(images)
+        const [images, setImages] = useState<any[]>(Array(5).fill({
+            id: Math.round(Math.random() * 100),
+            image: null,
+            idDone: false
+        }));
 
 
         const [check, setCheck] = useState("")
@@ -56,9 +60,35 @@ const AddProperty = (e: React.DragEvent<HTMLDivElement>) => {
                     idDone: false
                 })
             })
-            if (images.length < 5) {
-                setImages([...selectedFiles, ...images]);
-            }
+
+
+
+
+
+            // console.log(selectedFiles)
+
+            // let num =  selectedFiles.length
+
+            // console.log(num)
+            //
+            // setImages(images.slice(num))
+
+            // images.slice(0,num)
+
+            // setImages(images.splice(0, 0, ...selectedFiles));
+
+            // if (images.length < 9) {
+            //     images.unshift(...selectedFiles)
+                // setImages([...selectedFiles, ...images]);
+
+            // }
+
+
+
+
+            // if (images.length < 5) {
+            //     setImages([...selectedFiles, ...images.slice(num)]);
+            // }
 
             // if (images.length === 4) {
             //     if (images.find(el => el === null)) {
@@ -76,14 +106,15 @@ const AddProperty = (e: React.DragEvent<HTMLDivElement>) => {
             //         isDone: false,
             //     }))
             // }
-            else {
-                setImages(images);
-            }
+            // else {
+            //     setImages(images);
+            // }
 
         }
 
 
-        const handleRef = useRef<any>()
+        console.log(images)
+
 
         const toggleMode = useCallback(() => {
             switch (mode) {
@@ -184,12 +215,15 @@ const AddProperty = (e: React.DragEvent<HTMLDivElement>) => {
         const havingImages = (el: any, idx: any) => {
 
             if (idx === 0) {
-                return (<div draggable={true}
-                             onDragStart={(e) => startDrag(e, el)}
-                             onDragOver={(e) => e.preventDefault()}
-                             onDrop={(e) => handleDrop(e, el)}
-                             style={{background: `url("${el.image}")no-repeat center/cover`}}
-                             className="addProperty--images__blocks--bigBlock"></div>)
+                return el.image !== null ? (<div draggable={true}
+                                                 onDragStart={(e) => startDrag(e, el)}
+                                                 onDragOver={(e) => e.preventDefault()}
+                                                 onDrop={(e) => handleDrop(e, el)}
+                                                 style={{background: `url("${el.image}")no-repeat center/cover`}}
+                                                 className="addProperty--images__blocks--bigBlock"></div>)
+                    : (<div draggable={true}
+                            className="addProperty--images__blocks--bigBlock">
+                        <BiSolidImageAlt/></div>)
             }
             if (el.image) {
                 return (<div draggable={true}
@@ -204,12 +238,16 @@ const AddProperty = (e: React.DragEvent<HTMLDivElement>) => {
                              className="addProperty--images__blocks--letBlock"><BiSolidImageAlt/></div>)
             } else {
                 return (<div draggable={true}
+                             onDragStart={(e) => startDrag(e, el)}
+                             onDragOver={(e) => e.preventDefault()}
+                             onDrop={(e) => handleDrop(e, el)}
                              className="addProperty--images__blocks--letBlock"><BiSolidImageAlt/></div>)
             }
         }
 
 
         const [notImages, setNotImages] = useState([1, 2, 3, 4, 5])
+
 
         return (
             <div id="addProperty">
@@ -219,9 +257,9 @@ const AddProperty = (e: React.DragEvent<HTMLDivElement>) => {
                         <div className='addProperty--images'>
                             <div className="addProperty--images__blocks">
                                 {
-                                    images.length ? images.sort(sortCards).map((el, idx) => havingImages(el, idx))
-                                        : notImages.map(el => el === 1 ? (<div draggable={true}
-                                                                               className="addProperty--images__blocks--bigBlock">
+                                    images ? images.sort(sortCards).map((el, idx) => havingImages(el, idx))
+                                        : notImages.map((el, idx) => el === 1 ? (<div draggable={true}
+                                                                                      className="addProperty--images__blocks--bigBlock">
                                                 <BiSolidImageAlt/></div>)
                                             : (<div draggable={true} className="addProperty--images__blocks--letBlock">
                                                 <BiSolidImageAlt/></div>))
